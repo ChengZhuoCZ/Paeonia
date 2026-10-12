@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Static hygiene gate for reconstructed LaTeX manuscripts."""
 import argparse, re, sys
+from pathlib import Path
+from no_box_audit import audit as audit_no_box
 
 FORBIDDEN_INTERNAL = [
     r"\bStage\s+\d", r"\bModule\s+[A-Z0-9]", r"\bFCW\b",
@@ -31,6 +33,14 @@ def main():
     for x in set(labels):
         if labels.count(x) > 1:
             issues.append(("DUPLICATE_LABEL", labels.count(x), x))
+    # v1.43 hard no-box rule is independent of formulaic-language heuristics.
+    # Treat missing local TeX inputs as incomplete coverage rather than PASS.
+    if Path(args.tex).suffix.lower() == '.tex':
+        no_box = audit_no_box([Path(args.tex)])
+        for finding in no_box['violations']:
+            issues.append(('NO-BOX-TYPESETTING', f"{finding['file']}:{finding['line']}:{finding['column']}", finding['token']))
+        for missing in no_box['missing_local_inputs']:
+            issues.append(('INCOMPLETE_TEX_COVERAGE', 0, missing))
     if issues:
         for row in issues:
             print("\t".join(map(str, row)))

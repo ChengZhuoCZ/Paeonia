@@ -75,3 +75,8 @@ referee:
 submission_gate:
   status: NOT_READY
   conditions: []
+no_box_typesetting:
+  status: pending
+  issues: []
+  checked_files: []
+  visual_inspection: pending

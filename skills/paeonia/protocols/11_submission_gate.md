@@ -12,7 +12,7 @@ The authoritative registry is `registry/gates.yaml`. For a full source-based res
 - `STYLE-SOURCE-INDEPENDENCE` when a style corpus is used
 - `STYLE-LEDGER-FIDELITY` when a style corpus is used
 - `CONDITIONAL-STYLE-FIDELITY` when high-intensity conditional style distillation is used
-- `GENERATIVE-RESIDUE`
+- `GENERATIVE-RESIDUE` (including the Protocol 05q authorial-prose cold read)
 - `AUTHORIAL-DECISION`
 - `PARAGRAPH-FINGERPRINT-FIDELITY`
 - `SECTION-NARRATIVE-FIDELITY`
@@ -28,6 +28,7 @@ The authoritative registry is `registry/gates.yaml`. For a full source-based res
 - `NOTATION-CONSISTENCY`
 - `PROOF-CLOSURE`
 - `LATEX-INTEGRITY` when LaTeX/compilation is part of the requested output
+- `NO-BOX-TYPESETTING` for **every** delivered LaTeX manuscript, even when compilation was not requested
 
 In addition:
 
@@ -40,8 +41,13 @@ In addition:
 - a substantial Introduction must pass editorial-impact calibration: the strongest verified contribution is surfaced, the exact pre-paper frontier is visible, consequence and method significance are explained at their evidence-supported strength, and every amplification respects a factuality ceiling;
 - no internal engineering labels may remain in submission prose;
 - bibliography metadata must be verified or flagged;
-- no cosmetic humanization strategy may have been used;
+- no cosmetic humanization strategy may have been used; AI-like residue is assessed at the paragraph, proof and whole-paper level under Protocol 05q, not by an invented detector percentage;
+- **No visual boxes** may survive in the delivered manuscript, including boxed equations, framed/colored/shaded declarations and indirect macros (Protocol 09a);
 - **Protocol 05p unified voice:** the editorial cold read must confirm one consistent research register across all editable sections, with any conflicting style guidance resolved internally and without an unsolicited style-selection prompt. The checklist is `checklists/unified_language_style.md`. This is an editorial review, not a machine-certified proof of literary quality.
+
+## No-box evidence
+
+For TeX manuscripts record complete source-level `tools/no_box_audit.py` results on the delivered local dependency set and inspect any compiled PDF for visually framed content. Static PASS alone cannot guarantee absence of boxes hidden in custom packages or drawing commands. A remaining known visual box, including in a protected passage, prevents `SUBMISSION_READY`. If only non-TeX prose is delivered, follow Protocol 09a stylistically and do not fabricate a LaTeX scan.
 
 ## Evidence rule
 

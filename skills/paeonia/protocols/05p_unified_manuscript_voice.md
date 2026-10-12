@@ -44,6 +44,10 @@ If two rules at the same level conflict, choose the formulation that (a) better 
 | English house voice versus explicit Chinese manuscript | Write the whole authorized output in Chinese with the same clarity, precision and restraint; do not mix languages stylistically. |
 | Current authorial baseline versus preferred house style in `LOCAL_POLISH` | Preserve effective baseline prose. Repair only the authorized inconsistency; report out-of-scope drift rather than silently rewrite. |
 
+## Relationship to authorial integrity and no-box
+
+Protocol 05q is the default content-grounded, whole-manuscript editorial cold read. It does not create a second writing voice or ask for style preferences. Protocol 09a independently prohibits visual boxes in manuscript artifacts. No corpus trait, venue-neutral house-style convention or prose preference can override this explicit no-box rule.
+
 ## Workflow (no additional permission or mandatory ledger)
 
 1. **Before drafting:** infer output language and genre from explicit instructions and manuscript; otherwise choose English and the single house voice. Fix technical terminology, first-person policy and mathematical name/notation conventions. Do not request a preferred style or exemplar.

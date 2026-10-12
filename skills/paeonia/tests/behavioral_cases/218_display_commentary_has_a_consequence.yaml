@@ -1,0 +1,15 @@
+version: 1
+id: 218
+title: Case 218 — Display commentary has a consequence
+legacy_spec: 218_display_commentary_has_a_consequence.md
+gate: GENERATIVE-RESIDUE
+assertions:
+- path: proof.postdisplay_adds_inference
+  op: equals
+  value: true
+good_candidate:
+  proof:
+    postdisplay_adds_inference: true
+bad_candidate:
+  proof:
+    postdisplay_adds_inference: false

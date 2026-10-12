@@ -1,0 +1,15 @@
+version: 1
+id: 217
+title: Case 217 — Earned importance in the Introduction
+legacy_spec: 217_earned_importance_in_the_introduction.md
+gate: GENERATIVE-RESIDUE
+assertions:
+- path: introduction.importance_claim_grounded
+  op: equals
+  value: true
+good_candidate:
+  introduction:
+    importance_claim_grounded: true
+bad_candidate:
+  introduction:
+    importance_claim_grounded: false

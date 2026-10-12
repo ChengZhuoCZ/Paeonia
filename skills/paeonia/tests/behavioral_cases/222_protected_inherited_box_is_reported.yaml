@@ -1,0 +1,15 @@
+version: 1
+id: 222
+title: Case 222 — Protected inherited box is reported
+legacy_spec: 222_protected_inherited_box_is_reported.md
+gate: NO-BOX-TYPESETTING
+assertions:
+- path: typesetting.protected_box_silently_removed
+  op: equals
+  value: false
+good_candidate:
+  typesetting:
+    protected_box_silently_removed: false
+bad_candidate:
+  typesetting:
+    protected_box_silently_removed: true

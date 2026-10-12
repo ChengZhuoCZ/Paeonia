@@ -1,0 +1,15 @@
+version: 1
+id: 221
+title: Case 221 — Framed theorem environment prohibited
+legacy_spec: 221_framed_theorem_environment_prohibited.md
+gate: NO-BOX-TYPESETTING
+assertions:
+- path: typesetting.framed_theorem_remains
+  op: equals
+  value: false
+good_candidate:
+  typesetting:
+    framed_theorem_remains: false
+bad_candidate:
+  typesetting:
+    framed_theorem_remains: true

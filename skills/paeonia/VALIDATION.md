@@ -1,3 +1,9 @@
+# Validation — v1.43.0
+
+The complete 41-program release suite passed (`RELEASE_SUITE_PASS`) following the final no-box source-inspection update. The v1.43 contract passed 25 targeted checks. The contract compiler reported 29 states, 48 artifacts, 23 gates, and 222 executable behavioral fixtures; the behavioral runner accepted 222 good cases and rejected the corresponding 222 bad cases. See [the detailed v1.43 validation report](validation/authorial_prose_no_box_v143.md) and `validation/release_suite_v143.log`. These tests validate the package's behavior and policy contracts, **not** any article's authorship origin, AI-detector score, reader quality, mathematical correctness or rendered-PDF absence of custom visual boxes. No mathematical manuscript was edited.
+
+---
+
 # v1.42.1 — Paeonia rename validation
 
 - **Identity:** skill frontmatter and manifest use `paeonia`; the directory and archive root are `paeonia/`; UI display name and documentation title are **Paeonia**. All version metadata is `1.42.1`.

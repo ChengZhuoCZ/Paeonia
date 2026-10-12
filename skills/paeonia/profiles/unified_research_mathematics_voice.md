@@ -10,6 +10,8 @@
 
 **Equations:** define symbols near first use; frame consequential displays by their purpose, then state what is gained. Do not narrate a display symbol by symbol or conceal a difficult step under “clearly.”
 
+**Authorial-prose check:** Protocol 05q requires prose whose local reason is recognizable; remove generic AI-like self-praise, empty step announcements, formula paraphrase, uniform proof geometry, whole-paper echo, and abrupt mode changes. No invented AI rate and no detector-based style manipulation. Avoid boxed visual emphasis under Protocol 09a; the mathematical content itself supplies emphasis.
+
 **Across the manuscript:** use one family of definitions, abbreviations, hyphenations, capitalization, theorem names, modality (`proves`, `suggests`, `conjectures`) and citation language. Align abstract and Introduction claims with the same mathematically verified theorem statement. Avoid mixing an excited Introduction with an overly cryptic proof, or a ceremonial theorem statement with relaxed commentary.
 
 **Editorial decision:** resolve stylistic conflicts in favor of mathematical fidelity, explicit constraints, subfield intelligibility, this voice and then optional reference traits—in that order. Choose one final formulation; do not ask for style approval or write multiple style versions by default. In `LOCAL_POLISH`, preserve the effective approved baseline inside the protected scope.

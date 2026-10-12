@@ -1,0 +1,15 @@
+version: 1
+id: 219
+title: Case 219 — Whole-paper cold read required
+legacy_spec: 219_whole_paper_cold_read_required.md
+gate: GENERATIVE-RESIDUE
+assertions:
+- path: manuscript.cross_section_cold_read_completed
+  op: equals
+  value: true
+good_candidate:
+  manuscript:
+    cross_section_cold_read_completed: true
+bad_candidate:
+  manuscript:
+    cross_section_cold_read_completed: false

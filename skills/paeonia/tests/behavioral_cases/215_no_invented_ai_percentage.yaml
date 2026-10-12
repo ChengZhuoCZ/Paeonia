@@ -1,0 +1,15 @@
+version: 1
+id: 215
+title: Case 215 — No invented AI percentage
+legacy_spec: 215_no_invented_ai_percentage.md
+gate: GENERATIVE-RESIDUE
+assertions:
+- path: language_report.detector_probability_claimed
+  op: equals
+  value: false
+good_candidate:
+  language_report:
+    detector_probability_claimed: false
+bad_candidate:
+  language_report:
+    detector_probability_claimed: true

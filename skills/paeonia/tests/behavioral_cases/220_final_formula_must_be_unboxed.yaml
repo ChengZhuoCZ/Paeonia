@@ -1,0 +1,15 @@
+version: 1
+id: 220
+title: Case 220 — Final formula must be unboxed
+legacy_spec: 220_final_formula_must_be_unboxed.md
+gate: NO-BOX-TYPESETTING
+assertions:
+- path: typesetting.final_formula_boxed
+  op: equals
+  value: false
+good_candidate:
+  typesetting:
+    final_formula_boxed: false
+bad_candidate:
+  typesetting:
+    final_formula_boxed: true

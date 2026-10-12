@@ -6,6 +6,10 @@ The symbol system is designed earlier by `protocols/02d_notation_architecture.md
 
 If this pass discovers a structural collision, normalization conflict, overloaded index family, or theorem/proof symbol mismatch, roll back to `NOTATION_ARCHITECTURE` and invalidate affected downstream prose. Do not patch a structural notation problem locally.
 
+## Independent no-box release blocker
+
+Apply Protocol 09a (`09a_no_box_typesetting.md`) to **every delivered TeX manuscript**. A clean compile is not enough: `\boxed`, `\fbox`, framed/colored/shaded theorem boxes, `tcolorbox`, `mdframed`, `framed` and all visually highlighted callouts are prohibited. Use `tools/no_box_audit.py` on the main source and its local included files, then inspect the rendered PDF when available. Report a protected-source conflict instead of editing outside scope. Record `NO-BOX-TYPESETTING` separately from conditional `LATEX-INTEGRITY`.
+
 ## Normalize
 
 - theorem environment hierarchy;

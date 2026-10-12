@@ -1,3 +1,13 @@
+# Paeonia v1.43.0 — Authorial Prose Integrity & Absolute No-Box Rule
+
+This release makes mathematical authorial naturalness and the no-box constraint explicit manuscript requirements, without introducing a selectable prose style or an AI detector score. **Protocol 05q** adds content-grounded tests for generic grandeur, administrative transitions, repetitive proof templates, display paraphrase, whole-paper echo and false humanization. Diagnostics locate review candidates but do not infer human/AI authorship or guarantee an "AI rate". Maintain exact proof semantics, scholarly credit and the user's protected text.
+
+**Protocol 09a** prohibits all visually framed, shaded and colored manuscript content, including `\boxed`, `\fbox`, tcolorbox/mdframed/framed, decorative theorem environments and disguised callouts. The independent **`NO-BOX-TYPESETTING`** blocker applies to every generated LaTeX manuscript regardless of compile requests. A source scanner checks known commands, environments and local inputs; a PDF is visually inspected when produced. User-protected inherited boxes are reported as blockers, not silently edited.
+
+Added [authorial prose](protocols/05q_authorial_prose_integrity.md) and [no-box](protocols/09a_no_box_typesetting.md) protocols and checklists, a [source no-box scanner](tools/no_box_audit.py), an advisory [prose residue review tool](tools/prose_residue_review.py), and regression and release-contract tests. The v1.42 unified voice, v1.41 notation selection, v1.40 exact proof citation replacement and v1.39 literature-first Introduction remain in force. No user manuscript has been modified in this skill-only release.
+
+---
+
 # Paeonia v1.42.1 — Skill Rename
 
 The skill is now **Paeonia**, with the installation identifier and directory `paeonia`. Its entrypoint, manifest and UI display name use the same identity. This patch changes the name and distribution metadata; the manuscript-writing protocols, tools and behavioral rules remain those of v1.42.0. Invoke the renamed skill as `$paeonia`.

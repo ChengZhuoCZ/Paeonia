@@ -31,6 +31,10 @@ Use one consistent research-mathematics register: professional, economical when 
 
 For proof bodies, load `profiles/classical_analysis_proof_prose.md` by default. Its traits govern clarity, proof rhythm, and authorial naturalization, while source/style phrase reuse remains forbidden.
 
+## Whole-paper authorial language control
+
+After the unified Protocol 05p voice is fixed, apply Protocol 05q (`05q_authorial_prose_integrity.md`) to each authorized section and their interfaces. This is a mathematical precision and repetition audit, not a detector score or random “humanization.”
+
 ## Equation/prose rule
 
 Prefer `purpose → formula → consequence`. A display should not be followed by a prose transcription of the same symbols.

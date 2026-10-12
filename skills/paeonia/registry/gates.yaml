@@ -29,8 +29,7 @@ release_blockers:
     - PROOF-CLOSURE
     - PROOF-CORE-ORDER
     mode_semantics:
-      trusted_source: preserve source theorem semantics without independent validity
-        checking
+      trusted_source: preserve source theorem semantics without independent validity checking
       verify_proof: independently audit theorem semantics against verified mathematics
   PROOF-CORE-ORDER:
     audit_key: proof_core_order
@@ -462,8 +461,7 @@ release_blockers:
     - MATH-SEMANTICS
     - PROOF-CORE-ORDER
     mode_semantics:
-      trusted_source: faithful source-relative proof coverage through the source-stated
-        closure
+      trusted_source: faithful source-relative proof coverage through the source-stated closure
       verify_proof: independent mathematical proof closure
     trusted_source_repairs:
     - restore_omitted_source_branch
@@ -579,3 +577,23 @@ release_blockers:
     - INTRODUCTION-PROSE-INTEGRITY
     - CITATION-INTEGRITY
     - THEOREM-STATEMENT-INTEGRITY
+  NO-BOX-TYPESETTING:
+    audit_key: no_box_typesetting
+    owner_state: EDIT
+    rollback_to: EDIT
+    allowed_repairs:
+    - replace_boxed_formula_with_unboxed_equation
+    - replace_framed_callout_with_plain_theorem_or_prose
+    - remove_unused_box_package
+    - request_scope_expansion_for_protected_box
+    forbidden_repairs:
+    - hide_box_in_custom_macro
+    - replace_with_colored_panel
+    - silently_edit_protected_text
+    - change_math_to_remove_box
+    invalidates:
+    - SubmissionGateReport
+    re_audit:
+    - NO-BOX-TYPESETTING
+    - LATEX-INTEGRITY
+    - NOTATION-CONSISTENCY

@@ -1,6 +1,6 @@
 {
   "name": "paeonia",
-  "version": "1.42.1",
+  "version": "1.43.0",
   "entrypoint": "SKILL.md",
   "domain": "research mathematics writing",
   "default_language": "English",
@@ -41,7 +41,14 @@
     "no_unprompted_style_tone_or_author_reference_selection",
     "conflicting_style_guidance_is_resolved_autonomously",
     "role_sensitive_explanatory_density_is_not_a_distinct_style",
-    "local_polish_preserves_accepted_prose_and_protected_scope"
+    "local_polish_preserves_accepted_prose_and_protected_scope",
+    "prose_quality_follows_mathematical_function_not_an_ai_detector_score",
+    "ai_authorship_percentage_is_not_reported_or_guaranteed",
+    "whole_manuscript_ai_like_residue_requires_contextual_cold_read",
+    "no_visual_boxes_in_any_delivered_manuscript",
+    "no_box_latex_gate_applies_even_without_compilation",
+    "protected_boxes_block_release_without_silent_edits",
+    "static_no_box_audit_does_not_replace_pdf_visual_inspection"
   ],
   "release_status": "research-grade",
   "tests": [
@@ -84,7 +91,8 @@
     "tests/test_proof_citation_dossier.py",
     "tests/test_v1_41_contract.py",
     "tests/test_notation_choice_audit.py",
-    "tests/test_v1_42_contract.py"
+    "tests/test_v1_42_contract.py",
+    "tests/test_v1_43_contract.py"
   ],
   "default_proof_prose_profile": "classical_analysis_proof_prose",
   "composition_order": "proof_body_first",
@@ -143,7 +151,9 @@
     "tools/mathematical_story_audit.py",
     "tools/proof_explanation_audit.py",
     "tools/proof_citation_dossier_audit.py",
-    "tools/notation_choice_audit.py"
+    "tools/notation_choice_audit.py",
+    "tools/no_box_audit.py",
+    "tools/prose_residue_review.py"
   ],
   "adaptive_execution": "research_director_advice_then_deterministic_admissibility_filter",
   "behavioral_regression": "executable_good_and_bad_candidate_fixtures",
@@ -388,5 +398,8 @@
   "style_selection": "none_author_resolves_conflicts_and_delivers_one_draft",
   "style_conflict_priority": "math_and_protected_scope_then_explicit_language_journal_then_field_reader_then_unified_voice_then_optional_corpus_then_cosmetics",
   "cross_section_voice_audit": "checklists/unified_language_style.md",
-  "style_default_prompt_policy": "forbidden_even_when_no_author_corpus"
+  "style_default_prompt_policy": "forbidden_even_when_no_author_corpus",
+  "authorial_prose_integrity": "protocols/05q_authorial_prose_integrity.md",
+  "no_box_typesetting": "protocols/09a_no_box_typesetting.md",
+  "no_box_gate": "NO-BOX-TYPESETTING"
 }

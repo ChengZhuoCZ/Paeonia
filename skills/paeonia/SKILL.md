@@ -1,8 +1,8 @@
 ---
 name: paeonia
-description: Reconstruct mathematical manuscripts, locally polish a draft, or audit references in one consistent research-mathematics voice without offering style options. Choose field-native notation, use exact verified theorem citations where applicable, and research related mathematics before writing evidence-grounded Introductions; preserve theorem scope and protected text.
+description: Reconstruct mathematical manuscripts, locally polish a draft, or audit references in one natural, evidence-grounded research-mathematics voice without offering style options; prohibit visually boxed manuscript content. Choose field-native notation, use exact verified theorem citations where applicable, and research related mathematics before writing evidence-grounded Introductions; preserve theorem scope and protected text.
 metadata:
-  version: 1.42.1
+  version: 1.43.0
   category: mathematics-writing
   status: research-grade
   entrypoint: SKILL.md
@@ -13,6 +13,12 @@ metadata:
 ## Unified language style — no stylistic selection (v1.42)
 
 Use [Protocol 05p — unified manuscript voice](protocols/05p_unified_manuscript_voice.md) and its [single default profile](profiles/unified_research_mathematics_voice.md) for **every** authorized manuscript writing pass. Default to precise, restrained, mathematically ambitious research-paper English; honor an explicitly specified language or mandatory journal style. The same register spans Abstract, Introduction, theorem statements, proofs and remarks, while explanation density follows genuine mathematical difficulty. **Do not ask the user to choose a tone, style profile, exemplar author or variant.** Resolve conflicts independently using mathematical fidelity, authorized scope and requirements, field clarity, the unified house voice, then optional corpus evidence. Deliver one coherent draft, not style choices. In `LOCAL_POLISH`, preserve protected text and effective baseline voice; do not turn this rule into unrequested wholesale rewriting. The separate writing-mode question below determines editorial permission, *not* language style.
+
+## Authorial prose and no-box hard policy — v1.43.0
+
+**Language priority.** Follow [Protocol 05q](protocols/05q_authorial_prose_integrity.md) and its [whole-paper cold-read checklist](checklists/authorial_prose_integrity.md) after the single Protocol 05p voice has been chosen. Reduce AI-like formulaic residue by editing **the mathematical cause** of repetitive wording, flat proof rhythm, generic significance claims, empty transitions and formula paraphrase—not by mechanical synonym changes or fabricated human imperfections. Audit the manuscript as a whole (Abstract, Introduction, statements, proofs, remarks and ending), and within the authorized editing scope. `tools/prose_residue_review.py` can locate high-confidence review signals but does not assign an AI authorship percentage; do not invent an "AI rate" or promise a detector score. A clean diagnostic is not a proof of literary quality. Preserve mathematics, verified credit and protected prose.
+
+**Absolute no-box rule.** Apply [Protocol 09a](protocols/09a_no_box_typesetting.md) and the [hard no-box checklist](checklists/no_box_typesetting.md) to every manuscript output. **Never use visual boxes**: no `\boxed`, `\fbox`, colored/shaded/frame boxes, `tcolorbox`/`mdframed`/`framed`, equation boxing, or disguised boxed theorem/callout styles. Use plain `amsthm` statements and unboxed `equation`/`align`. Run `python tools/no_box_audit.py main.tex` over the deliverable and included local sources. The independent **`NO-BOX-TYPESETTING`** release blocker applies to LaTeX manuscripts even if TeX compilation was not requested, and one remaining visual box prevents a submission-ready claim. If the boxed material is protected, report the conflict; do not silently rewrite it. A static scan is followed by visual inspection of a PDF when available.
 
 ## Writing mode comes before workflow
 
@@ -422,6 +428,14 @@ Scientific context must return to the focal mathematics. Decorative one-line mot
 The constitution, state machine, artifact registry, gate registry, schemas, templates, manifest, behavioral regressions, and release tests must remain mutually consistent when developing or releasing the skill package. `tools/contract_consistency.py` is a package-release blocker, not a step in ordinary manuscript writing. Human-readable regression specifications without executable coverage are not sufficient for research-grade package release status.
 
 ---
+
+### C0.23 — Authorial language integrity is a semantic editorial requirement
+
+Apply Protocol 05q across the authorized manuscript scope. No generic AI-like scaffolding, performative importance claims, synchronized proof templates, or duplicated verbal summaries are retained where they add no mathematical information. Preserve ordinary, functional mathematical idiom; do not introduce deliberate error, artificial irregularity, imitated author tics, or detector-optimized text. Report only specific editorial defects, not a fabricated percentage of AI authorship. Protected text remains protected.
+
+### C0.24 — No visual boxes in manuscript outputs (absolute)
+
+Apply Protocol 09a to every manuscript deliverable. Never use `\boxed`, `\fbox`, visually framed, shaded, colored or decorative boxes in equations, theorem/lemma/definition environments, proofs, examples, sidebars or appendices. The same ban applies to custom macros and imported sections. The entire delivered TeX must pass `NO-BOX-TYPESETTING` source inspection and PDF visual review when available. No theorem, final estimate or research contribution is exempt. Respect protected-source boundaries by reporting conflicts, not by silent edits.
 
 ## 1. Default operating profile
 
@@ -847,7 +861,7 @@ Write the abstract from the stable result and mechanism using [Protocol 04s](pro
 
 ### Pass 13 — Editorial pass
 
-Only now edit globally at paragraph and sentence level, and only within authorized editable scope. Apply `protocols/05_editorial_style.md`, the **whole-manuscript Protocol 05p voice audit**, and re-run `protocols/05b_style_realization.md` as a subordinate drift check when a style corpus was supplied. If high-intensity distillation was used, re-run `protocols/05n_conditional_style_realization.md` to detect flattening of role-conditioned pressure.
+Only now edit globally at paragraph and sentence level, and only within authorized editable scope. Apply `protocols/05_editorial_style.md`, the **whole-manuscript Protocol 05p voice audit**, and **Protocol 05q authorial-prose integrity**, and re-run `protocols/05b_style_realization.md` as a subordinate drift check when a style corpus was supplied. If high-intensity distillation was used, re-run `protocols/05n_conditional_style_realization.md` to detect flattening of role-conditioned pressure.
 
 Optimize:
 - mathematical density;
@@ -858,11 +872,11 @@ Optimize:
 - sentence-length variation driven by logic;
 - removal of repeated meta-language.
 
-Do not literary-ize technical mathematics. Run `checklists/unified_language_style.md` as a final cross-section cold read; select a single best formulation when tone/style guidance conflicts, without requesting user style choices.
+Do not literary-ize technical mathematics. Run `checklists/authorial_prose_integrity.md` alongside `checklists/unified_language_style.md` as a final cross-section cold read; select a single best formulation when tone/style guidance conflicts, without requesting user style choices.
 
 ### Pass 14 — Generative-residue diagnosis
 
-Apply `protocols/05c_generative_residue_diagnosis.md` and the compatibility checklist in `protocols/06_anti_formulaic_style.md`.
+Apply `protocols/05c_generative_residue_diagnosis.md` together with Protocol 05q (whole-paper contextual evaluation) and the compatibility checklist in `protocols/06_anti_formulaic_style.md`.
 
 Diagnose, rather than blindly rewrite:
 - recurrent proof openings and closures;
@@ -874,7 +888,7 @@ Diagnose, rather than blindly rewrite:
 - administrative first-person narration;
 - repeated local transition tics.
 
-Use `tools/phrase_recurrence_audit.py`, `tools/prose_rhythm_audit.py`, `tools/equation_prose_redundancy.py`, and `tools/transition_density.py` when useful. Their statistics are review signals, never generation targets.
+Use `tools/prose_residue_review.py`, `tools/phrase_recurrence_audit.py`, `tools/prose_rhythm_audit.py`, `tools/equation_prose_redundancy.py`, and `tools/transition_density.py` when useful. Their statistics are review signals, never generation targets.
 
 ### Pass 15 — Authorial-decision pass
 
@@ -907,9 +921,9 @@ Delete redundant background and empty narration before logic. Preserve explanati
 
 ### Pass 19 — LaTeX and final notation audit
 
-Apply `protocols/09_latex_and_notation.md`. Audit the earlier `NotationLedger` against the final theorem statements and proof body, then check theorem environments, labels/references, equation numbering, macros, delimiter sizing, display punctuation, packages, appendices, and bibliography calls.
+Apply `protocols/09_latex_and_notation.md` **and mandatory Protocol 09a no-box typesetting**. Audit the earlier `NotationLedger` against the final theorem statements and proof body, then check theorem environments, labels/references, equation numbering, macros, delimiter sizing, display punctuation, packages, appendices, and bibliography calls.
 
-A local typography issue may be repaired here. Recheck Protocol 02h's selected symbols, representative identities, first-use definitions, optional external theorem symbol crosswalks and protected-scope decisions. A duplicate recurring symbol, decorative-alphabet violation, normalization conflict, local/global ambiguity, overloaded index family, font-only semantic distinction, or theorem/proof notation mismatch must roll back to `NOTATION_ARCHITECTURE`. Do not cosmetically rewrite mathematics in ways that alter semantics.
+A local typography issue may be repaired here. Recheck Protocol 02h's selected symbols, representative identities, first-use definitions, optional external theorem symbol crosswalks and protected-scope decisions. A duplicate recurring symbol, decorative-alphabet violation, normalization conflict, local/global ambiguity, overloaded index family, font-only semantic distinction, or theorem/proof notation mismatch must roll back to `NOTATION_ARCHITECTURE`. Do not cosmetically rewrite mathematics in ways that alter semantics. Scan all delivered TeX sources with `tools/no_box_audit.py`; remove any decorative box within writable scope, inspect rendered output if available, and never claim `NO-BOX-TYPESETTING: PASS` with an unresolved or protected boxed element.
 
 ### Pass 20 — Source/style-independence audit
 
@@ -962,7 +976,7 @@ The manuscript is ready only if all blocker classes pass:
 - `STYLE-SOURCE-INDEPENDENCE`;
 - `STYLE-LEDGER-FIDELITY`;
 - `CONDITIONAL-STYLE-FIDELITY` when high-intensity conditional style distillation is used;
-- `GENERATIVE-RESIDUE`;
+- `GENERATIVE-RESIDUE` (including Protocol 05q authorial whole-paper cold read);
 - `AUTHORIAL-DECISION`;
 - `PARAGRAPH-FINGERPRINT-FIDELITY`;
 - `SECTION-NARRATIVE-FIDELITY`;
@@ -977,7 +991,8 @@ The manuscript is ready only if all blocker classes pass:
 - `CITATION-INTEGRITY`;
 - `NOTATION-CONSISTENCY`;
 - `PROOF-CLOSURE`;
-- `LATEX-INTEGRITY`.
+- `LATEX-INTEGRITY`;
+- `NO-BOX-TYPESETTING` for every delivered LaTeX manuscript, irrespective of compilation scope.
 
 If a blocker remains, route it through `protocols/16_gate_repair_routing.md` and `registry/gates.yaml`. Roll back to the owning layer, invalidate dependent artifacts, repair there, and re-audit the registered dependent gates. If the blocker cannot be repaired under the current mathematical permissions, say so. Do not label the paper submission-ready.
 
@@ -1246,6 +1261,8 @@ The skill fails if any of the following occurs:
 - a legacy regression specification exists without executable behavioral coverage;
 - package release proceeds despite contract-consistency failure;
 - “submission-ready” is declared with unresolved blockers.
+- the delivered manuscript contains visually framed, colored, shaded or boxed mathematical statements or callouts, including `\boxed` and boxed theorem environments;
+- AI-like language defects are “fixed” through synonym rotation, artificial imperfection, unsupported superlatives or an invented detector score.
 
 ---
 

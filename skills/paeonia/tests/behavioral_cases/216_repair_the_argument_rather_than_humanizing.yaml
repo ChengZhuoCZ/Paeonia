@@ -1,0 +1,15 @@
+version: 1
+id: 216
+title: Case 216 — Repair the argument rather than humanizing
+legacy_spec: 216_repair_the_argument_rather_than_humanizing.md
+gate: GENERATIVE-RESIDUE
+assertions:
+- path: revision.random_humanization
+  op: equals
+  value: false
+good_candidate:
+  revision:
+    random_humanization: false
+bad_candidate:
+  revision:
+    random_humanization: true

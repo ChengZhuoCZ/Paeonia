@@ -1,3 +1,10 @@
+# v1.43.0 — Authorial Naturalness & No-Box Typesetting
+
+- Strengthened Protocol 05c with Protocol 05q's mathematical content-grounded, whole-paper language audit (including A1–A10 residue classes and three review passes), rather than artificial detector targeting. No "AI rate" guarantee or fabricated authorship percentage.
+- Made no visual boxes a hard cross-section output constraint under Protocol 09a, including `\boxed`, framed/shaded/colored theorem and equation callouts and custom wrappers. Added an independent `NO-BOX-TYPESETTING` gate that applies to all LaTeX deliverables, even without a compilation task.
+- Added a local-input-aware source linter for high-confidence box detection, an advisory recurrent-prose review tool, checklists and executable release tests. A scanner is not a PDF visual certification.
+- Preserved v1.42 unified journal voice, verified citations, notation conventions, mathematical integrity and protected editing scope. No underlying manuscript edited.
+
 # v1.42.1 — Rename the Skill to Paeonia
 
 - Renamed the skill identifier and installation directory to `paeonia`, and its human-facing title to **Paeonia**.

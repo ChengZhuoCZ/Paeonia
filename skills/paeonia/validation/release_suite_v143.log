@@ -1,0 +1,188 @@
+RUN tests/run_tests.py
+TEST_PASS
+required_files=162
+contract_checks=51
+RUN tests/test_tools.py
+TOOL_TEST_PASS
+RUN tests/test_v110_contract.py
+V110_COMPAT_PASS
+RUN tests/test_v120_contract.py
+V120_CONTRACT_PASS
+RUN tests/test_v130_contract.py
+V130_CONTRACT_PASS
+RUN tests/test_v140_contract.py
+V140_CONTRACT_PASS
+RUN tests/test_v150_contract.py
+V150_CONTRACT_PASS
+RUN tests/test_v160_contract.py
+V160_CONTRACT_PASS
+RUN tests/test_v170_contract.py
+V170_ADVANCED_TOOLING_RETAINED
+contract_checks=14
+RUN tests/test_v180_contract.py
+V180_CONTRACT_PASS
+contract_checks=11
+RUN tests/test_v190_contract.py
+V190_CONTRACT_PASS
+contract_checks=13
+RUN tests/test_v1_10_contract.py
+V1_10_CONTRACT_PASS
+contract_checks=11
+RUN tests/test_v1_11_contract.py
+V1_11_CONTRACT_PASS
+contract_checks=10
+RUN tests/test_v1_12_contract.py
+V1_12_CONTRACT_PASS
+contract_checks=14
+RUN tests/test_v1_13_contract.py
+V1_13_CONTRACT_PASS
+contract_checks=13
+RUN tests/test_v1_14_contract.py
+V1_14_CONTRACT_PASS
+contract_checks=15
+RUN tests/test_v1_15_contract.py
+V1_15_CONTRACT_PASS
+contract_checks=6
+RUN tests/test_v1_16_contract.py
+V1_16_CONTRACT_PASS
+contract_checks=5
+RUN tests/test_v1_17_contract.py
+V1_17_CONTRACT_PASS
+contract_checks=9
+RUN tests/test_v1_18_contract.py
+V1_18_CONTRACT_PASS
+contract_checks=13
+RUN tests/test_v1_19_contract.py
+V1_19_CONTRACT_PASS
+contract_checks=15
+RUN tests/test_v1_20_contract.py
+V1_20_CONTRACT_PASS
+contract_checks=16
+RUN tests/test_v1_21_contract.py
+V1_21_CONTRACT_PASS
+contract_checks=16
+RUN tests/test_v1_36_contract.py
+V1_36_CONTRACT_PASS
+checks=12
+RUN tests/test_v1_37_contract.py
+V1_37_CONTRACT_PASS
+checks=17
+RUN tests/test_v1_38_contract.py
+V1_38_CONTRACT_PASS
+checks=14
+RUN tests/test_v1_39_contract.py
+V1_39_CONTRACT_PASS
+checks=15
+RUN tests/test_v1_40_contract.py
+V1_40_CONTRACT_PASS
+checks=23
+RUN tests/test_proof_citation_dossier.py
+................
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK
+RUN tests/test_v1_41_contract.py
+V1_41_CONTRACT_PASS
+checks=23
+RUN tests/test_notation_choice_audit.py
+valid_complete: PASS
+missing_selection: PASS
+draft_not_locked: PASS
+invalid_stage: PASS
+wrong_selected_symbol: PASS
+nonexistent_object: PASS
+repeat_decision: PASS
+missing_basis: PASS
+missing_rationale: PASS
+missing_alternative_reason: PASS
+chosen_duplicate_alternative: PASS
+protected_mismatch: PASS
+crosswalk_unknown_target: PASS
+crosswalk_missing_locator: PASS
+crosswalk_missing_version: PASS
+crosswalk_false_applicability: PASS
+crosswalk_empty: PASS
+review_unchecked: PASS
+locked_without_decisions: PASS
+locked_without_field: PASS
+NOTATION_CHOICE_AUDIT_TEST_PASS: 20 cases
+NOTATION_CHOICE_STRICT_TEST_PASS: 3 cases
+NOTATION_CHOICE_STRICT_EMPTY_REJECTED
+RUN tests/test_v1_42_contract.py
+V1_42_CONTRACT_PASS
+checks=23
+RUN tests/test_v1_43_contract.py
+V1_43_CONTRACT_PASS
+checks=25
+RUN tests/test_behavioral_regressions.py
+BEHAVIORAL_REGRESSION_PASS
+legacy_specs=222
+executable_fixtures=222
+good_candidate_passes=222
+bad_candidate_rejections=222
+RUN tests/test_execution_planner.py
+EXECUTION_PLANNER_PASS
+RUN tests/test_gate_repair_routes.py
+GATE_REPAIR_ROUTE_PASS
+gates=23
+RUN tests/test_contract_consistency.py
+CONTRACT_CONSISTENCY_TEST_PASS
+artifacts=48
+gates=23
+behavioral_fixtures=222
+RUN tests/test_proof_explanation.py
+PROOF_EXPLANATION_TEST_PASS: valid graph, 12 invalid graph/evidence cases, scope guards
+RUN tests/test_writing_modes.py
+..............
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK
+RUN tests/test_citation_inventory.py
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 1.322s
+
+OK
+RELEASE_SUITE_PASS
+tests/run_tests.py: PASS
+tests/test_tools.py: PASS
+tests/test_v110_contract.py: PASS
+tests/test_v120_contract.py: PASS
+tests/test_v130_contract.py: PASS
+tests/test_v140_contract.py: PASS
+tests/test_v150_contract.py: PASS
+tests/test_v160_contract.py: PASS
+tests/test_v170_contract.py: PASS
+tests/test_v180_contract.py: PASS
+tests/test_v190_contract.py: PASS
+tests/test_v1_10_contract.py: PASS
+tests/test_v1_11_contract.py: PASS
+tests/test_v1_12_contract.py: PASS
+tests/test_v1_13_contract.py: PASS
+tests/test_v1_14_contract.py: PASS
+tests/test_v1_15_contract.py: PASS
+tests/test_v1_16_contract.py: PASS
+tests/test_v1_17_contract.py: PASS
+tests/test_v1_18_contract.py: PASS
+tests/test_v1_19_contract.py: PASS
+tests/test_v1_20_contract.py: PASS
+tests/test_v1_21_contract.py: PASS
+tests/test_v1_36_contract.py: PASS
+tests/test_v1_37_contract.py: PASS
+tests/test_v1_38_contract.py: PASS
+tests/test_v1_39_contract.py: PASS
+tests/test_v1_40_contract.py: PASS
+tests/test_proof_citation_dossier.py: PASS
+tests/test_v1_41_contract.py: PASS
+tests/test_notation_choice_audit.py: PASS
+tests/test_v1_42_contract.py: PASS
+tests/test_v1_43_contract.py: PASS
+tests/test_behavioral_regressions.py: PASS
+tests/test_execution_planner.py: PASS
+tests/test_gate_repair_routes.py: PASS
+tests/test_contract_consistency.py: PASS
+tests/test_proof_explanation.py: PASS
+tests/test_writing_modes.py: PASS
+tests/test_citation_inventory.py: PASS

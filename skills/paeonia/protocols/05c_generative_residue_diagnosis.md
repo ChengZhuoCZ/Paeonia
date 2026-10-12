@@ -4,7 +4,7 @@
 
 Detect prose that is mathematically correct but unnaturally uniform, over-signposted, repetitious, or administratively narrated.
 
-This is a manuscript-quality protocol, not an AI-detector evasion protocol. The target is **authored mathematical prose**: language whose density and shape are explained by the mathematics.
+This is a manuscript-quality protocol, not an AI-detector evasion protocol. Its binding whole-paper extension is Protocol 05q (`05q_authorial_prose_integrity.md`); no quantitative "AI rate" is inferred. The target is **authored mathematical prose**: language whose density and shape are explained by the mathematics.
 
 ## 1. Residue classes
 
@@ -101,6 +101,9 @@ Run or approximate:
 These are review signals, not target statistics. Do not force a manuscript to match a numerical human baseline.
 
 ## 4. Pass condition
+
+Also run the Protocol 05q cross-section read and inspect results from `tools/prose_residue_review.py` when applicable. Repeated phrases must be inspected in mathematical context, not automatically reworded to game a detector.
+
 
 `GENERATIVE-RESIDUE: PASS` requires:
 - no dominant empty signposting template;
