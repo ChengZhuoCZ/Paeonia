@@ -1,0 +1,13 @@
+version: 1
+id: 198
+title: Case 198 — Symbol decision cannot be reduced to aesthetic number
+legacy_spec: 198_symbol_decision_cannot_be_reduced_to_aesthetic_number.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: arbitrary_numeric_style_score_used
+  op: equals
+  value: false
+good_candidate:
+  arbitrary_numeric_style_score_used: false
+bad_candidate:
+  arbitrary_numeric_style_score_used: true

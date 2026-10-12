@@ -1,0 +1,13 @@
+version: 1
+id: 36
+title: Case 36 — No source-wide sequence copying
+legacy_spec: 36_no_source_global_sequence_copy.md
+gate: SOURCE-INDEPENDENCE
+assertions:
+- path: source_global_sequence_reused
+  op: equals
+  value: false
+good_candidate:
+  source_global_sequence_reused: false
+bad_candidate:
+  source_global_sequence_reused: true

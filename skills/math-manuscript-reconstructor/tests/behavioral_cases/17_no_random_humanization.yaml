@@ -1,0 +1,13 @@
+version: 1
+id: 17
+title: Regression 17 — No random humanization
+legacy_spec: 17_no_random_humanization.md
+gate: GENERATIVE-RESIDUE
+assertions:
+- path: random_humanization
+  op: equals
+  value: false
+good_candidate:
+  random_humanization: false
+bad_candidate:
+  random_humanization: true

@@ -1,0 +1,13 @@
+version: 1
+id: 35
+title: Case 35 — Whole-paper asymmetry is mathematics-driven
+legacy_spec: 35_global_asymmetry_no_section_padding.md
+gate: WHOLE-PAPER-NARRATIVE-FIDELITY
+assertions:
+- path: section_padding_for_balance
+  op: equals
+  value: false
+good_candidate:
+  section_padding_for_balance: false
+bad_candidate:
+  section_padding_for_balance: true

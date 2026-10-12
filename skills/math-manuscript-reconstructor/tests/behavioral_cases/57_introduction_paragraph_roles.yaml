@@ -1,0 +1,18 @@
+version: 1
+id: 57
+title: Case 57 — Introduction paragraphs have dominant mathematical roles
+legacy_spec: 57_introduction_paragraph_roles.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: all_paragraphs_have_one_dominant_role
+  op: equals
+  value: true
+- path: ledger_fields_dumped_directly_to_prose
+  op: equals
+  value: false
+good_candidate:
+  all_paragraphs_have_one_dominant_role: true
+  ledger_fields_dumped_directly_to_prose: false
+bad_candidate:
+  all_paragraphs_have_one_dominant_role: false
+  ledger_fields_dumped_directly_to_prose: true

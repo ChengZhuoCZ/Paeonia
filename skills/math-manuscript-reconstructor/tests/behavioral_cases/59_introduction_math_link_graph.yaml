@@ -1,0 +1,18 @@
+version: 1
+id: 59
+title: Case 59 — Paragraph links are mathematical not administrative
+legacy_spec: 59_introduction_math_link_graph.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: all_links_have_mathematical_referent
+  op: equals
+  value: true
+- path: administrative_transition_carries_missing_link
+  op: equals
+  value: false
+good_candidate:
+  all_links_have_mathematical_referent: true
+  administrative_transition_carries_missing_link: false
+bad_candidate:
+  all_links_have_mathematical_referent: false
+  administrative_transition_carries_missing_link: true

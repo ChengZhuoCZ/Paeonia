@@ -1,0 +1,25 @@
+version: 1
+id: 147
+title: Case 147 — PDE theorem latency follows prerequisite burden
+legacy_spec: 147_pde_theorem_latency_burden.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: theorem_mode
+  op: equals
+  value: MODEL_THEN_PRECISE
+- path: latency.prerequisite_object_needed
+  op: equals
+  value: true
+- path: latency.prestige_based
+  op: equals
+  value: false
+good_candidate:
+  theorem_mode: MODEL_THEN_PRECISE
+  latency:
+    prerequisite_object_needed: true
+    prestige_based: false
+bad_candidate:
+  theorem_mode: INFORMAL_THEN_PRECISE
+  latency:
+    prerequisite_object_needed: false
+    prestige_based: true

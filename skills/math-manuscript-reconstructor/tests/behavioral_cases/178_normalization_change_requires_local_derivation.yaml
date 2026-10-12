@@ -1,0 +1,23 @@
+version: 1
+id: 178
+title: Case 178 — Normalization change requires local derivation
+legacy_spec: 178_normalization_change_requires_local_derivation.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: normalization_translation_present
+  op: equals
+  value: true
+- path: adapted_status
+  op: equals
+  value: true
+- path: bare_citation_without_bridge
+  op: equals
+  value: false
+good_candidate:
+  normalization_translation_present: true
+  adapted_status: true
+  bare_citation_without_bridge: false
+bad_candidate:
+  normalization_translation_present: false
+  adapted_status: false
+  bare_citation_without_bridge: true

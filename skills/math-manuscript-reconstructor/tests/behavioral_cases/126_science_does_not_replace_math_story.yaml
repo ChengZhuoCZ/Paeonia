@@ -1,0 +1,23 @@
+version: 1
+id: 126
+title: Case 126 — Scientific context does not replace mathematical ancestry
+legacy_spec: 126_science_does_not_replace_math_story.md
+gate: MATHEMATICAL-STORY-INTEGRITY
+assertions:
+- path: scientific_context_substantial
+  op: equals
+  value: true
+- path: parent_math_program_visible
+  op: equals
+  value: true
+- path: model_to_math_bridge_visible
+  op: equals
+  value: true
+good_candidate:
+  scientific_context_substantial: true
+  parent_math_program_visible: true
+  model_to_math_bridge_visible: true
+bad_candidate:
+  scientific_context_substantial: true
+  parent_math_program_visible: false
+  model_to_math_bridge_visible: true

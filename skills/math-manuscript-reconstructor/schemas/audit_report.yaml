@@ -1,0 +1,77 @@
+version: 2
+semantic_integrity:
+  status: pending
+  issues: []
+proof_core_order:
+  status: pending
+  issues: []
+proof_closure:
+  status: pending
+  issues: []
+source_independence:
+  status: pending
+  structural: pending
+  prose: pending
+  justified_overlap: []
+style_source_independence:
+  status: pending
+  issues: []
+style_fidelity:
+  status: pending
+  issues: []
+conditional_style_fidelity:
+  status: pending
+  issues: []
+generative_residue:
+  status: pending
+  issues: []
+authorial_decision:
+  status: pending
+  issues: []
+paragraph_fingerprint_fidelity:
+  status: pending
+  issues: []
+section_narrative_fidelity:
+  status: pending
+  issues: []
+whole_paper_narrative_fidelity:
+  status: pending
+  issues: []
+grand_narrative_integrity:
+  status: pending
+  issues: []
+mathematical_story_integrity:
+  status: pending
+  issues: []
+introduction_prose_integrity:
+  status: pending
+  issues: []
+editorial_impact:
+  status: pending
+  issues: []
+theorem_statement_integrity:
+  status: pending
+  issues: []
+mathematical_transitions:
+  status: pending
+  issues: []
+cold_author:
+  status: pending
+  issues: []
+citation_integrity:
+  status: pending
+  issues: []
+notation_consistency:
+  status: pending
+  issues: []
+latex_integrity:
+  status: pending
+  issues: []
+referee:
+  blockers: []
+  major: []
+  minor: []
+  style: []
+submission_gate:
+  status: NOT_READY
+  conditions: []

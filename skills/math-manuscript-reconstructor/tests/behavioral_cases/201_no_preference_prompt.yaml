@@ -1,0 +1,15 @@
+version: 1
+id: 201
+title: Case 201 — No preference prompt
+legacy_spec: 201_no_preference_prompt.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: voice.style_prompt_issued
+  op: equals
+  value: false
+good_candidate:
+  voice:
+    style_prompt_issued: false
+bad_candidate:
+  voice:
+    style_prompt_issued: true

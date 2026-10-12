@@ -1,0 +1,21 @@
+version: 1
+id: 8
+title: Regression 08 — Proof Body Must Be Drafted First
+legacy_spec: 08_proof_first_order.md
+gate: PROOF-CORE-ORDER
+assertions:
+- path: state_order
+  op: before
+  value:
+  - PROOF_CORE_GATE
+  - FRONTMATTER
+good_candidate:
+  state_order:
+  - PROOF_CORE
+  - PROOF_CORE_GATE
+  - FRONTMATTER
+bad_candidate:
+  state_order:
+  - FRONTMATTER
+  - PROOF_CORE
+  - PROOF_CORE_GATE

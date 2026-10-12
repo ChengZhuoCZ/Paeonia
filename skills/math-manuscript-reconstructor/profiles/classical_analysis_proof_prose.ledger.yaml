@@ -1,0 +1,349 @@
+style_ledger:
+  profile: classical_analysis_proof_prose
+  corpus_mode: user_supplied_style_reference
+  representation: abstract_traits_only
+  extraction_status: distilled_from_stratified_proof_and_exposition_windows
+  evidence_policy:
+    source_sentence_storage: forbidden
+    confidence_scale: [strong, moderate, tentative]
+  aggregate_signature:
+    proof_windows: 610
+    sampled_words: 195028
+    sentence_words_mean: 20.6
+    sentence_words_median: 18
+    paragraph_words_mean: 38.16
+    paragraph_words_median: 28
+    numbered_step_mentions_per_proof: 0.033
+    explicit_closure_markers_per_proof: 0.174
+    first_person_plural_mentions_per_1000_words: 18.8
+    reader_address_markers_per_1000_words: 0.17
+    note: "descriptive evidence only; not mechanical generation targets"
+  language_style:
+    register:
+      value: "classical analysis clarity projected into specialist research prose"
+      confidence: strong
+    sentence_cadence:
+      value: "medium-length sentences dominate; short decisive sentences and longer qualification sentences appear when logic requires"
+      confidence: strong
+    clause_architecture:
+      value: "subordinate clauses primarily carry hypotheses, permissions, parameter regimes, or consequences rather than rhetorical decoration"
+      confidence: strong
+    sentence_length_tendency:
+      value: "varied by mathematical load; do not enforce fixed length targets"
+      confidence: moderate
+    first_person_plural_policy:
+      value: "use for genuine mathematical actions but alternate with object-led, premise-led, and consequence-led sentences"
+      confidence: strong
+    mathematical_verb_profile:
+      value:
+        - construction
+        - reduction
+        - comparison
+        - estimation
+        - approximation
+        - limiting_passage
+        - deduction
+      confidence: strong
+    transition_classes:
+      value:
+        - premise
+        - consequence
+        - construction
+        - reduction
+        - contrast
+        - recollection
+        - closure
+      confidence: strong
+    transition_repetition_control:
+      value: "transition words are functional and recurrent but should not become neighboring-sentence tics in research projection"
+      confidence: strong
+    certainty_language:
+      value: "restrained; easy/clear labels do not replace a needed reason"
+      confidence: strong
+    parenthetical_policy:
+      value: "compact qualifications only; no second proof track in parentheses"
+      confidence: moderate
+    punctuation_and_display_grammar:
+      value: "displays participate grammatically in surrounding sentences"
+      confidence: strong
+    formula_integration:
+      value: "purpose before display, consequence after display when not already self-evident"
+      confidence: strong
+    lexical_density:
+      value: "mathematical nouns and active operations dominate over editorial meta-language"
+      confidence: strong
+    reader_address_policy:
+      value: "remove direct reader coaching in research projection"
+      confidence: strong
+    avoid_patterns:
+      value:
+        - uniform sentence lengths
+        - stacked first-person sentence openings
+        - decorative evaluative adjectives
+        - formula paraphrase without inference
+        - source transition-frequency mimicry
+      confidence: strong
+  mathematical_writing_style:
+    proof_opening:
+      value:
+        short: "direct reduction, construction, normalization, or estimate"
+        nontrivial: "at most one compact strategy sentence identifying the decisive mechanism"
+        contradiction: "state contradiction mechanism immediately when natural"
+      confidence: strong
+    strategy_signal:
+      value: "name the actual mathematical obstruction or decisive mechanism, not a generic roadmap"
+      confidence: strong
+    local_goal_visibility:
+      value: "high at non-obvious transitions; low meta-narration elsewhere"
+      confidence: strong
+    obstruction_visibility:
+      value: "when changing tools, state what the previous method no longer supplies and why the replacement resolves it"
+      confidence: strong
+    theorem_entry:
+      value: "statements are introduced by their mathematical role or the obstruction they resolve, not by template-driven narration"
+      confidence: strong
+    lemma_insertion_logic:
+      value: "isolate a lemma when it removes a real obstruction, packages a reusable mechanism, or protects the main proof from a subordinate technical block"
+      confidence: strong
+    proof_granularity:
+      value: "continuous by default; segment only at genuine logical changes"
+      confidence: strong
+    step_heading_frequency:
+      value: "sparse; numbered steps reserved for multi-layer proof mechanisms"
+      confidence: strong
+    equation_prose_relation:
+      value: "mathematical purpose -> display -> mathematical consequence"
+      confidence: strong
+    justification_locality:
+      value: "hypotheses and legal permissions are explained at point of use"
+      confidence: strong
+    parameter_choice_explanation:
+      value: "introduce auxiliary parameters after the competing terms or constraints motivating the choice are visible"
+      confidence: moderate
+    case_split_pattern:
+      value: "split along genuine regularity, sign, scale, frequency, geometric, or parameter regimes"
+      confidence: strong
+    approximation_transition:
+      value: "state the failure of the stronger topology/tool, name the replacement topology or dense class, and explain stability through the limit"
+      confidence: strong
+    generality_ladder:
+      value:
+        - "clean_or_normalized_case -> general_case_by_explicit_bridge"
+        - "smooth_core -> rough_class_by_approximation_or_closure"
+        - "model_or_finite_case -> limiting_class"
+        - "local_estimate -> global_assembly"
+        - "interior_parameter -> endpoint"
+      confidence: strong
+    conceptual_interpretation:
+      value: "one concise interpretation after a central lemma when it actively guides the next proof"
+      confidence: strong
+    technical_detail_density:
+      value: "retain audit-critical details and sources of bounds; compress routine algebra first"
+      confidence: strong
+    proof_closure:
+      value: "end at the mathematical closure step; avoid recap"
+      confidence: strong
+    post_proof_movement:
+      value: "move to corollary, interpretation, next obstruction, or immediate application when useful"
+      confidence: strong
+    definition_entry:
+      value: "introduce nonstandard definitions through the problem they solve; suppress textbook explanations of standard specialist notions"
+      confidence: moderate
+    section_movement:
+      value: "sections advance by problem/obstruction/result rather than administrative roadmap"
+      confidence: strong
+    research_projection:
+      value:
+        retain:
+          - mechanism_first_clarity
+          - obstacle_driven_method_changes
+          - local_justifications
+          - dependency_driven_lemma_insertion
+          - explicit_generality_bridges
+          - natural_regime_splitting
+          - purpose_display_consequence_rhythm
+        discard:
+          - exercise_prompts
+          - reader_coaching
+          - textbook_recaps
+          - elementary_prerequisite_exposition
+          - nonessential_historical_digressions
+          - long_pedagogical_analogies
+      confidence: strong
+    avoid_patterns:
+      value:
+        - repeated_generic_proof_previews
+        - mechanical_three_step_scaffolding
+        - vague_general_case_transitions
+        - distant_legality_justifications
+        - generic_post_proof_praise
+        - source_paragraph_skeleton_reuse
+      confidence: strong
+  paragraph_fingerprint:
+    extraction_status: distilled_from_proof_windows
+    signature_ref: profiles/classical_analysis_paragraph_fingerprint.signature.json
+    profile_ref: profiles/classical_analysis_paragraph_fingerprint.md
+    boundary_policy:
+      value: mathematical_state_change_not_visual_length
+      confidence: strong
+    role_sensitive_density:
+      value: routine_thin_delicate_and_bridge_thicken_locally
+      confidence: strong
+    opening_policy:
+      value: mathematics_attached_openings_preferred_over_administrative_meta_openings
+      confidence: strong
+    display_adjacency:
+      value: display_boundaries_follow_obligation_change_not_typography_alone
+      confidence: strong
+    qualitative_transition_graph:
+      value:
+        - routine_to_routine_runs_are_normal
+        - routine_and_delicate_alternate_at_legality_pressure
+        - structural_returns_to_routine_execution
+        - bridge_returns_to_mainline_routine_motion
+        - routine_often_closes_claim
+      confidence: moderate
+    numerical_fit_policy:
+      value: descriptive_evidence_only_never_generation_target
+      confidence: strong
+    exact_source_role_sequence_reuse: forbidden
+
+  section_narrative_fingerprint:
+    extraction_status: distilled_from_section_windows
+    signature_ref: profiles/classical_analysis_section_fingerprint.signature.json
+    profile_ref: profiles/classical_analysis_section_fingerprint.md
+    section_boundary_policy:
+      value: obligation_family_driven
+      confidence: strong
+    theorem_latency_policy:
+      value: prerequisite_burden_driven_not_fixed_distance
+      confidence: strong
+    subsection_policy:
+      value: stable_internal_phase_only
+      confidence: strong
+    conceptual_technical_policy:
+      value: pressure_wave_never_forced_alternation
+      confidence: strong
+    numerical_fit_policy:
+      value: descriptive_evidence_only_never_generation_target
+      confidence: strong
+    exact_source_section_sequence_reuse: forbidden
+
+  whole_paper_narrative_fingerprint:
+    extraction_status: distilled_with_research_article_projection
+    signature_ref: profiles/classical_analysis_whole_paper_fingerprint.signature.json
+    profile_ref: profiles/classical_analysis_whole_paper_fingerprint.md
+    global_spine_policy:
+      value: target_dependency_graph_driven
+      confidence: strong
+    main_result_exposure_policy:
+      value: expose_when_accurate_and_readable_separate_from_proof_activation
+      confidence: strong
+    technical_mass_policy:
+      value: concentrate_by_proof_pressure_never_visual_balance
+      confidence: strong
+    frontmatter_compression_policy:
+      value: semantic_projection_from_closed_body_never_ratio_fit
+      confidence: strong
+    appendix_policy:
+      value: modularity_test_with_explicit_body_import
+      confidence: strong
+    conclusion_policy:
+      value: mathematically_optional
+      confidence: moderate
+    numerical_fit_policy:
+      value: descriptive_evidence_only_never_generation_target
+      confidence: strong
+    source_global_sequence_reuse: forbidden
+    source_mass_profile_reuse: forbidden
+    source_frontmatter_ratio_reuse: forbidden
+    source_appendix_pattern_reuse: forbidden
+
+  authorial_naturalization:
+    mode:
+      value: authorial_mathematical_prose
+      confidence: strong
+    paragraph_role_policy:
+      value:
+        routine: compress_aggressively
+        structural: name_move_and_purpose_concisely
+        delicate: preserve_local_auditability
+        surprising: one_concise_interpretation_if_useful
+        bridge: state_obstruction_and_replacement_mechanism
+        closure: stop_at_mathematical_endpoint
+      confidence: strong
+    explicitness_policy:
+      value:
+        must_explicit:
+          - nontrivial_limit_or_integral_interchange
+          - external_theorem_applicability
+          - parameter_balancing
+          - compactness_topology
+          - normalization_dependence
+          - equality_or_rigidity_propagation
+          - endpoint_passage
+          - uniform_constant_dependence
+        may_be_implicit:
+          - one_step_algebra
+          - direct_substitution
+          - immediate_differentiation
+          - genuinely_identical_symmetric_case
+        should_be_implicit:
+          - display_paraphrase
+          - elementary_nonsharp_arithmetic
+          - redundant_definition_reminders
+          - routine_reassurance
+      confidence: strong
+    generative_residue_classes:
+      value:
+        - recurrent_proof_openings_and_closures
+        - empty_signposting
+        - formula_paraphrase
+        - template_proof_geometry
+        - flat_information_density
+        - generic_importance_inflation
+        - administrative_author_voice
+        - repeated_transition_tics
+      confidence: strong
+    transition_semantics:
+      value:
+        - premise_activation
+        - cause
+        - reduction
+        - normalization
+        - contrast
+        - case_change
+        - approximation
+        - limit_passage
+        - bootstrap
+        - contradiction
+        - rigidity
+        - assembly
+        - return_to_main_argument
+      confidence: strong
+    recurrence_review_policy:
+      value: diagnose_and_classify_keep_delete_compress_mathematicalize_restructure_never_synonymize
+      confidence: strong
+    rhythm_policy:
+      value: asymmetry_must_be_explained_by_mathematical_load_not_randomization
+      confidence: strong
+    proof_geometry_policy:
+      value: dependency_geometry_controls_document_geometry
+      confidence: strong
+    cold_author_policy:
+      value: final_deletion_oriented_pass_with_math_ledger_frozen
+      confidence: strong
+    forbidden_humanization:
+      value:
+        - random_synonym_substitution
+        - random_sentence_shortening
+        - random_paragraph_splitting
+        - deliberate_grammar_errors
+        - deliberate_typos
+        - fake_uncertainty
+        - fake_personal_voice
+        - artificial_colloquialism
+        - random_transition_rotation
+        - ai_detector_score_optimization
+      confidence: strong
+  source_phrase_storage: forbidden

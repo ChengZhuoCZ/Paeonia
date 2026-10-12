@@ -1,0 +1,13 @@
+version: 1
+id: 12
+title: Regression 12 — Language Style and Mathematical Writing Style Are Distinct
+legacy_spec: 12_language_and_writing_style_split.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: language_and_writing_ledgers_split
+  op: equals
+  value: true
+good_candidate:
+  language_and_writing_ledgers_split: true
+bad_candidate:
+  language_and_writing_ledgers_split: false

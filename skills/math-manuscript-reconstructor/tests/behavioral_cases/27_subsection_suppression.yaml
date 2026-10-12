@@ -1,0 +1,16 @@
+version: 1
+id: 27
+title: Regression 27 — Subsection suppression
+legacy_spec: 27_subsection_suppression.md
+gate: SECTION-NARRATIVE-FIDELITY
+assertions:
+- path: subsection_reason
+  op: not_in
+  value:
+  - LENGTH_BREAK
+  - VISUAL_BALANCE
+  - SOURCE_PATTERN
+good_candidate:
+  subsection_reason: STABLE_INTERNAL_PHASE
+bad_candidate:
+  subsection_reason: LENGTH_BREAK

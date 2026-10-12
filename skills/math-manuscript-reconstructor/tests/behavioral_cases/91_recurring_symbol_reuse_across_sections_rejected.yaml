@@ -1,0 +1,19 @@
+version: 1
+id: 91
+title: Case 91 — Recurring symbol reuse across sections is still a duplicate
+legacy_spec: 91_recurring_symbol_reuse_across_sections_rejected.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: duplicate_symbol_free
+  op: equals
+  value: true
+good_candidate:
+  duplicate_symbol_free: true
+  recurring_symbols:
+    E: energy
+bad_candidate:
+  duplicate_symbol_free: false
+  recurring_symbols:
+    E:
+    - energy_in_section_2
+    - exceptional_set_in_section_6

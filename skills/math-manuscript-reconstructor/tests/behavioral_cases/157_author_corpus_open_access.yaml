@@ -1,0 +1,35 @@
+version: 1
+id: 157
+title: Case 157 — Author corpus uses legal open-access version-locked copies
+legacy_spec: 157_author_corpus_open_access.md
+gate: STYLE-SOURCE-INDEPENDENCE
+assertions:
+- path: acquisition.open_access_only
+  op: equals
+  value: true
+- path: acquisition.paywall_circumvention
+  op: equals
+  value: false
+- path: acquisition.version_locked
+  op: equals
+  value: true
+- path: acquisition.sha256_recorded
+  op: equals
+  value: true
+- path: acquisition.author_prepared_preferred
+  op: equals
+  value: true
+good_candidate:
+  acquisition:
+    open_access_only: true
+    paywall_circumvention: false
+    version_locked: true
+    sha256_recorded: true
+    author_prepared_preferred: true
+bad_candidate:
+  acquisition:
+    open_access_only: false
+    paywall_circumvention: true
+    version_locked: false
+    sha256_recorded: false
+    author_prepared_preferred: false

@@ -1,0 +1,18 @@
+version: 1
+id: 41
+title: Case 41 — Result hierarchy uses reader order
+legacy_spec: 41_result_hierarchy_uses_reader_order.md
+gate: GRAND-NARRATIVE-INTEGRITY
+assertions:
+- path: theorem_order_basis
+  op: equals
+  value: reader_significance
+- path: copied_proof_chronology
+  op: equals
+  value: false
+good_candidate:
+  theorem_order_basis: reader_significance
+  copied_proof_chronology: false
+bad_candidate:
+  theorem_order_basis: proof_chronology
+  copied_proof_chronology: true

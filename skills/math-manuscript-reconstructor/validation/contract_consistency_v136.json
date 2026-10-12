@@ -1,0 +1,11 @@
+{
+  "version": "1.36.0",
+  "states": 29,
+  "artifacts": 45,
+  "gates": 22,
+  "legacy_regressions": 143,
+  "behavioral_fixtures": 143,
+  "errors": [],
+  "warnings": [],
+  "status": "PASS"
+}

@@ -1,0 +1,13 @@
+version: 1
+id: 16
+title: Regression 16 — Authorial density asymmetry
+legacy_spec: 16_authorial_density_asymmetry.md
+gate: AUTHORIAL-DECISION
+assertions:
+- path: routine_delicate_equal_density
+  op: equals
+  value: false
+good_candidate:
+  routine_delicate_equal_density: false
+bad_candidate:
+  routine_delicate_equal_density: true

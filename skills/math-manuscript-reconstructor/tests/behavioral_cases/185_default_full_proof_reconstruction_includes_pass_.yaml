@@ -1,0 +1,23 @@
+version: 1
+id: 185
+title: Case 185 — Default full proof reconstruction includes Pass 6a
+legacy_spec: 185_default_full_proof_reconstruction_includes_pass_.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: proof_scan_performed
+  op: equals
+  value: true
+- path: new_opt_in_required
+  op: equals
+  value: false
+- path: all_candidates_replaced
+  op: equals
+  value: false
+good_candidate:
+  proof_scan_performed: true
+  new_opt_in_required: false
+  all_candidates_replaced: false
+bad_candidate:
+  proof_scan_performed: false
+  new_opt_in_required: true
+  all_candidates_replaced: true

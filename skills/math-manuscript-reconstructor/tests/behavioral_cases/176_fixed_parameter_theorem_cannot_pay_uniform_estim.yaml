@@ -1,0 +1,23 @@
+version: 1
+id: 176
+title: Case 176 — Fixed-parameter theorem cannot pay uniform estimate
+legacy_spec: 176_fixed_parameter_theorem_cannot_pay_uniform_estim.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: uniformity_in_source_verified
+  op: equals
+  value: false
+- path: uniformity_argument_retained
+  op: equals
+  value: true
+- path: false_uniform_conclusion
+  op: equals
+  value: false
+good_candidate:
+  uniformity_in_source_verified: false
+  uniformity_argument_retained: true
+  false_uniform_conclusion: false
+bad_candidate:
+  uniformity_in_source_verified: false
+  uniformity_argument_retained: false
+  false_uniform_conclusion: true

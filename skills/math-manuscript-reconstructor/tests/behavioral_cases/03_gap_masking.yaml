@@ -1,0 +1,15 @@
+version: 1
+id: 3
+title: Regression 03 — Gap Masking
+legacy_spec: 03_gap_masking.md
+gate: PROOF-CLOSURE
+assertions:
+- path: gap_status
+  op: in
+  value:
+  - BLOCKER
+  - MATHEMATICAL-CHECK
+good_candidate:
+  gap_status: BLOCKER
+bad_candidate:
+  gap_status: SMOOTHED_OVER

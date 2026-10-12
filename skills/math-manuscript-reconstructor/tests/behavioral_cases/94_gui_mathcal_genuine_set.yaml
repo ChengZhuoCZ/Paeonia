@@ -1,0 +1,20 @@
+version: 1
+id: 94
+title: Case 94 — Gui prior allows mathcal for a genuine named set or class
+legacy_spec: 94_gui_mathcal_genuine_set.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: genuine_set_role
+  op: equals
+  value: true
+- path: mathcal_allowed
+  op: equals
+  value: true
+good_candidate:
+  genuine_set_role: true
+  mathcal_allowed: true
+  choice: \mathcal Z(u)
+bad_candidate:
+  genuine_set_role: false
+  mathcal_allowed: false
+  choice: \mathcal E as decorative energy

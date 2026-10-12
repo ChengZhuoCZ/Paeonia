@@ -1,0 +1,43 @@
+{
+  "emits_source_phrases": false,
+  "evaluative_ease_markers_per_1000_words": 2.47,
+  "explicit_closure_markers_per_proof": 0.174,
+  "first_person_plural_mentions_per_1000_words": 18.8,
+  "numbered_step_mentions": 20,
+  "numbered_step_mentions_per_proof": 0.033,
+  "paragraph_words_mean": 38.16,
+  "paragraph_words_median": 28.0,
+  "proof_markers": 610,
+  "proof_opening_class_counts": {
+    "contradiction": 6,
+    "direct_construction": 34,
+    "direct_estimate_or_application": 19,
+    "direct_or_other": 522,
+    "direct_reduction": 15,
+    "strategy_signal": 14
+  },
+  "reader_address_markers_per_1000_words": 0.17,
+  "sample_window_chars": 2200,
+  "sampled_words": 195028,
+  "sentence_count_in_windows": 9393,
+  "sentence_start_class_counts": {
+    "consequence_led": 353,
+    "contrast_led": 101,
+    "direct_action_led": 214,
+    "first_person_led": 650,
+    "object_or_other_led": 7832,
+    "premise_led": 243
+  },
+  "sentence_words_mean": 20.6,
+  "sentence_words_median": 18,
+  "stores_source_sentences": false,
+  "transition_class_counts": {
+    "closure": 106,
+    "consequence": 908,
+    "construction": 1365,
+    "contrast": 196,
+    "premise": 906,
+    "recollection": 452,
+    "reduction": 162
+  }
+}

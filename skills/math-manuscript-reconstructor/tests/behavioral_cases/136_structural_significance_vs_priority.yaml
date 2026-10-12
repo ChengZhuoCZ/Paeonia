@@ -1,0 +1,18 @@
+version: 1
+id: 136
+title: Case 136 — structural significance vs priority
+legacy_spec: 136_structural_significance_vs_priority.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: structural_significance
+  op: equals
+  value: explicit
+- path: unverified_priority_claim
+  op: equals
+  value: false
+good_candidate:
+  structural_significance: explicit
+  unverified_priority_claim: false
+bad_candidate:
+  structural_significance: routine_encoding
+  unverified_priority_claim: true

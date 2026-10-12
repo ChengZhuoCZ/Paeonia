@@ -1,0 +1,25 @@
+version: 1
+id: 167
+title: Case 167 — Unsupported program ambition falls back to precise direct opening
+legacy_spec: 167_direct_when_unearned.md
+gate: GRAND-NARRATIVE-INTEGRITY
+assertions:
+- path: chosen_scale
+  op: equals
+  value: DIRECT
+- path: invented_history
+  op: equals
+  value: false
+- path: theorem_specific_opening
+  op: equals
+  value: true
+good_candidate:
+  parent_program_found: false
+  chosen_scale: DIRECT
+  invented_history: false
+  theorem_specific_opening: true
+bad_candidate:
+  parent_program_found: false
+  chosen_scale: HISTORICAL_SYNTHESIS
+  invented_history: true
+  theorem_specific_opening: false

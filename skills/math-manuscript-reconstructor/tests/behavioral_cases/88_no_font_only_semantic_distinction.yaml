@@ -1,0 +1,18 @@
+version: 1
+id: 88
+title: Case 88 — Semantic distinctions are not font-only
+legacy_spec: 88_no_font_only_semantic_distinction.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: font_only_distinction
+  op: equals
+  value: false
+- path: semantic_index_or_name_used
+  op: equals
+  value: true
+good_candidate:
+  font_only_distinction: false
+  semantic_index_or_name_used: true
+bad_candidate:
+  font_only_distinction: true
+  semantic_index_or_name_used: false

@@ -1,0 +1,23 @@
+version: 1
+id: 104
+title: Case 104 — Deformations preserve a common base symbol
+legacy_spec: 104_gui_deformation_family.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: common_base_preserved
+  op: equals
+  value: true
+- path: deformation_notation
+  op: equals
+  value: T^t
+- path: unrelated_symbol_per_time
+  op: equals
+  value: false
+good_candidate:
+  common_base_preserved: true
+  deformation_notation: T^t
+  unrelated_symbol_per_time: false
+bad_candidate:
+  common_base_preserved: false
+  deformation_notation: T_tilde
+  unrelated_symbol_per_time: true

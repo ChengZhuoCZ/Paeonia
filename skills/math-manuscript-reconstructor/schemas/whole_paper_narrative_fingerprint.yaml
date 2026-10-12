@@ -1,0 +1,113 @@
+version: 1
+ledger: WholePaperNarrativeFingerprintLedger
+
+corpus_policy:
+  source_unit_prose_stored: false
+  source_global_sequence_reuse: forbidden
+  source_mass_profile_reuse: forbidden
+  source_frontmatter_ratio_reuse: forbidden
+  source_appendix_pattern_reuse: forbidden
+  exact_main_result_position_reuse: forbidden
+  numeric_targets_forbidden: true
+  long_expository_corpus_requires_research_projection: true
+
+global_spine_types:
+  - SINGLE_SPINE
+  - ENGINE_THEN_ASSEMBLY
+  - TWO_ENGINE_FUSION
+  - REGIME_SPLIT_REJOIN
+  - LOCAL_TO_GLOBAL
+  - CONSTRUCTION_TO_RIGIDITY
+  - THEORY_APPLICATION_RETURN
+  - CLASSIFICATION_FUNNEL
+  - COUNTEREXAMPLE_ESCALATION
+  - MULTI_RESULT_CONSTELLATION
+
+main_result_exposure_modes:
+  - EARLY_READABLE_STATEMENT
+  - MINIMAL_SETUP_THEN_STATEMENT
+  - RESULT_MAP_FOR_MULTI_THEOREM_PAPER
+
+proof_activation_modes:
+  - DIRECT_AFTER_SETUP
+  - ENGINE_DELAYED
+  - MULTI_ENGINE_DELAYED
+  - REGIME_DELAYED
+  - AUXILIARY_THEORY_DELAYED
+
+technical_core_shapes:
+  - COMPACT_PEAK
+  - BROAD_CORE
+  - TWO_PEAK
+  - CASCADE
+  - REGIME_CLUSTER
+  - DISTRIBUTED_BY_NECESSITY
+
+frontmatter_policy:
+  allowed_payload:
+    - problem_and_context
+    - exact_main_results
+    - novelty_or_difference_if_verified
+    - principal_obstruction
+    - proof_mechanism_map
+    - equality_or_rigidity_message_when_central
+    - literature_position_if_verified
+  forbidden_payload:
+    - duplicated_proof_arithmetic
+    - internal_dependency_lists
+    - repeated_full_theorem_statements
+    - section_by_section_administration
+    - claims_not_closed_by_body
+  compression_type: semantic_lossy_projection
+
+appendix_roles:
+  - GLOBAL_TOOLBOX
+  - LOCAL_TECHNICAL_MODULE
+  - REFERENCE_FOUNDATION
+  - TECHNICAL_VERIFICATION
+  - OPTIONAL_EXTENSION
+  - COMPUTATIONAL_CERTIFICATE
+
+appendix_strong_reasons:
+  - method_is_orthogonal_to_main_spine
+  - material_is_reused_by_multiple_body_units
+  - self_contained_background_would_interrupt_core_argument
+  - lengthy_verification_is_necessary_but_not_mechanism_bearing
+  - optional_extension_is_logically_separable
+  - certificate_or_table_requires_modular_verification
+
+appendix_forbidden_reasons:
+  - hide_proof_gap
+  - exile_central_novel_idea
+  - exile_main_equality_or_rigidity_argument
+  - dump_leftover_source_material
+  - shorten_body_by_removing_reader_critical_logic
+  - preserve_old_appendix_structure
+
+closure_policy:
+  conclusion_section_required: false
+  valid_endings:
+    - MAIN_PROOF_CLOSED
+    - RIGIDITY_CLOSED
+    - CLASSIFICATION_CLOSED
+    - CONSEQUENCES_COMPLETE
+    - APPLICATION_COMPLETE
+    - OPTIONAL_EXTENSION_COMPLETE
+
+corpus_evidence:
+  major_body_unit_count: null
+  body_unit_word_distribution: {}
+  body_unit_mass_cv: null
+  formal_result_density_distribution: {}
+  technical_mass_concentration: {}
+  introduction_words: null
+  introduction_to_body_word_ratio: null
+  appendix_count: null
+  appendix_words: null
+  appendix_formal_results: null
+  appendix_to_body_word_ratio: null
+  evidence_locators: []
+
+supported_rules: []
+tentative_rules: []
+unsupported_rules: []

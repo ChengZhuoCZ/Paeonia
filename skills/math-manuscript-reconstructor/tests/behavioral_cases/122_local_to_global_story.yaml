@@ -1,0 +1,28 @@
+version: 1
+id: 122
+title: Case 122 — Local theory is placed inside the global program
+legacy_spec: 122_local_to_global_story.md
+gate: MATHEMATICAL-STORY-INTEGRITY
+assertions:
+- path: story_archetype
+  op: equals
+  value: LOCAL_TO_GLOBAL
+- path: local_frontier_visible
+  op: equals
+  value: true
+- path: global_obstruction_visible
+  op: equals
+  value: true
+- path: globalization_mechanism_visible
+  op: equals
+  value: true
+good_candidate:
+  story_archetype: LOCAL_TO_GLOBAL
+  local_frontier_visible: true
+  global_obstruction_visible: true
+  globalization_mechanism_visible: true
+bad_candidate:
+  story_archetype: LOCAL_RESULT_ONLY
+  local_frontier_visible: true
+  global_obstruction_visible: false
+  globalization_mechanism_visible: false

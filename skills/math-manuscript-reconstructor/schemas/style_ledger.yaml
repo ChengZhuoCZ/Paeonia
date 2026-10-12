@@ -1,0 +1,131 @@
+style_ledger:
+  profile: null
+  corpus_mode: user_supplied_style_reference
+  representation: abstract_traits_only
+  extraction_status: null
+  evidence_policy:
+    minimum_support: repeated_across_distinct_windows_when_available
+    source_sentence_storage: forbidden
+    allowed_evidence:
+    - line_or_page_locators
+    - aggregate_counts
+    - aggregate_rates
+    - abstract_feature_labels
+  unified_voice_contract:
+    profile: profiles/unified_research_mathematics_voice.md
+    default_language: English
+    choice_prompt: forbidden
+    style_alternative_menu: forbidden_unless_explicitly_requested
+    conflict_resolution: autonomous_priority_hierarchy_protocol_05p
+    local_polish_baseline: preserve_within_authorized_scope
+    role_variation: mathematical_density_only
+  language_style:
+    register: null
+    sentence_cadence: null
+    clause_architecture: null
+    sentence_length_tendency: null
+    first_person_plural_policy: null
+    mathematical_verb_profile: []
+    transition_classes: []
+    transition_repetition_control: null
+    certainty_language: null
+    parenthetical_policy: null
+    punctuation_and_display_grammar: null
+    formula_integration: null
+    lexical_density: null
+    reader_address_policy: null
+    avoid_patterns: []
+  mathematical_writing_style:
+    proof_opening: null
+    strategy_signal: null
+    local_goal_visibility: null
+    obstruction_visibility: null
+    theorem_entry: null
+    lemma_insertion_logic: null
+    proof_granularity: null
+    step_heading_frequency: null
+    equation_prose_relation: null
+    justification_locality: null
+    parameter_choice_explanation: null
+    case_split_pattern: null
+    approximation_transition: null
+    generality_ladder: []
+    conceptual_interpretation: null
+    technical_detail_density: null
+    proof_closure: null
+    post_proof_movement: null
+    definition_entry: null
+    section_movement: null
+    research_projection: null
+    avoid_patterns: []
+  paragraph_fingerprint:
+    enabled: true
+    ledger_ref: schemas/paragraph_fingerprint.yaml
+    boundary_policy: mathematics_driven
+    role_sensitive_density: required
+    numeric_fit_policy: evidence_only_never_generation_target
+    source_paragraph_template_reuse: forbidden
+  section_narrative_fingerprint:
+    enabled: true
+    ledger_ref: schemas/section_narrative_fingerprint.yaml
+    section_boundary_policy: obligation_family_driven
+    theorem_latency_policy: prerequisite_burden_driven
+    subsection_policy: stable_internal_phase_only
+    conceptual_technical_policy: pressure_wave_not_forced_alternation
+    numeric_fit_policy: evidence_only_never_generation_target
+    source_section_order_reuse: forbidden
+    source_subsection_pattern_reuse: forbidden
+  whole_paper_narrative_fingerprint:
+    enabled: true
+    ledger_ref: schemas/whole_paper_narrative_fingerprint.yaml
+    global_spine_policy: target_dependency_graph_driven
+    main_result_exposure_policy: readability_and_prerequisite_driven
+    technical_mass_policy: proof_pressure_driven
+    frontmatter_compression_policy: semantic_projection_not_ratio_fit
+    appendix_policy: modularity_test_required
+    conclusion_policy: mathematically_optional
+    numeric_fit_policy: evidence_only_never_generation_target
+    source_global_sequence_reuse: forbidden
+    source_mass_profile_reuse: forbidden
+    source_frontmatter_ratio_reuse: forbidden
+    source_appendix_pattern_reuse: forbidden
+  authorial_naturalization:
+    mode: authorial_mathematical_prose
+    paragraph_role_policy:
+      routine: null
+      structural: null
+      delicate: null
+      surprising: null
+      bridge: null
+      closure: null
+    explicitness_policy:
+      must_explicit: []
+      may_be_implicit: []
+      should_be_implicit: []
+    generative_residue_classes: []
+    empty_signposting_policy: null
+    formula_restatement_policy: null
+    transition_semantics: []
+    mathematical_action_density: null
+    recurrence_review_policy: null
+    rhythm_policy: null
+    proof_geometry_policy: null
+    cold_author_policy: null
+    forbidden_humanization:
+    - random_synonym_substitution
+    - random_sentence_shortening
+    - random_paragraph_splitting
+    - deliberate_grammar_errors
+    - deliberate_typos
+    - fake_uncertainty
+    - fake_personal_voice
+    - artificial_colloquialism
+    - random_transition_rotation
+    - ai_detector_score_optimization
+  source_phrase_storage: forbidden
+source_roles:
+  user_supplied_style_reference: false
+  author_corpus_supplement: false
+  author_corpus_dossier_ref: null
+  coauthor_attribution_policy: author_associated_not_individual_unless_supported
+  citation_contamination_policy: forbidden

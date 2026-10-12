@@ -1,0 +1,30 @@
+version: 1
+id: 155
+title: Case 155 — No unsolicited author-style choice (supersedes original request)
+legacy_spec: 155_author_request_after_proof.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: author_corpus.prompt_count
+  op: equals
+  value: 0
+- path: author_corpus.default_voice_enabled
+  op: equals
+  value: true
+- path: author_corpus.style_reference_required
+  op: equals
+  value: false
+- path: author_corpus.user_supplied_only
+  op: equals
+  value: true
+good_candidate:
+  author_corpus:
+    prompt_count: 0
+    default_voice_enabled: true
+    style_reference_required: false
+    user_supplied_only: true
+bad_candidate:
+  author_corpus:
+    prompt_count: 1
+    default_voice_enabled: false
+    style_reference_required: true
+    user_supplied_only: false

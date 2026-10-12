@@ -1,0 +1,25 @@
+version: 1
+id: 100
+title: Case 100 — Standard ambient spaces use conventional blackboard-bold notation
+legacy_spec: 100_gui_standard_blackboard_spaces.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: standard_blackboard_space
+  op: equals
+  value: true
+- path: decorative_space_variant
+  op: equals
+  value: false
+good_candidate:
+  standard_blackboard_space: true
+  decorative_space_variant: false
+  examples:
+  - \mathbb R^n
+  - \mathbb S^N
+  - \mathbb D
+bad_candidate:
+  standard_blackboard_space: false
+  decorative_space_variant: true
+  examples:
+  - \mathcal R^n
+  - \mathscr S^N

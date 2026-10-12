@@ -1,0 +1,26 @@
+version: 1
+id: 159
+title: Case 159 — Coauthored papers yield author-associated not certain individual
+  style
+legacy_spec: 159_coauthor_attribution_caution.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: attribution.coauthored_label
+  op: equals
+  value: AUTHOR_ASSOCIATED
+- path: attribution.individual_authorship_claim
+  op: equals
+  value: false
+- path: attribution.cross_collaboration_required_for_stable
+  op: equals
+  value: true
+good_candidate:
+  attribution:
+    coauthored_label: AUTHOR_ASSOCIATED
+    individual_authorship_claim: false
+    cross_collaboration_required_for_stable: true
+bad_candidate:
+  attribution:
+    coauthored_label: INDIVIDUAL_CERTAIN
+    individual_authorship_claim: true
+    cross_collaboration_required_for_stable: false

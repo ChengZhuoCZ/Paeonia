@@ -1,0 +1,23 @@
+version: 1
+id: 127
+title: Case 127 — Generic field grandeur is rejected without a mathematical transition
+legacy_spec: 127_reject_generic_grandeur.md
+gate: MATHEMATICAL-STORY-INTEGRITY
+assertions:
+- path: generic_importance_slogans
+  op: equals
+  value: false
+- path: specific_transition
+  op: equals
+  value: true
+- path: parent_program_specific
+  op: equals
+  value: true
+good_candidate:
+  generic_importance_slogans: false
+  specific_transition: true
+  parent_program_specific: true
+bad_candidate:
+  generic_importance_slogans: true
+  specific_transition: false
+  parent_program_specific: false

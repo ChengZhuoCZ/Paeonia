@@ -1,0 +1,18 @@
+version: 1
+id: 89
+title: Case 89 — Blackboard bold is restricted to standard canonical objects
+legacy_spec: 89_mathbb_standard_only.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: nonstandard_mathbb
+  op: equals
+  value: false
+- path: standard_mathbb_allowed
+  op: equals
+  value: true
+good_candidate:
+  nonstandard_mathbb: false
+  standard_mathbb_allowed: true
+bad_candidate:
+  nonstandard_mathbb: true
+  standard_mathbb_allowed: false

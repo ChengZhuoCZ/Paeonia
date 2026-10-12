@@ -1,0 +1,18 @@
+version: 1
+id: 138
+title: Case 138 — routine outline does not force reformulation
+legacy_spec: 138_routine_outline_does_not_force_reformulation.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: forced_reformulation
+  op: equals
+  value: false
+- path: exposition_depth
+  op: equals
+  value: proportionate
+good_candidate:
+  forced_reformulation: false
+  exposition_depth: proportionate
+bad_candidate:
+  forced_reformulation: true
+  exposition_depth: fixed_grand_template

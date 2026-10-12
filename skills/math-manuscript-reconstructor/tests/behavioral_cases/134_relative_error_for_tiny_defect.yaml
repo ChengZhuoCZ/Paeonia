@@ -1,0 +1,18 @@
+version: 1
+id: 134
+title: Case 134 — relative error for tiny defect
+legacy_spec: 134_relative_error_for_tiny_defect.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: error_control
+  op: equals
+  value: uniform_coefficient_times_same_defect
+- path: scope
+  op: equals
+  value: localized_class
+good_candidate:
+  error_control: uniform_coefficient_times_same_defect
+  scope: localized_class
+bad_candidate:
+  error_control: additive_o1_in_N
+  scope: all_polygons_without_reduction

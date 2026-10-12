@@ -1,0 +1,13 @@
+version: 1
+id: 18
+title: Regression 18 — Style ledger survives cold-author compression
+legacy_spec: 18_style_ledger_survives_compression.md
+gate: COLD-AUTHOR
+assertions:
+- path: delicate_justification_preserved
+  op: equals
+  value: true
+good_candidate:
+  delicate_justification_preserved: true
+bad_candidate:
+  delicate_justification_preserved: false

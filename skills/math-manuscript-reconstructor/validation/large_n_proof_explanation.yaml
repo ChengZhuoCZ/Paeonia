@@ -1,0 +1,216 @@
+proof_explanation:
+  enabled: true
+  audience_prerequisites:
+  - first Dirichlet eigenvalue
+  - Fourier modes
+  - variational minimality
+  evidence:
+    admissible:
+      source: manuscript
+      locator: thm:main
+      role: target admissible class and scope
+    entry:
+      source: manuscript
+      locator: prop:global-minimizer-radial-entry
+      role: independent near-disk entry
+    measure:
+      source: manuscript
+      locator: def:polar-coordinates
+      role: turning measure dictionary and chart
+    atomic:
+      source: manuscript
+      locator: thm:atomic-rigidity
+      role: positive energy and equality set
+    micro:
+      source: manuscript
+      locator: thm:microscopic-rigidity
+      role: small scaled defect gives mesh control
+    bessel:
+      source: manuscript
+      locator: thm:bessel-coercivity
+      role: exact spectral quadratic comparison
+    coarse:
+      source: manuscript
+      locator: prop:critical-localization
+      role: initial defect control without mesh assumption
+    first:
+      source: manuscript
+      locator: cor:first-localization
+      role: improvement to vanishing scaled defect
+    refined:
+      source: manuscript
+      locator: cor:refined-localization
+      role: entry to relative comparison range
+    cubic:
+      source: manuscript
+      locator: prop:principal-cubic-relative
+      role: relative cubic comparison
+    material:
+      source: manuscript
+      locator: thm:material-endpoint-comparison
+      role: compatible endpoint geometry
+    chart:
+      source: manuscript
+      locator: thm:constraint-chart
+      role: exact constraints and small-defect range
+    relative:
+      source: manuscript
+      locator: thm:relative-remainder
+      role: uniform error coefficient times defect
+    gap:
+      source: manuscript
+      locator: thm:spectral-gap
+      role: positive localized comparison
+    recovery:
+      source: manuscript
+      locator: lem:polar-equality-reconstruction
+      role: reconstruct regular polygon from equality
+  initial_facts:
+  - id: target_minimizer
+    meaning: global minimizer in the relaxed convex polygon class
+    evidence:
+    - admissible
+    - entry
+  reformulations:
+  - id: turning_configuration
+    original_problem: select the exact finite polygon by its first eigenvalue
+    obstruction: disk closeness loses the distribution of vertices and exterior angles
+    dictionary: atom locations are centered vertex directions; masses are exterior
+      angles divided by 2 pi
+    bridge_kind: one_way_reduction
+    new_capability: an atomic defect with a characterized regular zero set and quantitative
+      control of the mesh
+    remaining_cost: match the spectral response and recover a polygon at equality;
+      no global realization claim for all measures
+    evidence:
+    - measure
+    - atomic
+    - micro
+    - recovery
+  - id: spectral_defect_bridge
+    original_problem: compare eigenvalues of localized polygons and the regular polygon
+    obstruction: nonlinear and exact coefficient terms are not the principal inverse-cubic
+      energy
+    dictionary: two integrations supply k^-2 and the order-one Hessian yields principal
+      k^-3 curvature weights
+    bridge_kind: controlled_comparison
+    new_capability: a positive quadratic term bounded below by the atomic defect
+    remaining_cost: bound endpoint differences of the remaining terms by a small coefficient
+      times that same defect
+    evidence:
+    - bessel
+    - relative
+    - gap
+  stages:
+  - id: disk_entry
+    requires:
+    - target_minimizer
+    obstacle: vertices can still be irregular
+    action: localize by stability and convexity
+    produces:
+    - id: disk_chart
+      meaning: near-disk radial chart
+    payoff: uniform spectral estimates become available
+    regime: large N; no minimum mesh size
+    evidence:
+    - entry
+  - id: atomic_bridge
+    requires:
+    - disk_chart
+    obstacle: continuous proximity does not encode discrete arrangement
+    action: introduce centered turning data and compare quadratic energies
+    produces:
+    - id: positive_defect
+      meaning: nonnegative atomic defect controlling the quadratic term
+    payoff: use nonlinear estimates against an identified positive term
+    regime: centered chart
+    evidence:
+    - measure
+    - atomic
+    - bessel
+  - id: coarse_improvement
+    requires:
+    - positive_defect
+    obstacle: mesh control not yet available
+    action: use coarse localization and the first cubic comparison
+    produces:
+    - id: vanishing_scaled_defect
+      meaning: N^4 E_N tends to zero for minimizers
+    payoff: microscopic rigidity becomes applicable
+    regime: no gap lower bound assumed
+    evidence:
+    - coarse
+    - first
+  - id: mesh_recovery
+    requires:
+    - vanishing_scaled_defect
+    obstacle: need uniform regularity of weights and gaps
+    action: apply atomic rigidity and refine localization
+    produces:
+    - id: relative_entry
+      meaning: near-regular mesh in the stated defect range
+    payoff: relative cancellation is now applicable
+    regime: localized minimizers
+    evidence:
+    - micro
+    - refined
+  - id: relative_cancellation
+    requires:
+    - relative_entry
+    obstacle: absolute estimates lose the sign for tiny defects
+    action: subtract the regular endpoint and compare compatible material coordinates
+    produces:
+    - id: relative_above_cutoff
+      meaning: relative comparison on the material estimate range
+    payoff: only the tiny-defect range remains
+    regime: range in endpoint comparison theorem
+    evidence:
+    - cubic
+    - material
+  - id: cutoff_removal
+    requires:
+    - relative_above_cutoff
+    obstacle: positive defects may lie below the previous cutoff
+    action: use exact constraint coordinates and overlap the two ranges
+    produces:
+    - id: all_relative
+      meaning: relative error bound for every positive defect in the localized class
+    payoff: combine with positive quadratic term
+    regime: exact centered constraint chart
+    evidence:
+    - chart
+    - relative
+  - id: positive_comparison
+    requires:
+    - all_relative
+    obstacle: need the original spectral sign
+    action: assemble the exact splitting and defect bounds
+    produces:
+    - id: spectral_sign
+      meaning: strict comparison whenever defect is positive
+    payoff: minimality forces zero defect
+    regime: localized chart; sufficiently large N
+    evidence:
+    - gap
+  assembly:
+    requires:
+    - target_minimizer
+    - spectral_sign
+    implication: a minimizer cannot have positive defect; atomic equality and reconstruction
+      identify the regular polygon
+    scope: large N global minimizers in the convex class, with comparison first proved
+      in the localized chart
+    claims_equality: true
+    equality_recovery: uniform root data plus the turning equation and area constraint
+      recover the regular polygon modulo rigid motions
+    evidence:
+    - gap
+    - atomic
+    - recovery
+  cold_read:
+    performed: false
+    reader_answers: []
+    first_missing_link: null
+    repairs: []
+    limitations:
+    - This internal dependency record is not an independently tested manuscript outline.

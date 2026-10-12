@@ -1,0 +1,18 @@
+version: 1
+id: 78
+title: Case 78 — Context-conditioned realization overrides global average
+legacy_spec: 78_context_over_global_average.md
+gate: CONDITIONAL-STYLE-FIDELITY
+assertions:
+- path: context_overrides_global
+  op: equals
+  value: true
+- path: routine_delicate_flattened
+  op: equals
+  value: false
+good_candidate:
+  context_overrides_global: true
+  routine_delicate_flattened: false
+bad_candidate:
+  context_overrides_global: false
+  routine_delicate_flattened: true

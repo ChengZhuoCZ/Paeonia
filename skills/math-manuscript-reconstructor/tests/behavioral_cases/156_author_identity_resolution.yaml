@@ -1,0 +1,26 @@
+version: 1
+id: 156
+title: Case 156 — Ambiguous author names are resolved before attribution
+legacy_spec: 156_author_identity_resolution.md
+gate: STYLE-SOURCE-INDEPENDENCE
+assertions:
+- path: identity.status
+  op: not_equals
+  value: UNRESOLVED
+- path: identity.name_guessing
+  op: equals
+  value: false
+- path: identity.disambiguators
+  op: truthy
+good_candidate:
+  identity:
+    status: CONFIRMED
+    name_guessing: false
+    disambiguators:
+    - affiliation
+    - field
+bad_candidate:
+  identity:
+    status: UNRESOLVED
+    name_guessing: true
+    disambiguators: []

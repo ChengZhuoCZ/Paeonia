@@ -1,0 +1,45 @@
+version: 1
+id: 111
+title: Case 111 — Deep scientific context uses multi-role, source-diverse research
+legacy_spec: 111_substantial_context_evidence_roles.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: verified_roles
+  op: contains
+  value: MODEL_ORIGIN
+- path: verified_roles
+  op: contains
+  value: MECHANISM
+- path: verified_roles
+  op: contains
+  value: REGIME_OR_SCALING
+- path: verified_roles
+  op: contains
+  value: MATH_BRIDGE
+- path: research_breadth
+  op: equals
+  value: DEEP
+- path: source_types
+  op: contains
+  value: ORIGINAL_OR_CANONICAL_SCIENCE
+- path: source_types
+  op: contains
+  value: MATHEMATICAL_PHYSICS_BRIDGE
+good_candidate:
+  verified_roles:
+  - MODEL_ORIGIN
+  - MECHANISM
+  - REGIME_OR_SCALING
+  - MATH_BRIDGE
+  - MODERN_CONTEXT
+  research_breadth: DEEP
+  source_types:
+  - ORIGINAL_OR_CANONICAL_SCIENCE
+  - REVIEW_OR_MONOGRAPH
+  - MATHEMATICAL_PHYSICS_BRIDGE
+bad_candidate:
+  verified_roles:
+  - MODEL_ORIGIN
+  research_breadth: COMPACT
+  source_types:
+  - REVIEW_OR_MONOGRAPH

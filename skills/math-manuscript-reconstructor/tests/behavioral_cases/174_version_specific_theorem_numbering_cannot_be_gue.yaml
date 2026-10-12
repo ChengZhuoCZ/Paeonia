@@ -1,0 +1,23 @@
+version: 1
+id: 174
+title: Case 174 — Version-specific theorem numbering cannot be guessed
+legacy_spec: 174_version_specific_theorem_numbering_cannot_be_gue.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: source_version_locked
+  op: equals
+  value: true
+- path: result_number_matches_inspected_version
+  op: equals
+  value: true
+- path: invented_locator
+  op: equals
+  value: false
+good_candidate:
+  source_version_locked: true
+  result_number_matches_inspected_version: true
+  invented_locator: false
+bad_candidate:
+  source_version_locked: false
+  result_number_matches_inspected_version: false
+  invented_locator: true

@@ -1,0 +1,13 @@
+version: 1
+id: 37
+title: Case 37 — Conclusion is optional in pure mathematics
+legacy_spec: 37_no_mandatory_conclusion.md
+gate: WHOLE-PAPER-NARRATIVE-FIDELITY
+assertions:
+- path: conclusion_section_mandatory
+  op: equals
+  value: false
+good_candidate:
+  conclusion_section_mandatory: false
+bad_candidate:
+  conclusion_section_mandatory: true

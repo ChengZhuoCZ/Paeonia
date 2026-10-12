@@ -1,0 +1,28 @@
+version: 1
+id: 166
+title: Case 166 — Grand opening earned by sourced parent program and true tension
+legacy_spec: 166_earned_grand_opening.md
+gate: GRAND-NARRATIVE-INTEGRITY
+assertions:
+- path: parent_program_source_checked
+  op: equals
+  value: true
+- path: structural_transition_explicit
+  op: equals
+  value: true
+- path: return_to_program_exact
+  op: equals
+  value: true
+- path: prestige_only_intro
+  op: equals
+  value: false
+good_candidate:
+  parent_program_source_checked: true
+  structural_transition_explicit: true
+  return_to_program_exact: true
+  prestige_only_intro: false
+bad_candidate:
+  parent_program_source_checked: false
+  structural_transition_explicit: false
+  return_to_program_exact: false
+  prestige_only_intro: true

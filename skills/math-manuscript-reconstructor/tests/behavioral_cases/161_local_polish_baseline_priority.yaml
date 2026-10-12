@@ -1,0 +1,25 @@
+version: 1
+id: 161
+title: Case 161 — Local polishing preserves baseline above author-corpus preference
+legacy_spec: 161_local_polish_baseline_priority.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: local_polish.baseline_priority
+  op: equals
+  value: true
+- path: local_polish.wholesale_restyle
+  op: equals
+  value: false
+- path: local_polish.diagnosed_scope_only
+  op: equals
+  value: true
+good_candidate:
+  local_polish:
+    baseline_priority: true
+    wholesale_restyle: false
+    diagnosed_scope_only: true
+bad_candidate:
+  local_polish:
+    baseline_priority: false
+    wholesale_restyle: true
+    diagnosed_scope_only: false

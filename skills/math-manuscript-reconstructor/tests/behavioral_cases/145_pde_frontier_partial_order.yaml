@@ -1,0 +1,25 @@
+version: 1
+id: 145
+title: Case 145 — Incomparable PDE frontiers remain incomparable
+legacy_spec: 145_pde_frontier_partial_order.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: frontier.relation
+  op: equals
+  value: PARTIAL_ORDER
+- path: frontier.incomparable_nodes
+  op: equals
+  value: 2
+- path: frontier.false_strongest_claim
+  op: equals
+  value: false
+good_candidate:
+  frontier:
+    relation: PARTIAL_ORDER
+    incomparable_nodes: 2
+    false_strongest_claim: false
+bad_candidate:
+  frontier:
+    relation: LINEAR_RANKING
+    incomparable_nodes: 0
+    false_strongest_claim: true

@@ -1,0 +1,23 @@
+version: 1
+id: 109
+title: Case 109 — Scientific-context depth is independent of specialist audience
+legacy_spec: 109_context_depth_independent_of_specialist_audience.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: specialist_audience
+  op: equals
+  value: true
+- path: context_depth
+  op: equals
+  value: SUBSTANTIAL
+- path: suppressed_because_specialist
+  op: equals
+  value: false
+good_candidate:
+  specialist_audience: true
+  context_depth: SUBSTANTIAL
+  suppressed_because_specialist: false
+bad_candidate:
+  specialist_audience: true
+  context_depth: ORIGIN_BRIEF
+  suppressed_because_specialist: true

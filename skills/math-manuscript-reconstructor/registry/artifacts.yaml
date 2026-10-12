@@ -1,0 +1,244 @@
+version: 1
+artifacts:
+  TaskContract:
+    owner_state: TASK_CONTRACT
+    required_for:
+    - all_nontrivial
+    schema: schemas/task_contract.yaml
+  WritingOrder:
+    owner_state: WRITING_ORDER
+    schema: schemas/writing_order.yaml
+    required_for:
+    - manuscript_production
+  ResearchDirectorBrief:
+    owner_state: EXECUTION_PLAN
+    required_for:
+    - explicit_orchestration_or_audit
+    schema: schemas/research_director_brief.yaml
+  ResearchDirectorAdvice:
+    owner_state: EXECUTION_PLAN
+    required_for:
+    - explicit_orchestration_or_audit
+    schema: schemas/research_director_advice.yaml
+  ExecutionPlan:
+    owner_state: EXECUTION_PLAN
+    schema: schemas/execution_plan.yaml
+    required_for:
+    - explicit_orchestration_or_audit
+    template: templates/execution_plan.yaml
+  MathLedger:
+    owner_state: LEDGER_LOCK
+    schema: schemas/math_ledger.yaml
+    required_for:
+    - source_reconstruction
+  DependencyGraph:
+    owner_state: LEDGER_LOCK
+    required_for:
+    - source_reconstruction
+  ProofGraph:
+    owner_state: PROOF_GRAPH
+    required_for:
+    - proof_production
+  ProofBodyBlueprint:
+    owner_state: PROOF_GRAPH
+    required_for:
+    - proof_production
+  NotationLedger:
+    owner_state: NOTATION_ARCHITECTURE
+    schema: schemas/notation_ledger.yaml
+    template: templates/notation_ledger.yaml
+    required_for:
+    - proof_production
+  SourceFirewallReport:
+    owner_state: SOURCE_QUARANTINE
+    template: templates/source_firewall_report.md
+    required_for:
+    - source_reconstruction
+  AuthorCorpusDossier:
+    owner_state: STYLE_EXTRACT
+    schema: schemas/author_corpus_dossier.yaml
+    template: templates/author_corpus_dossier.yaml
+    required_for:
+    - author_corpus_style_supplement
+  LanguageStyleLedger:
+    owner_state: STYLE_EXTRACT
+    required_for:
+    - style_corpus
+  MathematicalWritingStyleLedger:
+    owner_state: STYLE_EXTRACT
+    required_for:
+    - style_corpus
+  ConditionalStyleLedger:
+    owner_state: STYLE_EXTRACT
+    schema: schemas/conditional_style_ledger.yaml
+    template: templates/conditional_style_ledger.yaml
+    required_for:
+    - large_style_corpus
+  HighIntensityStyleEvidenceReport:
+    owner_state: STYLE_EXTRACT
+    required_for:
+    - large_style_corpus
+  ParagraphFingerprintLedger:
+    owner_state: PARAGRAPH_FINGERPRINT_LOCK
+    schema: schemas/paragraph_fingerprint.yaml
+    required_for:
+    - style_corpus
+  SectionNarrativeFingerprintLedger:
+    owner_state: SECTION_FINGERPRINT_LOCK
+    schema: schemas/section_narrative_fingerprint.yaml
+    required_for:
+    - style_corpus
+  WholePaperNarrativeFingerprintLedger:
+    owner_state: WHOLE_PAPER_FINGERPRINT_LOCK
+    schema: schemas/whole_paper_narrative_fingerprint.yaml
+    required_for:
+    - style_corpus
+  StyleLedger:
+    owner_state: STYLE_EXTRACT
+    schema: schemas/style_ledger.yaml
+    required_for:
+    - style_corpus
+  ParagraphFingerprintReport:
+    owner_state: PARAGRAPH_RHYTHM
+    template: templates/paragraph_fingerprint_report.md
+    required_for:
+    - style_corpus_full_manuscript
+  SectionNarrativeReport:
+    owner_state: SECTION_NARRATIVE
+    template: templates/section_fingerprint_report.md
+    required_for:
+    - full_manuscript
+  WholePaperNarrativeReport:
+    owner_state: WHOLE_PAPER_NARRATIVE
+    template: templates/whole_paper_fingerprint_report.md
+    required_for:
+    - full_manuscript
+  IntroductionLiteratureDossier:
+    owner_state: INTRODUCTION_NARRATIVE
+    schema: schemas/introduction_literature_dossier.yaml
+    template: templates/introduction_literature_dossier.yaml
+    required_for:
+    - authorized_introduction_reconstruction_when_research_possible
+  IntroductionCoreBrief:
+    owner_state: INTRODUCTION_NARRATIVE
+    schema: schemas/introduction_core_brief.yaml
+    template: templates/introduction_core_brief.yaml
+    required_for:
+    - substantial_introduction_composition
+  IntroductionNarrativeLedger:
+    owner_state: INTRODUCTION_NARRATIVE
+    schema: schemas/introduction_narrative_ledger.yaml
+    template: templates/introduction_narrative_ledger.yaml
+    required_for:
+    - unusually_complex_introduction_compatibility_route
+  MathematicalStoryLedger:
+    owner_state: INTRODUCTION_NARRATIVE
+    schema: schemas/mathematical_story_ledger.yaml
+    template: templates/mathematical_story_ledger.yaml
+    required_for:
+    - genuine_parent_program_or_scale_transition_triggered
+  ProofCitationReplacementDossier:
+    owner_state: PROOF_CORE
+    schema: schemas/proof_citation_replacement_dossier.yaml
+    required_for:
+    - material_proof_citation_candidates_in_authorized_editable_scope
+  ProofCoreGateReport:
+    owner_state: PROOF_CORE_GATE
+    template: templates/proof_core_gate_report.md
+    required_for:
+    - proof_production
+  TheoremStatementLedger:
+    owner_state: THEOREM_FRAME
+    schema: schemas/theorem_statement_ledger.yaml
+    template: templates/theorem_statement_ledger.yaml
+    required_for:
+    - full_manuscript
+    - theorem_packaging
+  ReconstructionBlueprint:
+    owner_state: MANUSCRIPT_ARCHITECTURE
+    template: templates/reconstruction_blueprint.md
+    required_for:
+    - full_manuscript
+  SemanticChecksum:
+    owner_state: THEOREM_FRAME
+    schema: schemas/semantic_checksum.yaml
+    required_for:
+    - manuscript_prose
+  CitationLedger:
+    owner_state: AUDIT
+    template: templates/citation_ledger.yaml
+    required_for:
+    - citations_present
+  RefereeAudit:
+    owner_state: AUDIT
+    template: templates/referee_audit.md
+    required_for:
+    - full_manuscript_audit
+  SourceIndependenceReport:
+    owner_state: AUDIT
+    required_for:
+    - source_reconstruction_audit
+  GenerativeResidueReport:
+    owner_state: RESIDUE_DIAGNOSIS
+    required_for:
+    - authorial_naturalization
+  AuthorialDecisionReport:
+    owner_state: AUTHORIAL_DECISION
+    required_for:
+    - authorial_naturalization
+  NaturalizationGateReport:
+    owner_state: COLD_AUTHOR
+    template: templates/naturalization_gate_report.md
+    required_for:
+    - authorial_naturalization
+  RepairRouteReport:
+    owner_state: AUDIT
+    required_for:
+    - gate_failure
+    schema: schemas/repair_route.yaml
+  ContractConsistencyReport:
+    owner_state: RELEASE
+    required_for:
+    - release_build
+  BehavioralValidationReport:
+    owner_state: RELEASE
+    required_for:
+    - release_build
+  SubmissionGateReport:
+    owner_state: AUDIT
+    template: templates/submission_gate_report.md
+    required_for:
+    - submission_claim
+  IntroductionParagraphPlan:
+    owner_state: INTRODUCTION_NARRATIVE
+    schema: schemas/introduction_paragraph_plan.yaml
+    template: templates/introduction_paragraph_plan.yaml
+    required_for:
+    - multi_thread_introduction_complexity_triggered
+  IntroductionProseAudit:
+    owner_state: FRONTMATTER
+    template: templates/introduction_prose_audit.md
+    required_for:
+    - legacy_extended_introduction_audit
+  ReaderContractAudit:
+    owner_state: FRONTMATTER
+    template: templates/introduction_reader_contract_audit.md
+    required_for:
+    - substantial_introduction_composition
+  NarrativeAmbitionLedger:
+    owner_state: INTRODUCTION_NARRATIVE
+    schema: schemas/narrative_ambition_ledger.yaml
+    template: templates/narrative_ambition_ledger.yaml
+    required_for:
+    - verified_editorial_positioning_triggered
+  EditorialImpactAudit:
+    owner_state: FRONTMATTER
+    template: templates/editorial_impact_audit.md
+    required_for:
+    - verified_editorial_positioning_triggered
+  ScientificContextLedger:
+    owner_state: INTRODUCTION_NARRATIVE
+    schema: schemas/scientific_context_ledger.yaml
+    template: templates/scientific_context_ledger.yaml
+    required_for:
+    - scientific_context_triggered_frontmatter

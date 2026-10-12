@@ -1,0 +1,56 @@
+version: 1
+
+trigger:
+  detected: false
+  reason: null
+  context_depth: NONE
+  allowed: [NONE, ORIGIN_BRIEF, SUBSTANTIAL, PHYSICS_LED, INTERDISCIPLINARY_LED]
+  audience_independent: true
+  research_breadth: NONE
+  research_breadth_allowed: [NONE, COMPACT, TRIANGULATED, DEEP]
+
+scientific_domains: []
+phenomena_or_observables: []
+
+model_lineage: []
+# - stage: MICROSCOPIC|MESOSCOPIC|MACROSCOPIC|VARIATIONAL|GEOMETRIC|OTHER
+#   description: null
+#   evidence_anchor: null
+
+model_to_math_map: []
+# - scientific_object: null
+#   mathematical_object: null
+#   parameter_or_scale: null
+#   meaning: null
+#   evidence_anchor: null
+
+source_dossier: []
+# - source: null
+#   role: MODEL_ORIGIN|MECHANISM|REGIME_OR_SCALING|MATH_BRIDGE|MODERN_CONTEXT|EXPERIMENTAL_CONTEXT
+#   claim_supported: null
+#   verified: false
+
+historical_scientific_axis: []
+regimes_and_scalings: []
+
+introduction_use:
+  preferred_opening_mode: null
+  paragraph_roles: []
+  multi_paragraph_context_justified: false
+  return_anchor_to_mathematics: null
+
+theorem_interpretation:
+  mathematical_statement: null
+  scientific_interpretation: null
+  evidence_anchor: null
+  wording_ceiling: null
+  forbidden_overinterpretation: null
+
+factuality_ceilings: []
+
+integrity:
+  context_depth_supported: false
+  nontrivial_scientific_claims_verified: false
+  model_to_math_bridge_complete: false
+  decorative_context_removed: false
+  theorem_interpretation_calibrated: false

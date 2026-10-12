@@ -1,0 +1,13 @@
+# Verifiable methodological references for the v1.39 Introduction workflow
+
+Checked against publicly accessible source descriptions on **2026-10-13**. These references govern *research and editorial procedure*. They are **not** automatic citations for any mathematical manuscript. Each actual mathematical claim must be sourced to its own primary literature.
+
+1. **SIAM, Information for Journal Authors** — https://epubs.siam.org/journal-authors . SIAM's discussion of authorial integrity treats inadequate citation of relevant earlier work as a material risk when it could misrepresent who originated the results. Use as an ethical basis for positive credit, not as a mechanical reference quota.
+2. **SIAM, SIADS Instructions for Authors** — https://epubs.siam.org/siads/instructions-for-authors . Describes a clear Introduction explaining new results and why they matter to readers. Journal-specific formatting rules are not imported as universal requirements.
+3. **Oxford Mathematical, Physical and Life Sciences Division, Introduction to your manuscript** — https://www.mpls.ox.ac.uk/training/resources-for-researcher-and-career-development/communication-skills/scientific-writing/introduction . Advises a contextual, problem-driven rationale while avoiding irrelevant history or inflated introductions. Use only for the writing decision, not as a source on a mathematical theorem.
+4. **American Mathematical Society, MathSciNet help** — https://mathscinet.ams.org/mathscinet/help/about.html . Describes mathematical bibliographic coverage, curated authors, reviews, and reference/citation navigation. Database access varies; availability must be recorded.
+5. **Crossref, REST API Documentation** — https://www.crossref.org/documentation/retrieve-metadata/rest-api/ . Describes publication metadata discovery/verification. Deposited bibliographic metadata cannot itself establish theorem content or priority.
+6. **OpenAlex, API Recipes** — https://help.openalex.org/how-to/api-recipes/ . Documents backward, forward, and related-work links for scholarly discovery. A citation neighborhood is a lead, not a theorem proof or exhaustive search.
+7. **arXiv help, References to and in arXiv Documents** — https://info.arxiv.org/help/faq/references.html (also available at https://github.com/arXiv/arxiv-docs/blob/develop/source/help/faq/references.md). Explains version-specific preprint identifiers; check original abstract/source record when preparing actual bibliography metadata.
+
+Search providers and their coverage change over time. Do not assert source completeness, priority, or access just because these procedural references exist. The v1.39 change implements new *instructions*, not a new indexed research database or an automated source-verification service.

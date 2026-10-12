@@ -1,0 +1,25 @@
+version: 1
+id: 152
+title: Case 152 — Global PDE results link the estimate to continuation
+legacy_spec: 152_pde_continuation_route.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: global_route.local_theory_named
+  op: equals
+  value: true
+- path: global_route.continuation_criterion_named
+  op: equals
+  value: true
+- path: global_route.apriori_to_continuation_link
+  op: equals
+  value: true
+good_candidate:
+  global_route:
+    local_theory_named: true
+    continuation_criterion_named: true
+    apriori_to_continuation_link: true
+bad_candidate:
+  global_route:
+    local_theory_named: true
+    continuation_criterion_named: false
+    apriori_to_continuation_link: false

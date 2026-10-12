@@ -1,0 +1,13 @@
+version: 1
+id: 129
+title: Case 129 — reformulation has mathematical gain
+legacy_spec: 129_reformulation_has_mathematical_gain.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: representation_role
+  op: equals
+  value: dictionary_gain_and_cost
+good_candidate:
+  representation_role: dictionary_gain_and_cost
+bad_candidate:
+  representation_role: notation_only

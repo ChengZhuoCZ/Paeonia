@@ -1,0 +1,28 @@
+version: 1
+id: 55
+title: Case 55 — Supplied proof is trusted by default during writing
+legacy_spec: 55_trusted_proof_is_default_for_writing.md
+gate: PROOF-CLOSURE
+assertions:
+- path: proof_correctness_mode
+  op: equals
+  value: trusted_source
+- path: independent_gap_search
+  op: equals
+  value: false
+- path: proof_core_gate_scope
+  op: equals
+  value: source_fidelity
+- path: missing_source_policy
+  op: equals
+  value: SOURCE-MISSING
+good_candidate:
+  proof_correctness_mode: trusted_source
+  independent_gap_search: false
+  proof_core_gate_scope: source_fidelity
+  missing_source_policy: SOURCE-MISSING
+bad_candidate:
+  proof_correctness_mode: verify_proof
+  independent_gap_search: true
+  proof_core_gate_scope: independent_validity
+  missing_source_policy: MATHEMATICAL-CHECK

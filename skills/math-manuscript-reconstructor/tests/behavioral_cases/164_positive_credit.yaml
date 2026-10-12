@@ -1,0 +1,25 @@
+version: 1
+id: 164
+title: Case 164 — Fair credit attaches author names to proven contributions
+legacy_spec: 164_positive_credit.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: origin_credited
+  op: equals
+  value: true
+- path: direct_predecessor_named
+  op: equals
+  value: true
+- path: borrowed_method_credited
+  op: equals
+  value: true
+good_candidate:
+  origin_credited: true
+  direct_predecessor_named: true
+  borrowed_method_credited: true
+  present_delta_explicit: true
+bad_candidate:
+  origin_credited: false
+  direct_predecessor_named: false
+  borrowed_method_credited: false
+  present_delta_explicit: true

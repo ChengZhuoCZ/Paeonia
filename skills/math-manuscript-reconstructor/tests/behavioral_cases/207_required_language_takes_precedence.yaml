@@ -1,0 +1,15 @@
+version: 1
+id: 207
+title: Case 207 — Required language takes precedence
+legacy_spec: 207_required_language_takes_precedence.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: language.explicit_requirement_respected
+  op: equals
+  value: true
+good_candidate:
+  language:
+    explicit_requirement_respected: true
+bad_candidate:
+  language:
+    explicit_requirement_respected: false

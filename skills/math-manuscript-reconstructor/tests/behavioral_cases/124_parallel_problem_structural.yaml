@@ -1,0 +1,28 @@
+version: 1
+id: 124
+title: Case 124 — Parallel problems enlarge the story only through shared structure
+legacy_spec: 124_parallel_problem_structural.md
+gate: MATHEMATICAL-STORY-INTEGRITY
+assertions:
+- path: parallel_problem_used
+  op: equals
+  value: true
+- path: shared_structure_explicit
+  op: equals
+  value: true
+- path: decisive_difference_explicit
+  op: equals
+  value: true
+- path: decorative_parallel
+  op: equals
+  value: false
+good_candidate:
+  parallel_problem_used: true
+  shared_structure_explicit: true
+  decisive_difference_explicit: true
+  decorative_parallel: false
+bad_candidate:
+  parallel_problem_used: true
+  shared_structure_explicit: false
+  decisive_difference_explicit: false
+  decorative_parallel: true

@@ -1,0 +1,23 @@
+version: 1
+id: 75
+title: Case 75 — Strong verified terminology is evidence-sensitive not taboo
+legacy_spec: 75_strong_words_evidence_sensitive.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: strong_word_verified
+  op: equals
+  value: true
+- path: strong_word_used_at_exact_scope
+  op: equals
+  value: true
+- path: euphemized_for_caution
+  op: equals
+  value: false
+good_candidate:
+  strong_word_verified: true
+  strong_word_used_at_exact_scope: true
+  euphemized_for_caution: false
+bad_candidate:
+  strong_word_verified: true
+  strong_word_used_at_exact_scope: false
+  euphemized_for_caution: true

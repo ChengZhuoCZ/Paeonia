@@ -1,0 +1,23 @@
+version: 1
+id: 121
+title: Case 121 — Asymptotic selection is distinguished from exact finite rigidity
+legacy_spec: 121_limit_to_exact_finite.md
+gate: MATHEMATICAL-STORY-INTEGRITY
+assertions:
+- path: story_archetype
+  op: equals
+  value: LIMIT_TO_EXACT_FINITE
+- path: convergence_not_enough
+  op: equals
+  value: true
+- path: finite_gap_named
+  op: equals
+  value: true
+good_candidate:
+  story_archetype: LIMIT_TO_EXACT_FINITE
+  convergence_not_enough: true
+  finite_gap_named: true
+bad_candidate:
+  story_archetype: ASYMPTOTIC_ONLY
+  convergence_not_enough: false
+  finite_gap_named: false

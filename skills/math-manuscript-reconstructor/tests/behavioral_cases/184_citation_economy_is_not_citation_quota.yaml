@@ -1,0 +1,18 @@
+version: 1
+id: 184
+title: Case 184 — Citation economy is not citation quota
+legacy_spec: 184_citation_economy_is_not_citation_quota.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: elementary_proof_retained
+  op: equals
+  value: true
+- path: citation_added_for_quota
+  op: equals
+  value: false
+good_candidate:
+  elementary_proof_retained: true
+  citation_added_for_quota: false
+bad_candidate:
+  elementary_proof_retained: false
+  citation_added_for_quota: true

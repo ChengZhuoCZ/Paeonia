@@ -1,0 +1,25 @@
+version: 1
+id: 169
+title: Case 169 — Local polish does not overwrite authorial Introduction
+legacy_spec: 169_local_scope_preserved.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: external_search_scoped
+  op: equals
+  value: true
+- path: protected_introduction_preserved
+  op: equals
+  value: true
+- path: full_rewrite
+  op: equals
+  value: false
+good_candidate:
+  mode: LOCAL_POLISH
+  external_search_scoped: true
+  protected_introduction_preserved: true
+  full_rewrite: false
+bad_candidate:
+  mode: LOCAL_POLISH
+  external_search_scoped: false
+  protected_introduction_preserved: false
+  full_rewrite: true

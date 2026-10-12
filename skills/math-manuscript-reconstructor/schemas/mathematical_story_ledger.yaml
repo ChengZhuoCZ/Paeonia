@@ -1,0 +1,114 @@
+version: 1
+
+trigger:
+  required: false
+  required_for_scales: [EXPANSIVE, GRAND, GRAND_PLUS]
+  research_depth: COMPACT
+  research_depth_allowed: [COMPACT, TRIANGULATED, DEEP]
+
+hierarchy:
+  focal_theorem: null
+  focal_problem: null
+  parent_program: null
+  canonical_principle: null
+  stop_reason_if_no_higher_level: null
+
+story_archetypes:
+  primary: null
+  secondary: []
+  allowed:
+    - CONTINUUM_TO_FINITE_COMPLEXITY
+    - LIMIT_TO_EXACT_FINITE
+    - LOCAL_TO_GLOBAL
+    - QUALITATIVE_TO_QUANTITATIVE
+    - SYMMETRY_TO_RIGIDITY
+    - COMPACTNESS_TO_STRUCTURE
+    - VARIATIONAL_TO_GEOMETRIC
+    - CRITICAL_OR_ENDPOINT
+    - CLASSIFICATION_PROGRAM
+    - UNIFICATION_OF_REGIMES
+    - UNIVERSALITY_ACROSS_FUNCTIONALS
+    - DISCRETE_CONTINUUM_DUALITY
+    - MODEL_CASE_FOR_BROADER_PROGRAM
+    - OTHER
+
+scale_transitions: []
+# Each item:
+# - from: null
+#   to: null
+#   why_not_routine: null
+#   evidence_anchor: null
+
+structural_tensions: []
+# Each item:
+# - tension: null
+#   mathematical_objects: []
+#   theorem_level_relevance: null
+#   proof_obstruction_anchor: null
+
+story_graph:
+  nodes: []
+  edges: []
+  critical_story_path: []
+# Edge relation examples: SPECIALIZES|RESTRICTS_TO|LIMIT_OF|DISCRETE_ANALOGUE_OF|GLOBALIZES|QUANTIFIES|RIGIDIFIES|EXTENDS_PARAMETER_RANGE|PARALLEL_TO|SUPPLIES_MECHANISM_FOR|OBSTRUCTED_BY
+
+mathematical_ancestry: []
+# Each item:
+# - role: PROGRAM_ORIGIN|CANONICAL_THEOREM|DISCRETE_OR_RESTRICTED_FORMULATION|PARALLEL_PROBLEM|ASYMPTOTIC_OR_LOCAL_FRONTIER|GLOBAL_FRONTIER|RIGIDITY_OR_STABILITY_PRECURSOR|OBSTRUCTION_EVIDENCE
+#   work: null
+#   verified_claim: null
+#   evidence_anchor: null
+#   why_story_needs_it: null
+
+parallel_problems: []
+# Each item:
+# - problem: null
+#   shared_structure: null
+#   known_status: null
+#   decisive_difference: null
+#   relevance_to_present_theorem: null
+#   wording_ceiling: null
+
+program_interpretation:
+  theorem_role: null
+  allowed_roles:
+    - CONFIRMS_CANONICAL_SYMMETRY_IN_RESTRICTED_CLASS
+    - UPGRADES_ASYMPTOTIC_SELECTION_TO_EXACT_RIGIDITY
+    - CLOSES_LOCAL_GLOBAL_GAP
+    - COMPLETES_PARAMETER_OR_DIMENSION_RANGE
+    - PROVIDES_SHARP_STABILITY
+    - IDENTIFIES_NEW_REDUCTION_OR_INVARIANT
+    - LINKS_TWO_PREVIOUSLY_SEPARATE_REGIMES
+    - ESTABLISHES_A_MODEL_CASE_FOR_A_BROADER_PROGRAM
+    - OTHER
+  program_level_consequence: null
+  factuality_ceiling: null
+
+opening:
+  preferred_entry: null
+  allowed_entries: [CANONICAL_PRINCIPLE, PARENT_PROGRAM, STRUCTURAL_TENSION, LIMITING_THEOREM_AND_FINITE_GAP, PARALLEL_EXTREMAL_FAMILY, CLASSIFICATION_PROGRAM, SCIENTIFIC_ORIGIN]
+  first_page_goal: null
+  theorem_entry_anchor: null
+
+proof_story:
+  transition_to_explain: null
+  mechanism_that_crosses_transition: null
+
+scientific_context_relation:
+  mode: MATH_ONLY_MAINLINE
+  allowed: [MATH_LED_WITH_SCIENCE_ORIGIN, INTERLEAVED, MATH_ONLY_MAINLINE, SCIENCE_LED_WITH_MATH_PROGRAM]
+
+story_compression:
+  diagnostic_sentence: null
+  publication_template_forbidden: true
+
+integrity:
+  parent_program_is_mathematically_specific: false
+  primary_archetype_supported: false
+  scale_transition_or_tension_supported: false
+  story_graph_has_nontrivial_critical_path: false
+  ancestry_claims_verified: false
+  parallel_problems_are_structurally_relevant: true
+  theorem_returns_to_parent_program: false
+  no_generic_grandeur: false
+  no_story_inflation_beyond_evidence: false

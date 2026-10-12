@@ -1,0 +1,107 @@
+version: 5
+authority:
+  ordinary_workflow: protocols/04_introduction_abstract.md
+  status: optional_extended_planning_artifact
+  introduction_core_brief_required_first: true
+  do_not_generate_by_default: true
+
+core_brief_reference: null
+module_trigger:
+  reason: null
+  allowed: [MULTI_THEOREM, LITERATURE_HEAVY, LONG_MODEL_CONTEXT, PROGRAM_LEVEL_POSITIONING, OTHER]
+
+reconstruction:
+  mode: from_scratch
+  existing_introduction_use:
+    mathematical_claims: allowed
+    citation_candidates: allowed
+    terminology: allowed
+    prose: forbidden
+    paragraph_sequence: forbidden
+    theorem_latency: forbidden
+  audience_level: specialist_research
+
+scale:
+  value: STANDARD
+  reason: ""
+
+opening:
+  field: ""
+  canonical_object_or_problem: ""
+  opening_function: ""
+  candidate_modes: [CANONICAL_PRINCIPLE, PARENT_PROGRAM, CANONICAL_PROBLEM, LANDMARK_RESULT, CONJECTURE, STRUCTURAL_TENSION, LIMITING_THEOREM_AND_FINITE_GAP, PARALLEL_EXTREMAL_FAMILY, PHENOMENON]
+  research_audience_definition_budget: minimal
+
+mathematical_story:
+  ledger_required_for: TRIGGERED_PARENT_PROGRAM_OR_SCALE_TRANSITION_ONLY
+  parent_program: ""
+  canonical_principle: ""
+  primary_archetype: ""
+  scale_transition: ""
+  program_return_required: conditional
+
+classical_axis:
+  landmarks: []
+
+conjectural_axis:
+  conjecture_or_problem: ""
+  verified_status: ""
+  present_relation: ""
+
+modern_axis:
+  strongest_prior_results: []
+
+focal_problem:
+  exact_question: ""
+  normalization: ""
+
+problem_tension:
+  desired_statement: ""
+  natural_route: ""
+  required_property_of_route: ""
+  failure: ""
+  structural_obstruction: ""
+  replacement_viewpoint: ""
+  payoff: ""
+
+result_hierarchy:
+  motivating_conjecture_or_problem: ""
+  first_structural_result: ""
+  quantitative_engine: ""
+  main_global_result: ""
+  rigidity_or_equality: ""
+  corollaries_or_extensions: []
+
+literature_landscape: []
+adjacent_problem_bridges: []
+
+re_expansion:
+  conceptual_consequence: ""
+  methodological_consequence: ""
+  broader_problem: ""
+
+proof_story:
+  mechanism_chain: []
+  causal_links_required: true
+  section_itinerary_needed: false
+
+organization_paragraph:
+  needed: false
+  reason: ""
+
+prose_realization:
+  paragraph_plan_required: conditional_on_multi_thread_complexity
+  claim_centered_literature: true
+  administrative_transition_minimization: true
+  first_last_sentence_continuity_pass: true
+  paragraph_detachability_test: true
+  cold_read_required: true
+
+editorial_positioning:
+  narrative_ambition_ledger_required: false
+  strongest_defensible_position: null
+  verified_strong_claims_must_surface: true
+  amplification_allowed: [BROADEN_CONTEXT, SHARPEN_CONTRAST, CLARIFY_OBSTRUCTION, STRENGTHEN_CONSEQUENCE, EXPOSE_METHOD_AFTERLIFE]
+  factuality_ceiling_required: true
+  editorial_impact_gate_required: false
+  mathematical_story_integrity_gate_required_for_expansive_plus: conditional

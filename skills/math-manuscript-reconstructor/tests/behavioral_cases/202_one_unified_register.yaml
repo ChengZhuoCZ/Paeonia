@@ -1,0 +1,15 @@
+version: 1
+id: 202
+title: Case 202 — One unified register
+legacy_spec: 202_one_unified_register.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: voice.single_register
+  op: equals
+  value: true
+good_candidate:
+  voice:
+    single_register: true
+bad_candidate:
+  voice:
+    single_register: false

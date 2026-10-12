@@ -1,0 +1,139 @@
+version: 5
+
+authority:
+  ordinary_workflow: protocols/04_introduction_abstract.md
+  status: optional_extended_planning_artifact
+  introduction_core_brief_required_first: true
+  do_not_generate_by_default: true
+
+core_brief_reference: null
+module_trigger:
+  reason: null
+  allowed: [MULTI_THEOREM, LITERATURE_HEAVY, LONG_MODEL_CONTEXT, PROGRAM_LEVEL_POSITIONING, OTHER]
+
+reconstruction:
+  mode: from_scratch
+  existing_introduction_use:
+    mathematical_claims: allowed
+    citation_candidates: allowed
+    terminology: allowed
+    prose: forbidden
+    paragraph_sequence: forbidden
+    theorem_latency: forbidden
+  audience_level: specialist_research
+
+scale:
+  value: STANDARD
+  allowed: [STANDARD, EXPANSIVE, GRAND, GRAND_PLUS]
+  reason: null
+
+opening:
+  field: null
+  canonical_object_or_problem: null
+  opening_function: null
+  candidate_modes: [CANONICAL_PRINCIPLE, PARENT_PROGRAM, CANONICAL_PROBLEM, LANDMARK_RESULT, CONJECTURE, STRUCTURAL_TENSION, LIMITING_THEOREM_AND_FINITE_GAP, PARALLEL_EXTREMAL_FAMILY, PHENOMENON, PHYSICAL_ORIGIN, SCIENTIFIC_MODEL, DISCRETE_CONTINUUM_TENSION]
+  research_audience_definition_budget: minimal
+  scientific_context_depth_is_independent: true
+
+mathematical_story:
+  ledger_required_for: TRIGGERED_PARENT_PROGRAM_OR_SCALE_TRANSITION_ONLY
+  parent_program: null
+  canonical_principle: null
+  primary_archetype: null
+  scale_transition: null
+  program_return_required: conditional
+
+classical_axis:
+  landmarks: []
+
+conjectural_axis:
+  conjecture_or_problem: null
+  verified_status: null
+  present_relation: null
+
+modern_axis:
+  strongest_prior_results: []
+
+focal_problem:
+  exact_question: null
+  normalization: null
+
+problem_tension:
+  desired_statement: null
+  natural_route: null
+  required_property_of_route: null
+  failure: null
+  structural_obstruction: null
+  replacement_viewpoint: null
+  payoff: null
+
+result_hierarchy:
+  motivating_conjecture_or_problem: null
+  first_structural_result: null
+  quantitative_engine: null
+  main_global_result: null
+  rigidity_or_equality: null
+  corollaries_or_extensions: []
+
+literature_landscape: []
+# Each item:
+# - work: null
+#   verified_claim: null
+#   role: ORIGIN|CLASSICAL_LANDMARK|CONJECTURE|BEST_PRIOR_RESULT|ADJACENT_BREAKTHROUGH|TECHNICAL_PRECURSOR|NUMERICAL_EVIDENCE|LOCAL_RESULT|GLOBAL_RESULT|FAILED_OR_INSUFFICIENT_ROUTE
+#   why_here: null
+#   cluster_candidate: null
+
+adjacent_problem_bridges: []
+# Each item:
+# - adjacent_problem: null
+#   shared_structure: null
+#   known_result: null
+#   methodological_relation: null
+#   decisive_difference: null
+#   relevance_to_current_work: null
+#   return_to_main_thread: null
+
+result_repetition_policy:
+  orientation_summary: allowed
+  formal_statement: allowed
+  conceptual_interpretation: allowed
+  literal_restatement: forbidden
+
+re_expansion:
+  conceptual_consequence: null
+  methodological_consequence: null
+  broader_problem: null
+
+proof_story:
+  mechanism_chain: []
+  causal_links_required: true
+  section_itinerary_needed: false
+
+organization_paragraph:
+  needed: false
+  reason: null
+
+prose_realization:
+  paragraph_plan_required: conditional_on_multi_thread_complexity
+  claim_centered_literature: true
+  administrative_transition_minimization: true
+  first_last_sentence_continuity_pass: true
+  paragraph_detachability_test: true
+  cold_read_required: true
+
+integrity:
+  all_novelty_claims_verified: false
+  all_priority_claims_verified: false
+  all_intro_claims_mapped_to_math_or_literature: false
+  source_intro_sequence_not_reused: false
+
+editorial_positioning:
+  narrative_ambition_ledger_required: false
+  strongest_defensible_position: null
+  verified_strong_claims_must_surface: true
+  amplification_allowed: [BROADEN_CONTEXT, SHARPEN_CONTRAST, CLARIFY_OBSTRUCTION, STRENGTHEN_CONSEQUENCE, EXPOSE_METHOD_AFTERLIFE]
+  factuality_ceiling_required: true
+  editorial_impact_gate_required: false
+  scientific_context_ledger_required_when_triggered: true
+  contextual_grandeur_check_required_for_grand: conditional
+  mathematical_story_integrity_gate_required_for_expansive_plus: conditional

@@ -1,0 +1,27 @@
+version: 1
+id: 95
+title: Case 95 — Related families use semantic subscripts before font switching
+legacy_spec: 95_gui_family_subscripts.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: semantic_subscripts_used
+  op: equals
+  value: true
+- path: font_switch_family
+  op: equals
+  value: false
+good_candidate:
+  semantic_subscripts_used: true
+  font_switch_family: false
+  choice:
+  - P_i
+  - mu_j
+  - h_0
+  - h_1
+bad_candidate:
+  semantic_subscripts_used: false
+  font_switch_family: true
+  choice:
+  - P
+  - \mathcal P
+  - \mathscr P

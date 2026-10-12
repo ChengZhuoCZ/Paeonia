@@ -1,0 +1,39 @@
+version: 1
+artifact: ProofCitationReplacementDossier
+mode: RECONSTRUCT          # RECONSTRUCT|LOCAL_POLISH|READ_ONLY
+editable_proof_scope: null
+candidate_scan:
+  proof_graph_scanned: false
+  status: NOT_STARTED     # COMPLETE_WITHIN_SCOPE|PARTIAL|NOT_STARTED
+  notes: []
+entries: []               # only substantive candidates, not routine lines
+# Suggested entry fields:
+# - id: CLAIM-STABILITY
+#   manuscript: {location: null, full_claim: null, downstream_uses: []}
+#   source:
+#     bibkey: null
+#     url: null
+#     version: null         # exact journal edition or preprint version
+#     result_kind: null     # Theorem|Lemma|Proposition|Corollary|NamedResult|Unnumbered
+#     result_number: null   # real number, never guessed; null for unnumbered
+#     result_name: null     # specific name/statement description for unnumbered results
+#     result_locator: null  # page and uniquely identifying statement if unnumbered
+#     metadata_checked: false
+#     locator_checked: false
+#     primary_statement_checked: false
+#   application:
+#     hypotheses_map: []   # source_hypothesis, local_fact, local_locator
+#     no_external_hypotheses: false
+#     conclusion_map: null # precise implication to local full_claim
+#     scope_uniformity_equality_checked: false
+#     independent_dependency_checked: false
+#     adaptations: []
+#     retained_steps: []
+#   decision:
+#     status: PROPOSED     # APPLIED_DIRECT|APPLIED_ADAPTED|APPLIED_PARTIAL|PROPOSED|
+#                          # RETAINED_UNVERIFIED|RETAINED_INAPPLICABLE|RETAINED_ORIGINAL
+#     replacement_location: null
+#     exact_citation_written: false
+#     downstream_checked: false
+#     protected_scope_checked: false
+#     remarks: null

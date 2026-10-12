@@ -1,0 +1,140 @@
+{
+  "median_paragraphs_per_proof": 6.0,
+  "numeric_targets_forbidden": true,
+  "one_paragraph_proof_fraction": 0.077,
+  "opening_classes": {
+    "consequence": 59,
+    "contrast_bridge": 33,
+    "direct_action": 78,
+    "goal_or_reduction": 64,
+    "object_or_other": 5161,
+    "premise": 169,
+    "recall_or_observe": 49,
+    "return_or_next": 69
+  },
+  "paragraph_sentences_mean": 2.2,
+  "paragraph_words_mean": 36.78,
+  "paragraph_words_median": 26.0,
+  "paragraph_words_p25": 16.0,
+  "paragraph_words_p75": 46.0,
+  "paragraphs": 5682,
+  "paragraphs_per_proof_mean": 9.31,
+  "proof_sequences": 610,
+  "proofs": 610,
+  "role_counts": {
+    "BRIDGE": 61,
+    "CLOSURE": 147,
+    "DELICATE": 493,
+    "ROUTINE": 4743,
+    "STRUCTURAL": 193,
+    "SURPRISING": 45
+  },
+  "role_sentence_means": {
+    "BRIDGE": 3.44,
+    "CLOSURE": 3.59,
+    "DELICATE": 4.12,
+    "ROUTINE": 1.9,
+    "STRUCTURAL": 2.94,
+    "SURPRISING": 3.07
+  },
+  "role_word_means": {
+    "BRIDGE": 65.36,
+    "CLOSURE": 60.2,
+    "DELICATE": 79.9,
+    "ROUTINE": 30.19,
+    "STRUCTURAL": 56.25,
+    "SURPRISING": 60.02
+  },
+  "role_word_medians": {
+    "BRIDGE": 49,
+    "CLOSURE": 45,
+    "DELICATE": 74,
+    "ROUTINE": 23,
+    "STRUCTURAL": 41,
+    "SURPRISING": 58
+  },
+  "source_phrases_emitted": false,
+  "stores_source_paragraphs": false,
+  "top_role_transitions": [
+    {
+      "count": 3657,
+      "from": "ROUTINE",
+      "to": "ROUTINE"
+    },
+    {
+      "count": 314,
+      "from": "DELICATE",
+      "to": "ROUTINE"
+    },
+    {
+      "count": 310,
+      "from": "ROUTINE",
+      "to": "DELICATE"
+    },
+    {
+      "count": 140,
+      "from": "STRUCTURAL",
+      "to": "ROUTINE"
+    },
+    {
+      "count": 124,
+      "from": "ROUTINE",
+      "to": "STRUCTURAL"
+    },
+    {
+      "count": 111,
+      "from": "ROUTINE",
+      "to": "CLOSURE"
+    },
+    {
+      "count": 85,
+      "from": "CLOSURE",
+      "to": "ROUTINE"
+    },
+    {
+      "count": 76,
+      "from": "DELICATE",
+      "to": "DELICATE"
+    },
+    {
+      "count": 52,
+      "from": "BRIDGE",
+      "to": "ROUTINE"
+    },
+    {
+      "count": 46,
+      "from": "ROUTINE",
+      "to": "BRIDGE"
+    },
+    {
+      "count": 31,
+      "from": "SURPRISING",
+      "to": "ROUTINE"
+    },
+    {
+      "count": 27,
+      "from": "ROUTINE",
+      "to": "SURPRISING"
+    },
+    {
+      "count": 18,
+      "from": "STRUCTURAL",
+      "to": "DELICATE"
+    },
+    {
+      "count": 11,
+      "from": "CLOSURE",
+      "to": "CLOSURE"
+    },
+    {
+      "count": 11,
+      "from": "CLOSURE",
+      "to": "DELICATE"
+    },
+    {
+      "count": 10,
+      "from": "DELICATE",
+      "to": "STRUCTURAL"
+    }
+  ]
+}

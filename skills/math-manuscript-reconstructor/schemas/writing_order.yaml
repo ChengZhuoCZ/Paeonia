@@ -1,0 +1,7 @@
+version: 1
+artifact: WritingOrder
+goal: null
+ordered_units: []
+first_draft_unit: null
+frontmatter_deferred_until_proof_closure: true
+notes: []

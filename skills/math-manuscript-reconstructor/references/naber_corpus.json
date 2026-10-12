@@ -1,0 +1,291 @@
+{
+  "corpus_version": 1,
+  "method": "qualitative role-conditioned close reading",
+  "paper_count": 10,
+  "research_papers": 9,
+  "lecture_notes": 1,
+  "full_pdfs_downloaded": true,
+  "stored_source_sentences": false,
+  "full_proofs_audited": false,
+  "heldout_check": "same-agent qualitative check; candidates recorded before close reading held-out windows",
+  "independence_limit": "varifold and harmonic-map papers share methods; not independent stylistic samples",
+  "papers": [
+    {
+      "id": "1103.1819",
+      "url": "https://arxiv.org/pdf/1103.1819",
+      "file": "1103.1819.pdf",
+      "bytes": 186117,
+      "sha256": "c1ed600913a6eaa9bb869c349cea39147d5e6eca65e7891f45002301aeff02f5",
+      "title": "Lower Bounds on Ricci Curvature and Quantitative Behavior of Singular Sets",
+      "authors": [
+        "Jeff Cheeger",
+        "Aaron Naber"
+      ],
+      "arxiv_version": "1103.1819v4",
+      "versioned_pdf_url": "https://arxiv.org/pdf/1103.1819v4",
+      "abstract_url": "https://arxiv.org/abs/1103.1819v4",
+      "role": "discovery",
+      "pdf_pages": 18,
+      "read_pdf_windows": [
+        [
+          7,
+          9
+        ]
+      ],
+      "read_sections": "Section 2",
+      "reading_scope": "selected introduction/outline windows; no full-proof audit",
+      "downloaded_on": "2026-09-08",
+      "pdf_in_companion_archive": "pdfs/1103.1819.pdf"
+    },
+    {
+      "id": "1406.6534",
+      "url": "https://arxiv.org/pdf/1406.6534",
+      "file": "1406.6534.pdf",
+      "bytes": 565232,
+      "sha256": "0ffa6f2917a4679bfeab207e6050739c80e26f30f62a715d3bab8e071ed8d4d1",
+      "title": "Regularity of Einstein Manifolds and the Codimension 4 Conjecture",
+      "authors": [
+        "Jeff Cheeger",
+        "Aaron Naber"
+      ],
+      "arxiv_version": "1406.6534v10",
+      "versioned_pdf_url": "https://arxiv.org/pdf/1406.6534v10",
+      "abstract_url": "https://arxiv.org/abs/1406.6534v10",
+      "role": "discovery",
+      "pdf_pages": 63,
+      "read_pdf_windows": [
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "read_sections": "Introduction and Section 1.1",
+      "reading_scope": "selected introduction/outline windows; no full-proof audit",
+      "downloaded_on": "2026-09-08",
+      "pdf_in_companion_archive": "pdfs/1406.6534.pdf"
+    },
+    {
+      "id": "1504.02043",
+      "url": "https://arxiv.org/pdf/1504.02043",
+      "file": "1504.02043.pdf",
+      "bytes": 722618,
+      "sha256": "859bfa4d08c5db95f997b65b16f5c801f1d3536ee4f95469992989b2549c4371",
+      "title": "Rectifiable-Reifenberg and the Regularity of Stationary and Minimizing Harmonic Maps",
+      "authors": [
+        "Aaron Naber",
+        "Daniele Valtorta"
+      ],
+      "arxiv_version": "1504.02043v5",
+      "versioned_pdf_url": "https://arxiv.org/pdf/1504.02043v5",
+      "abstract_url": "https://arxiv.org/abs/1504.02043v5",
+      "role": "discovery",
+      "pdf_pages": 82,
+      "read_pdf_windows": [
+        [
+          5,
+          6
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "read_sections": "Sections 1.1 and 1.4",
+      "reading_scope": "selected introduction/outline windows; no full-proof audit",
+      "downloaded_on": "2026-09-08",
+      "pdf_in_companion_archive": "pdfs/1504.02043.pdf"
+    },
+    {
+      "id": "1505.03428",
+      "url": "https://arxiv.org/pdf/1505.03428",
+      "file": "1505.03428.pdf",
+      "bytes": 708955,
+      "sha256": "8e51f5d8394401ffe649588d8ea6d09864e3d5b1a38a97f643a362043743490e",
+      "title": "The Singular Structure and Regularity of Stationary Varifolds",
+      "authors": [
+        "Aaron Naber",
+        "Daniele Valtorta"
+      ],
+      "arxiv_version": "1505.03428v4",
+      "versioned_pdf_url": "https://arxiv.org/pdf/1505.03428v4",
+      "abstract_url": "https://arxiv.org/abs/1505.03428v4",
+      "role": "heldout_same_method_family",
+      "pdf_pages": 74,
+      "read_pdf_windows": [
+        [
+          8,
+          11
+        ]
+      ],
+      "read_sections": "Section 1.3",
+      "reading_scope": "selected introduction/outline windows; no full-proof audit",
+      "downloaded_on": "2026-09-08",
+      "pdf_in_companion_archive": "pdfs/1505.03428.pdf"
+    },
+    {
+      "id": "1605.05583",
+      "url": "https://arxiv.org/pdf/1605.05583",
+      "file": "1605.05583.pdf",
+      "bytes": 879984,
+      "sha256": "64f1836cd67ee71ec1f8dc2bf1f5d5993955bc07ce6fb808cf46e349358a77a1",
+      "title": "L2 Curvature Bounds on Manifolds with Bounded Ricci Curvature",
+      "authors": [
+        "Wenshuai Jiang",
+        "Aaron Naber"
+      ],
+      "arxiv_version": "1605.05583v2",
+      "versioned_pdf_url": "https://arxiv.org/pdf/1605.05583v2",
+      "abstract_url": "https://arxiv.org/abs/1605.05583v2",
+      "role": "discovery",
+      "pdf_pages": 98,
+      "read_pdf_windows": [
+        [
+          6,
+          12
+        ]
+      ],
+      "read_sections": "Section 1.3",
+      "reading_scope": "selected introduction/outline windows; no full-proof audit",
+      "downloaded_on": "2026-09-08",
+      "pdf_in_companion_archive": "pdfs/1605.05583.pdf"
+    },
+    {
+      "id": "1610.02898",
+      "url": "https://arxiv.org/pdf/1610.02898",
+      "file": "1610.02898.pdf",
+      "bytes": 448025,
+      "sha256": "2547b487aaf251b2736bc1475177ab8f565e2d1a4d15d1927b8dba84f588ff72",
+      "title": "Energy Identity for Stationary Yang Mills",
+      "authors": [
+        "Aaron Naber",
+        "Daniele Valtorta"
+      ],
+      "arxiv_version": "1610.02898v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/1610.02898v1",
+      "abstract_url": "https://arxiv.org/abs/1610.02898v1",
+      "role": "discovery",
+      "pdf_pages": 51,
+      "read_pdf_windows": [
+        [
+          5,
+          8
+        ]
+      ],
+      "read_sections": "Section 1.3",
+      "reading_scope": "selected introduction/outline windows; no full-proof audit",
+      "downloaded_on": "2026-09-08",
+      "pdf_in_companion_archive": "pdfs/1610.02898.pdf"
+    },
+    {
+      "id": "1306.6512",
+      "url": "https://arxiv.org/pdf/1306.6512",
+      "file": "1306.6512.pdf",
+      "bytes": 1001872,
+      "sha256": "92869597819a226362b5fa3eeccdbe5843f909da5bea9b62e9ee45c7473b09d0",
+      "title": "Characterizations of Bounded Ricci Curvature on Smooth and Nonsmooth Spaces",
+      "authors": [
+        "Aaron Naber"
+      ],
+      "arxiv_version": "1306.6512v4",
+      "versioned_pdf_url": "https://arxiv.org/pdf/1306.6512v4",
+      "abstract_url": "https://arxiv.org/abs/1306.6512v4",
+      "role": "sole_author_cross_field_check",
+      "pdf_pages": 119,
+      "read_pdf_windows": [
+        [
+          5,
+          7
+        ]
+      ],
+      "read_sections": "Sections 1 and 2.1",
+      "reading_scope": "selected introduction/outline windows; no full-proof audit",
+      "downloaded_on": "2026-09-08",
+      "pdf_in_companion_archive": "pdfs/1306.6512.pdf"
+    },
+    {
+      "id": "1612.08052",
+      "url": "https://arxiv.org/pdf/1612.08052",
+      "file": "1612.08052.pdf",
+      "bytes": 706492,
+      "sha256": "bc7ff7aba1bbcdc4ff6ae236205beb7d4794249117ceb781105c83af9705de29",
+      "title": "Quantitative Reifenberg Theorem for Measures",
+      "authors": [
+        "Nick Edelen",
+        "Aaron Naber",
+        "Daniele Valtorta"
+      ],
+      "arxiv_version": "1612.08052v3",
+      "versioned_pdf_url": "https://arxiv.org/pdf/1612.08052v3",
+      "abstract_url": "https://arxiv.org/abs/1612.08052v3",
+      "role": "discovery",
+      "pdf_pages": 72,
+      "read_pdf_windows": [
+        [
+          14,
+          16
+        ]
+      ],
+      "read_sections": "Section 2.5",
+      "reading_scope": "selected introduction/outline windows; no full-proof audit",
+      "downloaded_on": "2026-09-08",
+      "pdf_in_companion_archive": "pdfs/1612.08052.pdf"
+    },
+    {
+      "id": "1812.07564",
+      "url": "https://arxiv.org/pdf/1812.07564",
+      "file": "1812.07564.pdf",
+      "bytes": 583185,
+      "sha256": "3cb068b31068ec4580cef193e41ec428f88ff945f8123809bd4b61e2a326cfe9",
+      "title": "Lecture Notes on Rectifiable Reifenberg for Measures",
+      "authors": [
+        "Aaron Naber"
+      ],
+      "arxiv_version": "1812.07564v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/1812.07564v1",
+      "abstract_url": "https://arxiv.org/abs/1812.07564v1",
+      "role": "pedagogical_supplement",
+      "pdf_pages": 56,
+      "read_pdf_windows": [
+        [
+          29,
+          30
+        ]
+      ],
+      "read_sections": "Lecture 3 / Section 9",
+      "reading_scope": "selected introduction/outline windows; no full-proof audit",
+      "downloaded_on": "2026-09-08",
+      "pdf_in_companion_archive": "pdfs/1812.07564.pdf"
+    },
+    {
+      "id": "1403.4176",
+      "url": "https://arxiv.org/pdf/1403.4176",
+      "file": "1403.4176.pdf",
+      "bytes": 461428,
+      "sha256": "840ed0fc6fe07106cb826e646a2cadb3093a192ba3f0a0e83217e852694e5b35",
+      "title": "Volume Estimates on the Critical Sets of Solutions to Elliptic PDEs",
+      "authors": [
+        "Aaron Naber",
+        "Daniele Valtorta"
+      ],
+      "arxiv_version": "1403.4176v2",
+      "versioned_pdf_url": "https://arxiv.org/pdf/1403.4176v2",
+      "abstract_url": "https://arxiv.org/abs/1403.4176v2",
+      "role": "heldout_different_application",
+      "pdf_pages": 58,
+      "read_pdf_windows": [
+        [
+          9,
+          11
+        ]
+      ],
+      "read_sections": "Section 2.4 and Section 3 opening",
+      "reading_scope": "selected introduction/outline windows; no full-proof audit",
+      "downloaded_on": "2026-09-08",
+      "pdf_in_companion_archive": "pdfs/1403.4176.pdf"
+    }
+  ]
+}

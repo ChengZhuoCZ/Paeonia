@@ -1,0 +1,27 @@
+version: 1
+artifact: ExecutionPlan
+workflow: null
+writing_mode: null
+editable_scope: []
+protected_scope: []
+required_states: []
+conditional_states: []
+skipped_states: []
+artifact_inputs: []
+artifact_outputs: []
+reused_artifacts: []
+applicable_gates: []
+blocker_owners: {}
+critical_path: []
+director_advice_review:
+  accepted: []
+  rejected: []
+release_condition: null
+
+skip_record_schema:
+  state: null
+  reason: null
+  prerequisites_satisfied_elsewhere: []
+  risk_if_wrong: null
+  artifacts_not_produced: []
+  gates_that_become_unavailable: []

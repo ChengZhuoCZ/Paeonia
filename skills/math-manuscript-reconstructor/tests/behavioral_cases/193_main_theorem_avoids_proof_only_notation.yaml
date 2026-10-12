@@ -1,0 +1,13 @@
+version: 1
+id: 193
+title: Case 193 — Main theorem avoids proof-only notation
+legacy_spec: 193_main_theorem_avoids_proof_only_notation.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: theorem_auxiliary_baggage_removed
+  op: equals
+  value: true
+good_candidate:
+  theorem_auxiliary_baggage_removed: true
+bad_candidate:
+  theorem_auxiliary_baggage_removed: false

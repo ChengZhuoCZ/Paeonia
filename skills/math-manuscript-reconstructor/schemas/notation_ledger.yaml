@@ -1,0 +1,101 @@
+version: 7
+status: draft
+policy:
+  planned_before_proof_core: true
+  source_notation_is_binding: false
+  recurring_symbol_uniqueness: true
+  local_dummy_variables_excluded_from_duplicate_audit: true
+  numeric_or_style_corpus_matching: forbidden
+  plain_symbol_typography: true
+  font_only_semantic_distinctions: forbidden
+  notation_style_prior: changfeng_gui_corpus_soft_prior
+  notation_style_prior_is_soft: true
+  notation_style_prior_never_overrides_collision_or_user_convention: true
+  notation_style_prior_version: empirical_v2
+duplicate_symbol_policy:
+  audit_domain: canonical_objects
+  uniqueness_rule: one_visible_symbol_one_recurring_object_across_manuscript
+  exact_visible_symbol_match: true
+  same_symbol_same_object_allowed: true
+  local_dummy_variables_excluded: true
+typography_policy:
+  plain_alphabet_default: true
+  mathscr: forbidden
+  mathfrak: forbidden
+  mathcal: restrained_semantic_only
+  mathbb: standard_only
+  boldface: semantic_only
+  mathcal_exceptions: []
+  mathbb_allowlist:
+  - \mathbb R
+  - \mathbb C
+  - \mathbb Z
+  - \mathbb N
+  - \mathbb Q
+  - \mathbb P
+  - \mathbb E
+  - \mathbb S
+  - \mathbb D
+  explicit_user_overrides: []
+  mathcal_semantic_roles:
+  - named_set
+  - function_space
+  - admissible_class
+  - nodal_set
+  - critical_set
+  - standard_named_family
+notation_selection:
+  stage: DRAFT  # DRAFT or LOCKED
+  field_context:
+    primary_field: null  # e.g. spectral_variational; use actual paper's field
+    adjacent_fields: []
+    conventions_checked: []  # notes or verifiable references when material
+  protected_symbols: []  # [{object_id: ..., symbol: ...}]
+  decisions: []  # selectively record main or contested recurring objects
+  # One decision: {object_id, chosen_symbol, priority_basis, rationale,
+  #                alternatives_considered: [{symbol, reason_rejected}], representative_formula}
+  external_symbol_crosswalk: []
+  # Each: {source_version, exact_result_locator, symbol_map:
+  #        [{source_symbol, manuscript_symbol, object_id}], logical_coverage_checked}
+  review:
+    mathematical_semantics: pending
+    theorem_readability: pending
+    field_conventions: pending
+    scope_protection: pending
+    source_translation: pending
+canonical_objects: []
+local_global_pairs: []
+normalization_map: []
+index_conventions: []
+constant_families: []
+operator_conventions: []
+measure_and_transform_conventions: []
+duplicate_symbol_review:
+  duplicate_symbols: []
+  object_definition_inconsistencies: []
+  font_only_distinctions: []
+  decorative_alphabet_violations: []
+  other_notation_issues: []
+final_checks:
+  theorem_proof_alignment: pending
+  normalization_alignment: pending
+  local_global_distinction: pending
+  constant_dependencies_visible: pending
+  duplicate_symbol_integrity: pending
+  plain_typography_integrity: pending
+  internal_semantic_ids_removed: pending
+issues: []
+notation_style_prior:
+  profile: profiles/changfeng_gui_notation_prior.md
+  evidence_report: profiles/changfeng_gui_notation_distillation_report.md
+  priority: after_collision_user_domain_and_source_conventions
+  preferred_alphabet: plain_roman_greek_when_choice_is_open
+  family_strategy: base_symbol_plus_semantic_index_or_modifier
+  mathcal_strategy: genuine_named_sets_classes_spaces_only
+  exact_symbol_copying: forbidden
+  corpus_manifest: profiles/changfeng_gui_notation_corpus.yaml
+  version: empirical_v2
+  geometry_strategy: generic_Omega_then_semantic_concrete_initial_when_helpful
+  spectral_strategy: field_standard_then_stable_family_distinction
+  reduction_strategy: simplify_active_coordinate_and_repeated_derived_quantities
+  typography_note: corpus_is_mixed_user_plain_typography_override_is_stricter

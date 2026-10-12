@@ -1,0 +1,31 @@
+# Fill only when scientific/physical context is actually triggered.
+trigger:
+  detected: false
+  reason: null
+  context_depth: NONE
+  research_breadth: NONE
+scientific_domains: []
+phenomena_or_observables: []
+model_lineage: []
+model_to_math_map: []
+source_dossier: []
+historical_scientific_axis: []
+regimes_and_scalings: []
+introduction_use:
+  preferred_opening_mode: null
+  paragraph_roles: []
+  multi_paragraph_context_justified: false
+  return_anchor_to_mathematics: null
+theorem_interpretation:
+  mathematical_statement: null
+  scientific_interpretation: null
+  evidence_anchor: null
+  wording_ceiling: null
+  forbidden_overinterpretation: null
+factuality_ceilings: []
+integrity:
+  context_depth_supported: false
+  nontrivial_scientific_claims_verified: false
+  model_to_math_bridge_complete: false
+  decorative_context_removed: false
+  theorem_interpretation_calibrated: false

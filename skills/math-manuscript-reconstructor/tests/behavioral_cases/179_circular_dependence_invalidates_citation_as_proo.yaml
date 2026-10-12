@@ -1,0 +1,23 @@
+version: 1
+id: 179
+title: Case 179 — Circular dependence invalidates citation as proof
+legacy_spec: 179_circular_dependence_invalidates_citation_as_proo.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: citation_dependency_acyclic
+  op: equals
+  value: false
+- path: proof_retained
+  op: equals
+  value: true
+- path: citation_applied
+  op: equals
+  value: false
+good_candidate:
+  citation_dependency_acyclic: false
+  proof_retained: true
+  citation_applied: false
+bad_candidate:
+  citation_dependency_acyclic: false
+  proof_retained: false
+  citation_applied: true

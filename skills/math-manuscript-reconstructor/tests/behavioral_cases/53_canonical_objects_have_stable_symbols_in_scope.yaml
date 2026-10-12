@@ -1,0 +1,18 @@
+version: 1
+id: 53
+title: Case 53 — Canonical objects have stable symbols in scope
+legacy_spec: 53_canonical_objects_have_stable_symbols_in_scope.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: same_object_symbol_stable
+  op: equals
+  value: true
+- path: overlapping_symbol_collision
+  op: equals
+  value: false
+good_candidate:
+  same_object_symbol_stable: true
+  overlapping_symbol_collision: false
+bad_candidate:
+  same_object_symbol_stable: false
+  overlapping_symbol_collision: true

@@ -1,0 +1,11 @@
+{
+  "version": "1.22.0",
+  "states": 29,
+  "artifacts": 43,
+  "gates": 22,
+  "legacy_regressions": 138,
+  "behavioral_fixtures": 138,
+  "errors": [],
+  "warnings": [],
+  "status": "PASS"
+}

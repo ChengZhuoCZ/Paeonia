@@ -1,0 +1,23 @@
+version: 1
+id: 172
+title: Case 172 — Author style corpus is not an automatic novelty source
+legacy_spec: 172_style_citation_separation.md
+gate: STYLE-SOURCE-INDEPENDENCE
+assertions:
+- path: style_evidence_separate
+  op: equals
+  value: true
+- path: scholarship_verified_under_protocol07
+  op: equals
+  value: true
+- path: style_corpus_auto_citation
+  op: equals
+  value: false
+good_candidate:
+  style_evidence_separate: true
+  scholarship_verified_under_protocol07: true
+  style_corpus_auto_citation: false
+bad_candidate:
+  style_evidence_separate: false
+  scholarship_verified_under_protocol07: false
+  style_corpus_auto_citation: true

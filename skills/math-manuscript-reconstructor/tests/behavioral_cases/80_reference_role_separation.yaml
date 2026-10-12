@@ -1,0 +1,24 @@
+version: 1
+id: 80
+title: Case 80 — Textbook microstyle and research Introduction macro narrative are
+  separated
+legacy_spec: 80_reference_role_separation.md
+gate: CONDITIONAL-STYLE-FIDELITY
+assertions:
+- path: markdown_role
+  op: equals
+  value: microstyle
+- path: research_intro_role
+  op: equals
+  value: macro_narrative
+- path: textbook_priority_rhetoric
+  op: equals
+  value: false
+good_candidate:
+  markdown_role: microstyle
+  research_intro_role: macro_narrative
+  textbook_priority_rhetoric: false
+bad_candidate:
+  markdown_role: macro_narrative
+  research_intro_role: microstyle
+  textbook_priority_rhetoric: true

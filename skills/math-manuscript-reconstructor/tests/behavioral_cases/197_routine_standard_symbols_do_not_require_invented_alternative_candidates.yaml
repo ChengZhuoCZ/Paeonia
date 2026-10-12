@@ -1,0 +1,13 @@
+version: 1
+id: 197
+title: Case 197 — Routine standard symbols do not require invented alternative candidates
+legacy_spec: 197_routine_standard_symbols_do_not_require_invented_alternative_candidates.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: forced_alternatives
+  op: equals
+  value: false
+good_candidate:
+  forced_alternatives: false
+bad_candidate:
+  forced_alternatives: true

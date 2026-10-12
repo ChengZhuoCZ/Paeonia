@@ -1,0 +1,13 @@
+version: 1
+id: 7
+title: "Regression 07 \u2014 Honor explicit local-edit scope"
+legacy_spec: 07_mode_mismatch.md
+gate: PROOF-CORE-ORDER
+assertions:
+- path: result
+  op: equals
+  value: HONOR_REQUESTED_LOCAL_SCOPE
+good_candidate:
+  result: HONOR_REQUESTED_LOCAL_SCOPE
+bad_candidate:
+  result: MODE_MISMATCH

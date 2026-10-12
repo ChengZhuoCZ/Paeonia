@@ -1,0 +1,40 @@
+version: 1
+id: 158
+title: Case 158 — Core-paper selection is balanced rather than prestige-only
+legacy_spec: 158_representative_core_selection.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: selection.paper_count
+  op: equals
+  value: 4
+- path: selection.topic_near
+  op: equals
+  value: true
+- path: selection.author_central
+  op: equals
+  value: true
+- path: selection.recent
+  op: equals
+  value: true
+- path: selection.authorship_control
+  op: equals
+  value: true
+- path: selection.prestige_only
+  op: equals
+  value: false
+good_candidate:
+  selection:
+    paper_count: 4
+    topic_near: true
+    author_central: true
+    recent: true
+    authorship_control: true
+    prestige_only: false
+bad_candidate:
+  selection:
+    paper_count: 1
+    topic_near: false
+    author_central: false
+    recent: false
+    authorship_control: false
+    prestige_only: true

@@ -1,0 +1,30 @@
+version: 1
+id: 144
+title: Case 144 — PDE result delta is multi-axis and explicit
+legacy_spec: 144_pde_result_delta_multi_axis.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: pde_active
+  op: equals
+  value: true
+- path: result_delta.axis_count
+  op: equals
+  value: 3
+- path: result_delta.exact_change_named
+  op: equals
+  value: true
+- path: vague_improvement_only
+  op: equals
+  value: false
+good_candidate:
+  pde_active: true
+  result_delta:
+    axis_count: 3
+    exact_change_named: true
+  vague_improvement_only: false
+bad_candidate:
+  pde_active: true
+  result_delta:
+    axis_count: 0
+    exact_change_named: false
+  vague_improvement_only: true

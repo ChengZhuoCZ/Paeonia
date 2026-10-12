@@ -1,0 +1,18 @@
+version: 1
+id: 86
+title: Case 86 — Decorative script and fraktur are suppressed
+legacy_spec: 86_no_decorative_script_fraktur.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: uses_mathscr
+  op: equals
+  value: false
+- path: uses_mathfrak
+  op: equals
+  value: false
+good_candidate:
+  uses_mathscr: false
+  uses_mathfrak: false
+bad_candidate:
+  uses_mathscr: true
+  uses_mathfrak: true

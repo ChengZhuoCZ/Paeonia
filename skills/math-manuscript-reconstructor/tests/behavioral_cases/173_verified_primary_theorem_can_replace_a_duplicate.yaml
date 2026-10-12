@@ -1,0 +1,28 @@
+version: 1
+id: 173
+title: Case 173 — Verified primary theorem can replace a duplicated proof
+legacy_spec: 173_verified_primary_theorem_can_replace_a_duplicate.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: primary_full_text_inspected
+  op: equals
+  value: true
+- path: exact_source_locator_verified
+  op: equals
+  value: true
+- path: hypothesis_conclusion_map_complete
+  op: equals
+  value: true
+- path: replacement_applied
+  op: equals
+  value: true
+good_candidate:
+  primary_full_text_inspected: true
+  exact_source_locator_verified: true
+  hypothesis_conclusion_map_complete: true
+  replacement_applied: true
+bad_candidate:
+  primary_full_text_inspected: false
+  exact_source_locator_verified: false
+  hypothesis_conclusion_map_complete: false
+  replacement_applied: true

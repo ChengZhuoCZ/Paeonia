@@ -1,0 +1,28 @@
+version: 1
+id: 74
+title: Case 74 — Editorial first-two-pages read exposes contribution
+legacy_spec: 74_editorial_first_two_pages.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: big_problem_visible
+  op: equals
+  value: true
+- path: exact_gap_visible
+  op: equals
+  value: true
+- path: exact_advance_visible
+  op: equals
+  value: true
+- path: theorem_strength_visible
+  op: equals
+  value: true
+good_candidate:
+  big_problem_visible: true
+  exact_gap_visible: true
+  exact_advance_visible: true
+  theorem_strength_visible: true
+bad_candidate:
+  big_problem_visible: true
+  exact_gap_visible: false
+  exact_advance_visible: false
+  theorem_strength_visible: false

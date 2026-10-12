@@ -1,0 +1,56 @@
+# Optional nested field of IntroductionParagraphPlan. Not a publication template.
+# Stage order here is logical dependency order; prose may use conditional assembly.
+version: 1
+proof_explanation:
+  enabled: true
+  audience_prerequisites: []
+  # Optional diagnosis for the central bottlenecks, not another mandatory ledger.
+  editorial_decisions: []
+  # Example keys: missing_inference, visible_input, explanatory_witness,
+  # source_anchor, chosen_move, reason_for_move, simpler_edit_insufficient,
+  # expected_reader_answer, inappropriate_when.
+  # These fields record judgments; proof_explanation_audit.py does not validate them.
+  connections: []
+  # Optional: target_object, neighboring_object, source_and_locator,
+  # status (precedent|exact_reinterpretation|structural_analogy|prospective_extension),
+  # normalization_or_hypothesis_difference, reader_payoff, permitted_claim.
+  evidence:
+    # Map stable IDs to source labels or verified literature locators.
+    # Each anchor: {source: manuscript|literature, locator: 'thm:...', role: '...'}
+    {}
+  initial_facts:
+    # - {id: target_class, meaning: 'admissible competitors', evidence: [anchor_id]}
+    []
+  reformulations:
+    # - id: turning_measure
+    #   original_problem: ...
+    #   obstruction: ...
+    #   dictionary: ...
+    #   bridge_kind: exact_identity|equivalence|one_way_reduction|principal_order|controlled_comparison
+    #   new_capability: ...
+    #   remaining_cost: ...
+    #   evidence: [anchor_id]
+    []
+  stages:
+    # - id: localization
+    #   requires: [target_class]
+    #   obstacle: ...
+    #   action: ...
+    #   produces: [{id: near_disk, meaning: '...'}]
+    #   payoff: ...
+    #   regime: ...
+    #   evidence: [anchor_id]
+    []
+  assembly:
+    requires: []
+    implication: null
+    scope: null
+    equality_recovery: null # Required only when equality/rigidity is claimed.
+    claims_equality: false
+    evidence: []
+  cold_read:
+    performed: false
+    reader_answers: [] # Answers with the actual licensing sentence/formula, not just a locator.
+    first_missing_link: null
+    repairs: []
+    limitations: []

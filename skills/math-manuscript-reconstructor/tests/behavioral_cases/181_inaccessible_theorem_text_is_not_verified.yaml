@@ -1,0 +1,23 @@
+version: 1
+id: 181
+title: Case 181 — Inaccessible theorem text is not verified
+legacy_spec: 181_inaccessible_theorem_text_is_not_verified.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: primary_statement_accessible
+  op: equals
+  value: false
+- path: candidate_status
+  op: equals
+  value: RETAINED_UNVERIFIED
+- path: proof_deleted
+  op: equals
+  value: false
+good_candidate:
+  primary_statement_accessible: false
+  candidate_status: RETAINED_UNVERIFIED
+  proof_deleted: false
+bad_candidate:
+  primary_statement_accessible: false
+  candidate_status: APPLIED_DIRECT
+  proof_deleted: true

@@ -1,0 +1,23 @@
+version: 1
+id: 43
+title: Case 43 — Adjacent problem requires a bridge
+legacy_spec: 43_adjacent_problem_requires_bridge.md
+gate: GRAND-NARRATIVE-INTEGRITY
+assertions:
+- path: adjacent_bridge.shared_structure
+  op: truthy
+- path: adjacent_bridge.decisive_difference
+  op: truthy
+- path: unrelated_excursion
+  op: equals
+  value: false
+good_candidate:
+  adjacent_bridge:
+    shared_structure: polygonal extremal problem
+    decisive_difference: boundary operator is nonlocal
+  unrelated_excursion: false
+bad_candidate:
+  adjacent_bridge:
+    shared_structure: ''
+    decisive_difference: ''
+  unrelated_excursion: true

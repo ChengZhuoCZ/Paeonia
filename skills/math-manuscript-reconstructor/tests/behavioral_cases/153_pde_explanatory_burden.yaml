@@ -1,0 +1,23 @@
+version: 1
+id: 153
+title: Case 153 — PDE Introduction length follows explanatory burden
+legacy_spec: 153_pde_explanatory_burden.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: length_policy
+  op: equals
+  value: EXPLANATORY_BURDEN
+- path: venue_prestige_length_target
+  op: equals
+  value: false
+- path: clean_short_intro_allowed
+  op: equals
+  value: true
+good_candidate:
+  length_policy: EXPLANATORY_BURDEN
+  venue_prestige_length_target: false
+  clean_short_intro_allowed: true
+bad_candidate:
+  length_policy: TOP_JOURNAL_EXPANSION
+  venue_prestige_length_target: true
+  clean_short_intro_allowed: false

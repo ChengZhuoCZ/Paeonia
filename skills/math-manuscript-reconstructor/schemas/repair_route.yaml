@@ -1,0 +1,11 @@
+version: 1
+artifact: RepairRouteReport
+gate: null
+root_cause: null
+owner_state: null
+rollback_to: null
+repairs_applied: []
+invalidated_artifacts: []
+reconstructed_artifacts: []
+re_audit: []
+final_status: pending

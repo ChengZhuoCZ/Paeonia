@@ -1,0 +1,23 @@
+version: 1
+id: 62
+title: Case 62 — Theorem cadence separates orientation statement interpretation
+legacy_spec: 62_theorem_cadence_distinct.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: orientation_formal_interpretation_distinct
+  op: equals
+  value: true
+- path: post_theorem_formula_paraphrase
+  op: equals
+  value: false
+- path: stacked_theorems_without_escalation
+  op: equals
+  value: false
+good_candidate:
+  orientation_formal_interpretation_distinct: true
+  post_theorem_formula_paraphrase: false
+  stacked_theorems_without_escalation: false
+bad_candidate:
+  orientation_formal_interpretation_distinct: false
+  post_theorem_formula_paraphrase: true
+  stacked_theorems_without_escalation: true

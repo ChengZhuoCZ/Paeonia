@@ -1,0 +1,13 @@
+version: 1
+id: 14
+title: Regression 14 — No formula paraphrase
+legacy_spec: 14_no_formula_paraphrase.md
+gate: GENERATIVE-RESIDUE
+assertions:
+- path: followup_classification
+  op: equals
+  value: DELETE
+good_candidate:
+  followup_classification: DELETE
+bad_candidate:
+  followup_classification: KEEP_BY_SYNONYM

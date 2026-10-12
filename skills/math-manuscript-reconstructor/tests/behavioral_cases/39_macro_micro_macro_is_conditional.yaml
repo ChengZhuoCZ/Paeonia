@@ -1,0 +1,18 @@
+version: 1
+id: 39
+title: Case 39 — Macro–micro–macro is conditional
+legacy_spec: 39_macro_micro_macro_is_conditional.md
+gate: GRAND-NARRATIVE-INTEGRITY
+assertions:
+- path: narrative_geometry_is_template
+  op: equals
+  value: false
+- path: stages_may_be_omitted
+  op: equals
+  value: true
+good_candidate:
+  narrative_geometry_is_template: false
+  stages_may_be_omitted: true
+bad_candidate:
+  narrative_geometry_is_template: true
+  stages_may_be_omitted: false

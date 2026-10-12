@@ -1,0 +1,12 @@
+claim_id: null
+quantifiers: null
+hypotheses: []
+parameter_ranges: []
+normalization: []
+regularity: []
+domain_and_dimension: []
+conclusion: null
+equality_cases: []
+constant_dependencies: []
+external_inputs: []
+status: pending

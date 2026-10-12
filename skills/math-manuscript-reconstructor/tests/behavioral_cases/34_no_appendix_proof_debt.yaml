@@ -1,0 +1,13 @@
+version: 1
+id: 34
+title: Case 34 — Appendix cannot store proof debt
+legacy_spec: 34_no_appendix_proof_debt.md
+gate: WHOLE-PAPER-NARRATIVE-FIDELITY
+assertions:
+- path: central_novelty_in_appendix
+  op: equals
+  value: false
+good_candidate:
+  central_novelty_in_appendix: false
+bad_candidate:
+  central_novelty_in_appendix: true

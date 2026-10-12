@@ -1,0 +1,13 @@
+version: 1
+id: 6
+title: Regression 06 — Multiple Conflicting Drafts
+legacy_spec: 06_multiple_sources.md
+gate: MATH-SEMANTICS
+assertions:
+- path: merge_level
+  op: equals
+  value: LEDGER
+good_candidate:
+  merge_level: LEDGER
+bad_candidate:
+  merge_level: PROSE_SPLICE

@@ -1,0 +1,20 @@
+# v1.36 release suite batch 1
+RUN tests/run_tests.py
+TEST_PASS
+required_files=152
+contract_checks=51
+RUN tests/test_tools.py
+TOOL_TEST_PASS
+RUN tests/test_v110_contract.py
+V110_COMPAT_PASS
+RUN tests/test_v120_contract.py
+V120_CONTRACT_PASS
+RUN tests/test_v130_contract.py
+V130_CONTRACT_PASS
+RUN tests/test_v140_contract.py
+V140_CONTRACT_PASS
+RUN tests/test_v150_contract.py
+V150_CONTRACT_PASS
+RUN tests/test_v160_contract.py
+V160_CONTRACT_PASS
+BATCH_1_PASS

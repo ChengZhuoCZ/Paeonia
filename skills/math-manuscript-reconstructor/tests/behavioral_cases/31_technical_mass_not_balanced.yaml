@@ -1,0 +1,13 @@
+version: 1
+id: 31
+title: Case 31 — Technical mass is not visually balanced
+legacy_spec: 31_technical_mass_not_balanced.md
+gate: WHOLE-PAPER-NARRATIVE-FIDELITY
+assertions:
+- path: technical_mass_equalized_for_visual_balance
+  op: equals
+  value: false
+good_candidate:
+  technical_mass_equalized_for_visual_balance: false
+bad_candidate:
+  technical_mass_equalized_for_visual_balance: true

@@ -1,0 +1,28 @@
+version: 1
+id: 163
+title: Case 163 — Introduction reconstruction searches beyond inherited bibliography
+legacy_spec: 163_outward_search.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: search_before_prose
+  op: equals
+  value: true
+- path: outside_bibliography
+  op: equals
+  value: true
+- path: external_routes
+  op: contains
+  value: citation_network
+good_candidate:
+  reconstruct: true
+  search_before_prose: true
+  external_routes:
+  - exact_and_alias
+  - citation_network
+  outside_bibliography: true
+bad_candidate:
+  reconstruct: true
+  search_before_prose: false
+  external_routes:
+  - inherited_bib
+  outside_bibliography: false

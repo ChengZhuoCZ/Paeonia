@@ -1,0 +1,28 @@
+version: 1
+id: 171
+title: Case 171 — Credit sufficient without artificial citation quotas
+legacy_spec: 171_no_citation_quota.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: coverage_role_driven
+  op: equals
+  value: true
+- path: forced_reference_count
+  op: equals
+  value: false
+- path: empty_citation_padding
+  op: equals
+  value: false
+- path: closest_source_explained
+  op: equals
+  value: true
+good_candidate:
+  coverage_role_driven: true
+  forced_reference_count: false
+  empty_citation_padding: false
+  closest_source_explained: true
+bad_candidate:
+  coverage_role_driven: false
+  forced_reference_count: true
+  empty_citation_padding: true
+  closest_source_explained: false

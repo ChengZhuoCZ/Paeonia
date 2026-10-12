@@ -1,0 +1,18 @@
+version: 1
+id: 50
+title: Case 50 — Qualitative and quantitative results are split only when useful
+legacy_spec: 50_qualitative_and_quantitative_results_are_split_only_when_useful.md
+gate: THEOREM-STATEMENT-INTEGRITY
+assertions:
+- path: qualitative_result_readable
+  op: equals
+  value: true
+- path: quantitative_detail_obscures_main_result
+  op: equals
+  value: false
+good_candidate:
+  qualitative_result_readable: true
+  quantitative_detail_obscures_main_result: false
+bad_candidate:
+  qualitative_result_readable: false
+  quantitative_detail_obscures_main_result: true

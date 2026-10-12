@@ -1,0 +1,15 @@
+version: 1
+id: 209
+title: Case 209 — Single chosen draft, not style variants
+legacy_spec: 209_single_chosen_draft_not_style_variants.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: release.tone_menu_presented
+  op: equals
+  value: false
+good_candidate:
+  release:
+    tone_menu_presented: false
+bad_candidate:
+  release:
+    tone_menu_presented: true

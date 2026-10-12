@@ -1,0 +1,25 @@
+version: 1
+id: 160
+title: Case 160 — Style corpus does not contaminate bibliography or novelty claims
+legacy_spec: 160_style_literature_separation.md
+gate: STYLE-SOURCE-INDEPENDENCE
+assertions:
+- path: separation.automatic_citations
+  op: equals
+  value: false
+- path: separation.automatic_novelty_claims
+  op: equals
+  value: false
+- path: separation.protocol07_required
+  op: equals
+  value: true
+good_candidate:
+  separation:
+    automatic_citations: false
+    automatic_novelty_claims: false
+    protocol07_required: true
+bad_candidate:
+  separation:
+    automatic_citations: true
+    automatic_novelty_claims: true
+    protocol07_required: false

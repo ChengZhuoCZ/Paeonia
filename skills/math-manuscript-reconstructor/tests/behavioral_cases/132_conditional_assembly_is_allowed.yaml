@@ -1,0 +1,18 @@
+version: 1
+id: 132
+title: Case 132 — conditional assembly is allowed
+legacy_spec: 132_conditional_assembly_is_allowed.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: conditional_assumption_declared
+  op: equals
+  value: true
+- path: return_to_deferred_obligation
+  op: equals
+  value: true
+good_candidate:
+  conditional_assumption_declared: true
+  return_to_deferred_obligation: true
+bad_candidate:
+  conditional_assumption_declared: false
+  return_to_deferred_obligation: false

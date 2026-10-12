@@ -1,0 +1,19 @@
+version: 1
+id: 84
+title: Case 84 — Duplicate recurring Delta is rejected
+legacy_spec: 84_duplicate_recurring_Delta_rejected.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: duplicate_symbol_free
+  op: equals
+  value: true
+good_candidate:
+  duplicate_symbol_free: true
+  symbol_table:
+    \Delta: laplacian_operator
+bad_candidate:
+  duplicate_symbol_free: false
+  symbol_table:
+    \Delta:
+    - laplacian_operator
+    - deficit

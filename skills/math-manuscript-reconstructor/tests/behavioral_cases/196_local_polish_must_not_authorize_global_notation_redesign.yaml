@@ -1,0 +1,13 @@
+version: 1
+id: 196
+title: Case 196 — Local polish must not authorize global notation redesign
+legacy_spec: 196_local_polish_must_not_authorize_global_notation_redesign.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: within_editable_scope
+  op: equals
+  value: true
+good_candidate:
+  within_editable_scope: true
+bad_candidate:
+  within_editable_scope: false

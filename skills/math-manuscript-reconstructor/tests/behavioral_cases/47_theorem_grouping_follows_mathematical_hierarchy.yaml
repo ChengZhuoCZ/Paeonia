@@ -1,0 +1,18 @@
+version: 1
+id: 47
+title: Case 47 — Theorem grouping follows mathematical hierarchy
+legacy_spec: 47_theorem_grouping_follows_mathematical_hierarchy.md
+gate: THEOREM-STATEMENT-INTEGRITY
+assertions:
+- path: grouping_reason_mathematical
+  op: equals
+  value: true
+- path: source_packaging_inherited
+  op: equals
+  value: false
+good_candidate:
+  grouping_reason_mathematical: true
+  source_packaging_inherited: false
+bad_candidate:
+  grouping_reason_mathematical: false
+  source_packaging_inherited: true

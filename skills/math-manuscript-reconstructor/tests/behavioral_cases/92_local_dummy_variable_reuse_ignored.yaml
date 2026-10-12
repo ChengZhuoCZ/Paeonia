@@ -1,0 +1,24 @@
+version: 1
+id: 92
+title: Case 92 — Local dummy-variable reuse is outside the audit
+legacy_spec: 92_local_dummy_variable_reuse_ignored.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: local_dummy_variables_excluded
+  op: equals
+  value: true
+- path: duplicate_symbol_free
+  op: equals
+  value: true
+good_candidate:
+  local_dummy_variables_excluded: true
+  duplicate_symbol_free: true
+  dummy_uses:
+  - x in proof 1
+  - x in proof 7
+bad_candidate:
+  local_dummy_variables_excluded: false
+  duplicate_symbol_free: false
+  dummy_uses:
+  - x in proof 1
+  - x in proof 7

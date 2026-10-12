@@ -1,0 +1,23 @@
+version: 1
+id: 113
+title: Case 113 — Reject decorative physics wallpaper
+legacy_spec: 113_reject_physics_wallpaper.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: context_changes_problem_legibility
+  op: equals
+  value: true
+- path: return_anchor_to_mathematics
+  op: equals
+  value: true
+- path: decorative_only
+  op: equals
+  value: false
+good_candidate:
+  context_changes_problem_legibility: true
+  return_anchor_to_mathematics: true
+  decorative_only: false
+bad_candidate:
+  context_changes_problem_legibility: false
+  return_anchor_to_mathematics: false
+  decorative_only: true

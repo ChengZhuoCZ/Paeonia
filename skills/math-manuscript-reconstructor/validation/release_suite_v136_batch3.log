@@ -1,0 +1,31 @@
+# v1.36 release suite batch 3
+RUN tests/test_v1_20_contract.py
+V1_20_CONTRACT_PASS
+contract_checks=16
+RUN tests/test_v1_21_contract.py
+V1_21_CONTRACT_PASS
+contract_checks=16
+RUN tests/test_v1_36_contract.py
+V1_36_CONTRACT_PASS
+checks=12
+RUN tests/test_behavioral_regressions.py
+BEHAVIORAL_REGRESSION_PASS
+legacy_specs=143
+executable_fixtures=143
+good_candidate_passes=143
+bad_candidate_rejections=143
+RUN tests/test_execution_planner.py
+EXECUTION_PLANNER_PASS
+RUN tests/test_gate_repair_routes.py
+GATE_REPAIR_ROUTE_PASS
+gates=22
+RUN tests/test_contract_consistency.py
+CONTRACT_CONSISTENCY_TEST_PASS
+artifacts=45
+gates=22
+behavioral_fixtures=143
+RUN tests/test_proof_explanation.py
+PROOF_EXPLANATION_TEST_PASS: valid graph, 12 invalid graph/evidence cases, scope guards
+RUN tests/test_writing_modes.py
+RUN tests/test_citation_inventory.py
+BATCH_3_PASS

@@ -1,0 +1,13 @@
+version: 1
+id: 1
+title: Regression 01 — Structural Copy
+legacy_spec: 01_structural_copy.md
+gate: SOURCE-INDEPENDENCE
+assertions:
+- path: one_to_one_source_alignment
+  op: equals
+  value: false
+good_candidate:
+  one_to_one_source_alignment: false
+bad_candidate:
+  one_to_one_source_alignment: true

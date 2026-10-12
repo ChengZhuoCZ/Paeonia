@@ -1,0 +1,13 @@
+version: 1
+id: 195
+title: Case 195 — Theorem citation needs version-specific symbol crosswalk
+legacy_spec: 195_theorem_citation_needs_version_specific_symbol_crosswalk.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: verified_crosswalk_present
+  op: equals
+  value: true
+good_candidate:
+  verified_crosswalk_present: true
+bad_candidate:
+  verified_crosswalk_present: false

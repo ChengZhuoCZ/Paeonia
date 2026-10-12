@@ -1,0 +1,15 @@
+version: 1
+id: 206
+title: Case 206 — Corpus never overrides house voice
+legacy_spec: 206_corpus_never_overrides_house_voice.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: corpus.overrides_house_register
+  op: equals
+  value: false
+good_candidate:
+  corpus:
+    overrides_house_register: false
+bad_candidate:
+  corpus:
+    overrides_house_register: true

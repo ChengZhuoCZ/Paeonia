@@ -1,0 +1,64 @@
+version: 1
+source_role:
+  microstyle_corpus: null
+  narrative_reference: null
+  domain_reference: null
+corpus_scale:
+  words_or_chars: null
+  usable_units: null
+  stratification_adequate: null
+strata:
+  PROOF_ROUTINE:
+    evidence: null
+    realization: []
+  PROOF_DELICATE:
+    evidence: null
+    realization: []
+  PROOF_TECHNICAL_ESTIMATE:
+    evidence: null
+    realization: []
+  PROOF_BRIDGE:
+    evidence: null
+    realization: []
+  PROOF_CLOSURE:
+    evidence: null
+    realization: []
+  THEOREM_LEADIN:
+    evidence: null
+    realization: []
+  CONCEPTUAL_INTERPRETATION:
+    evidence: null
+    realization: []
+  SECTION_OPENING:
+    evidence: null
+    realization: []
+  INTRO_ORIENTATION:
+    evidence: null
+    realization: []
+  GENERAL_EXPOSITION:
+    evidence: null
+    realization: []
+cross_context_rules:
+  density_covariance: []
+  clause_covariance: []
+  first_person_policy: []
+  administrative_opener_policy: []
+  transition_policy: []
+  display_prose_policy: []
+intro_microstyle_mapping: {}
+research_projection:
+  retain: []
+  compress: []
+  suppress: []
+evidence_stability:
+  folds: null
+  strong_features: []
+  moderate_features: []
+  tentative_features: []
+forbidden:
+  - source_sentence_storage
+  - source_paragraph_storage
+  - source_ngram_storage
+  - numeric_distribution_matching
+  - source_role_sequence_copy
+  - global_average_override_of_context

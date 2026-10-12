@@ -1,0 +1,74 @@
+version: 2
+
+authority:
+  ordinary_workflow: protocols/04_introduction_abstract.md
+  status: optional_extended_planning_artifact
+  use_only_when_complexity_justifies: true
+
+core_brief_reference: null
+trigger_reason: null
+
+reconstruction_mode: from_scratch
+source_intro_policy:
+  claim_extraction: allowed
+  citation_candidate_extraction: allowed
+  terminology_extraction: allowed
+  prose_reuse: forbidden
+  paragraph_sequence_reuse: forbidden
+  theorem_latency_reuse: forbidden
+
+audience:
+  level: specialist_research
+  standard_background_assumed: []
+  definitions_required: []
+
+opening:
+  mode: null
+  mathematical_stakes: null
+  narrowing_vector: null
+  definition_budget: minimal
+
+paragraphs: []
+# Each item:
+# - id: I1
+#   dominant_role: FIELD_ORIENTATION|CLASSICAL_LANDMARK|CURRENT_FRONTIER|NARROWING_TO_TARGET|CONJECTURE_SETUP|ADJACENT_PROBLEM_BRIDGE|RETURN_TO_MAIN_THREAD|OBSTRUCTION|THEOREM_ORIENTATION|FORMAL_THEOREM|THEOREM_INTERPRETATION|RESULT_LADDER_BRIDGE|METHOD_POSITIONING|PROOF_MECHANISM|OPEN_DIRECTION|ORGANIZATION
+#   secondary_role: null
+#   dominant_claim: null
+#   claim_ids: []
+#   literature_roles: []
+#   citation_cluster_ids: []
+#   entry_anchor: null
+#   exit_anchor: null
+#   theorem_function: none|orientation|formal|interpretation
+#   density: LEAN|MEDIUM|THICK
+#   display_needed: false
+#   detachable_if_removed: false
+
+literature_clusters: []
+# Each item:
+# - id: L1
+#   mathematical_question: null
+#   role: ORIGIN|CLASSICAL_LANDMARK|CONJECTURE|BEST_PRIOR_RESULT|ADJACENT_BREAKTHROUGH|TECHNICAL_PRECURSOR|NUMERICAL_EVIDENCE|LOCAL_RESULT|GLOBAL_RESULT|FAILED_OR_INSUFFICIENT_ROUTE
+#   verified_claims: []
+#   citations: []
+#   consequence_for_target: null
+
+link_graph: []
+# Each item:
+# - from: I1
+#   to: I2
+#   shared_referent: null
+#   mathematical_relation: narrowing|contrast|consequence|obstruction|return|strengthening|method_need|closure
+
+global_checks:
+  one_primary_information_change_per_paragraph: true
+  integrated_secondary_functions_allowed: true
+  all_paragraphs_have_entry_or_opening_function: false
+  all_nonfinal_paragraphs_have_exit_anchor: false
+  all_literature_clusters_change_problem_position: false
+  adjacent_excursions_return_to_main_thread: false
+  source_intro_polishing_forbidden: true
+
+# Optional when the mechanism is nonroutine; see schemas/proof_explanation.yaml.
+# This is an internal planning record, not a required manuscript layout.
+proof_explanation: null

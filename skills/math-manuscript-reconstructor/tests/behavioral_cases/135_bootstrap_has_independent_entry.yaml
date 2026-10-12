@@ -1,0 +1,18 @@
+version: 1
+id: 135
+title: Case 135 — bootstrap has independent entry
+legacy_spec: 135_bootstrap_has_independent_entry.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: entry_requires_regular_mesh
+  op: equals
+  value: false
+- path: entry_estimate_identified
+  op: equals
+  value: true
+good_candidate:
+  entry_requires_regular_mesh: false
+  entry_estimate_identified: true
+bad_candidate:
+  entry_requires_regular_mesh: true
+  entry_estimate_identified: false

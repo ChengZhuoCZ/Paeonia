@@ -1,0 +1,18 @@
+version: 1
+id: 71
+title: Case 71 — Theorem interpretation explains change in mathematical picture
+legacy_spec: 71_theorem_interpretation_picture_change.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: post_theorem_function
+  op: equals
+  value: changes_existing_picture
+- path: formula_restatement
+  op: equals
+  value: false
+good_candidate:
+  post_theorem_function: changes_existing_picture
+  formula_restatement: false
+bad_candidate:
+  post_theorem_function: restate_theorem
+  formula_restatement: true

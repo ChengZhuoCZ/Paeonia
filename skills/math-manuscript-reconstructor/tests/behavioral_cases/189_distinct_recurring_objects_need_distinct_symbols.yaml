@@ -1,0 +1,13 @@
+version: 1
+id: 189
+title: Case 189 — Distinct recurring objects need distinct symbols
+legacy_spec: 189_distinct_recurring_objects_need_distinct_symbols.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: recurring_symbol_unique
+  op: equals
+  value: true
+good_candidate:
+  recurring_symbol_unique: true
+bad_candidate:
+  recurring_symbol_unique: false

@@ -1,0 +1,44 @@
+{
+  "appendix_count": 3,
+  "appendix_formal_results": 95,
+  "appendix_to_body_word_ratio": 0.08771,
+  "appendix_words": 26344,
+  "body_unit_mass_cv": 0.4759,
+  "body_unit_word_distribution": {
+    "max": 30604,
+    "median": 10303.0,
+    "min": 5208,
+    "q1": 7601.0,
+    "q3": 15453.75
+  },
+  "emits_source_titles": false,
+  "formal_result_count_distribution": {
+    "max": 134,
+    "median": 35.5,
+    "min": 0,
+    "q1": 23.0,
+    "q3": 49.0
+  },
+  "formal_result_density_per_1000_words_distribution": {
+    "max": 5.806,
+    "median": 3.55425,
+    "min": 0.0,
+    "q1": 2.238875,
+    "q3": 4.12805
+  },
+  "introduction_count": 1,
+  "introduction_to_body_word_ratio": 0.002843,
+  "introduction_words": 854,
+  "largest_body_unit_share": 0.1019,
+  "major_body_unit_count": 26,
+  "numeric_targets_forbidden": true,
+  "research_projection_required_for_long_expository_corpora": true,
+  "source_appendix_pattern_reuse": "forbidden",
+  "source_frontmatter_ratio_reuse": "forbidden",
+  "source_global_sequence_reuse": "forbidden",
+  "source_mass_profile_reuse": "forbidden",
+  "status": "OK",
+  "stores_source_unit_prose": false,
+  "top_quartile_body_units_formal_result_share": 0.4664,
+  "top_quartile_body_units_word_share": 0.4367
+}

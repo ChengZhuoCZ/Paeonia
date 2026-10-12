@@ -1,0 +1,23 @@
+version: 1
+id: 116
+title: Case 116 — Pure mathematics does not receive invented physical motivation
+legacy_spec: 116_pure_math_no_forced_physics.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: scientific_lineage_verified
+  op: equals
+  value: false
+- path: context_depth
+  op: equals
+  value: NONE
+- path: fabricated_physics
+  op: equals
+  value: false
+good_candidate:
+  scientific_lineage_verified: false
+  context_depth: NONE
+  fabricated_physics: false
+bad_candidate:
+  scientific_lineage_verified: false
+  context_depth: PHYSICS_LED
+  fabricated_physics: true

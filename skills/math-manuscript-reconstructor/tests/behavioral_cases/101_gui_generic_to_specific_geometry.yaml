@@ -1,0 +1,25 @@
+version: 1
+id: 101
+title: Case 101 — Generic domain may specialize to a semantic geometry initial
+legacy_spec: 101_gui_generic_to_specific_geometry.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: generic_domain
+  op: equals
+  value: \Omega
+- path: concrete_geometry_uses_semantic_initial
+  op: equals
+  value: true
+- path: forced_same_symbol_for_all_geometry_levels
+  op: equals
+  value: false
+good_candidate:
+  generic_domain: \Omega
+  concrete_geometry: T
+  concrete_geometry_uses_semantic_initial: true
+  forced_same_symbol_for_all_geometry_levels: false
+bad_candidate:
+  generic_domain: \Omega
+  concrete_geometry: \Omega
+  concrete_geometry_uses_semantic_initial: false
+  forced_same_symbol_for_all_geometry_levels: true

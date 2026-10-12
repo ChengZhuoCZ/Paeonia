@@ -1,0 +1,20 @@
+version: 1
+id: 96
+title: Case 96 — Geometry initials are soft preferences only
+legacy_spec: 96_gui_geometry_initials_soft.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: gui_prior_is_soft
+  op: equals
+  value: true
+- path: forces_T_or_Q
+  op: equals
+  value: false
+good_candidate:
+  gui_prior_is_soft: true
+  forces_T_or_Q: false
+  reason: use Q only if collision-free and natural
+bad_candidate:
+  gui_prior_is_soft: false
+  forces_T_or_Q: true
+  reason: always rename every quadrilateral Q

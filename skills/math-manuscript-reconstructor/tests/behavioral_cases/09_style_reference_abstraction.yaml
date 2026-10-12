@@ -1,0 +1,13 @@
+version: 1
+id: 9
+title: Regression 09 — Style Reference Is Not a Template
+legacy_spec: 09_style_reference_abstraction.md
+gate: STYLE-SOURCE-INDEPENDENCE
+assertions:
+- path: style_source_sentence_reuse
+  op: equals
+  value: false
+good_candidate:
+  style_source_sentence_reuse: false
+bad_candidate:
+  style_source_sentence_reuse: true

@@ -1,0 +1,24 @@
+version: 1
+id: 108
+title: Case 108 — Do not copy one paper's symbol sequence or attribute coauthored
+  choices to Gui alone
+legacy_spec: 108_gui_no_exact_symbol_copy_or_attribution.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: exact_symbol_sequence_copying
+  op: equals
+  value: false
+- path: coauthor_specific_attribution
+  op: equals
+  value: false
+- path: transfer_abstract_strategy_only
+  op: equals
+  value: true
+good_candidate:
+  exact_symbol_sequence_copying: false
+  coauthor_specific_attribution: false
+  transfer_abstract_strategy_only: true
+bad_candidate:
+  exact_symbol_sequence_copying: true
+  coauthor_specific_attribution: true
+  transfer_abstract_strategy_only: false

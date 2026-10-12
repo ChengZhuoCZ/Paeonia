@@ -1,0 +1,1795 @@
+{
+  "legacy_specs": 138,
+  "executable_fixtures": 138,
+  "uncovered": [],
+  "passed": 138,
+  "failed": 0,
+  "results": [
+    {
+      "id": 1,
+      "title": "Regression 01 — Structural Copy",
+      "gate": "SOURCE-INDEPENDENCE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 2,
+      "title": "Regression 02 — Quantifier Drift",
+      "gate": "MATH-SEMANTICS",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 3,
+      "title": "Regression 03 — Gap Masking",
+      "gate": "PROOF-CLOSURE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 4,
+      "title": "Regression 04 — Citation Invention",
+      "gate": "CITATION-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 5,
+      "title": "Regression 05 — Preserve All Details Without Preserving Packaging",
+      "gate": "PROOF-CLOSURE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 6,
+      "title": "Regression 06 — Multiple Conflicting Drafts",
+      "gate": "MATH-SEMANTICS",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 7,
+      "title": "Regression 07 — Honor explicit local-edit scope",
+      "gate": "PROOF-CORE-ORDER",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 8,
+      "title": "Regression 08 — Proof Body Must Be Drafted First",
+      "gate": "PROOF-CORE-ORDER",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 9,
+      "title": "Regression 09 — Style Reference Is Not a Template",
+      "gate": "STYLE-SOURCE-INDEPENDENCE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 100,
+      "title": "Case 100 — Standard ambient spaces use conventional blackboard-bold notation",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 101,
+      "title": "Case 101 — Generic domain may specialize to a semantic geometry initial",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 102,
+      "title": "Case 102 — Concrete geometry and vertices use direct family notation",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 103,
+      "title": "Case 103 — Stable geometric roles may use short semantic labels",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 104,
+      "title": "Case 104 — Deformations preserve a common base symbol",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 105,
+      "title": "Case 105 — Genuine coordinate reduction may simplify local notation",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 106,
+      "title": "Case 106 — Spectral letters are contextual rather than hard-coded",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 107,
+      "title": "Case 107 — Corpus typography evidence is mixed and user plain style is separate",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 108,
+      "title": "Case 108 — Do not copy one paper's symbol sequence or attribute coauthored choices to Gui alone",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 109,
+      "title": "Case 109 — Scientific-context depth is independent of specialist audience",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 10,
+      "title": "Regression 10 — Front Matter Follows the Proof",
+      "gate": "PROOF-CORE-ORDER",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 110,
+      "title": "Case 110 — Scientific context requires a genuine verified trigger",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 111,
+      "title": "Case 111 — Deep scientific context uses multi-role, source-diverse research",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "pass": true
+    },
+    {
+      "id": 112,
+      "title": "Case 112 — Model-to-math map connects scientific quantities to theorem structure",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 113,
+      "title": "Case 113 — Reject decorative physics wallpaper",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 114,
+      "title": "Case 114 — Scientific theorem interpretation stays below an evidence ceiling",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 115,
+      "title": "Case 115 — Grand opening precedes routine definitions when a larger verified stake exists",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        3,
+        4
+      ],
+      "pass": true
+    },
+    {
+      "id": 116,
+      "title": "Case 116 — Pure mathematics does not receive invented physical motivation",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 117,
+      "title": "Case 117 — Substantial context may occupy a multi-paragraph opening",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 118,
+      "title": "Case 118 — Large-N spectral introductions expose continuous-discrete tension instead of staying definition-first",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3,
+        4
+      ],
+      "pass": true
+    },
+    {
+      "id": 119,
+      "title": "Case 119 — Parent program is identified above the local conjecture",
+      "gate": "MATHEMATICAL-STORY-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 11,
+      "title": "Regression 11 — Style Is Distilled Before Proof Prose",
+      "gate": "STYLE-SOURCE-INDEPENDENCE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 120,
+      "title": "Case 120 — Continuum-to-finite-complexity transition is made explicit",
+      "gate": "MATHEMATICAL-STORY-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 121,
+      "title": "Case 121 — Asymptotic selection is distinguished from exact finite rigidity",
+      "gate": "MATHEMATICAL-STORY-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 122,
+      "title": "Case 122 — Local theory is placed inside the global program",
+      "gate": "MATHEMATICAL-STORY-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        3,
+        4
+      ],
+      "pass": true
+    },
+    {
+      "id": 123,
+      "title": "Case 123 — Mathematical ancestry is role-based rather than chronological",
+      "gate": "MATHEMATICAL-STORY-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 124,
+      "title": "Case 124 — Parallel problems enlarge the story only through shared structure",
+      "gate": "MATHEMATICAL-STORY-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3,
+        4
+      ],
+      "pass": true
+    },
+    {
+      "id": 125,
+      "title": "Case 125 — The theorem is interpreted back at parent-program scale",
+      "gate": "MATHEMATICAL-STORY-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 126,
+      "title": "Case 126 — Scientific context does not replace mathematical ancestry",
+      "gate": "MATHEMATICAL-STORY-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 127,
+      "title": "Case 127 — Generic field grandeur is rejected without a mathematical transition",
+      "gate": "MATHEMATICAL-STORY-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 128,
+      "title": "Case 128 — Large-N Pólya–Szegő uses the isoperimetric continuum-to-finite story",
+      "gate": "MATHEMATICAL-STORY-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pass": true
+    },
+    {
+      "id": 129,
+      "title": "Case 129 — reformulation has mathematical gain",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 12,
+      "title": "Regression 12 — Language Style and Mathematical Writing Style Are Distinct",
+      "gate": "STYLE-LEDGER-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 130,
+      "title": "Case 130 — bridge status is not overclaimed",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 131,
+      "title": "Case 131 — outline independent of proof body",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 132,
+      "title": "Case 132 — conditional assembly is allowed",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 133,
+      "title": "Case 133 — compression preserves formula interpretation",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 134,
+      "title": "Case 134 — relative error for tiny defect",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 135,
+      "title": "Case 135 — bootstrap has independent entry",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 136,
+      "title": "Case 136 — structural significance vs priority",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 137,
+      "title": "Case 137 — research corpus not author template",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 138,
+      "title": "Case 138 — routine outline does not force reformulation",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 13,
+      "title": "Regression 13 — Fidelity Without Imitation",
+      "gate": "STYLE-LEDGER-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 14,
+      "title": "Regression 14 — No formula paraphrase",
+      "gate": "GENERATIVE-RESIDUE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 15,
+      "title": "Regression 15 — No template proof geometry",
+      "gate": "GENERATIVE-RESIDUE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 16,
+      "title": "Regression 16 — Authorial density asymmetry",
+      "gate": "AUTHORIAL-DECISION",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 17,
+      "title": "Regression 17 — No random humanization",
+      "gate": "GENERATIVE-RESIDUE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 18,
+      "title": "Regression 18 — Style ledger survives cold-author compression",
+      "gate": "COLD-AUTHOR",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 19,
+      "title": "Regression 19 — Paragraph boundary requires mathematical state",
+      "gate": "PARAGRAPH-FINGERPRINT-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 20,
+      "title": "Regression 20 — Role-pressure thickening",
+      "gate": "AUTHORIAL-DECISION",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 21,
+      "title": "Regression 21 — No numerical fingerprint matching",
+      "gate": "PARAGRAPH-FINGERPRINT-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 22,
+      "title": "Regression 22 — Bridge paragraph names the obstruction",
+      "gate": "MATHEMATICAL-TRANSITIONS",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 23,
+      "title": "Regression 23 — Paragraph fingerprint without template copy",
+      "gate": "STYLE-SOURCE-INDEPENDENCE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 24,
+      "title": "Regression 24 — Section boundary requires obligation family",
+      "gate": "SECTION-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 25,
+      "title": "Regression 25 — Theorem latency follows prerequisite burden",
+      "gate": "SECTION-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 26,
+      "title": "Regression 26 — No forced conceptual/technical alternation",
+      "gate": "SECTION-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 27,
+      "title": "Regression 27 — Subsection suppression",
+      "gate": "SECTION-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 28,
+      "title": "Regression 28 — Lemma cluster section-worthiness",
+      "gate": "SECTION-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 29,
+      "title": "Regression 29 — No numeric section fingerprint matching",
+      "gate": "SECTION-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 30,
+      "title": "Case 30 — Main-result exposure is not proof activation",
+      "gate": "WHOLE-PAPER-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 31,
+      "title": "Case 31 — Technical mass is not visually balanced",
+      "gate": "WHOLE-PAPER-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 32,
+      "title": "Case 32 — Front matter is semantically compressed",
+      "gate": "WHOLE-PAPER-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 33,
+      "title": "Case 33 — Appendix requires a modular reason",
+      "gate": "WHOLE-PAPER-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 34,
+      "title": "Case 34 — Appendix cannot store proof debt",
+      "gate": "WHOLE-PAPER-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 35,
+      "title": "Case 35 — Whole-paper asymmetry is mathematics-driven",
+      "gate": "WHOLE-PAPER-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 36,
+      "title": "Case 36 — No source-wide sequence copying",
+      "gate": "SOURCE-INDEPENDENCE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 37,
+      "title": "Case 37 — Conclusion is optional in pure mathematics",
+      "gate": "WHOLE-PAPER-NARRATIVE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 38,
+      "title": "Case 38 — Introduction scale is earned",
+      "gate": "GRAND-NARRATIVE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 39,
+      "title": "Case 39 — Macro–micro–macro is conditional",
+      "gate": "GRAND-NARRATIVE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 40,
+      "title": "Case 40 — Problem tension names the obstruction",
+      "gate": "GRAND-NARRATIVE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 41,
+      "title": "Case 41 — Result hierarchy uses reader order",
+      "gate": "GRAND-NARRATIVE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 42,
+      "title": "Case 42 — Literature has narrative roles",
+      "gate": "GRAND-NARRATIVE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 43,
+      "title": "Case 43 — Adjacent problem requires a bridge",
+      "gate": "GRAND-NARRATIVE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 44,
+      "title": "Case 44 — Main-result repetition is functional",
+      "gate": "GRAND-NARRATIVE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        4
+      ],
+      "pass": true
+    },
+    {
+      "id": 45,
+      "title": "Case 45 — Mechanism map precedes section itinerary",
+      "gate": "GRAND-NARRATIVE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 46,
+      "title": "Case 46 — Grand narrative does not permit hype debt",
+      "gate": "GRAND-NARRATIVE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 47,
+      "title": "Case 47 — Theorem grouping follows mathematical hierarchy",
+      "gate": "THEOREM-STATEMENT-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 48,
+      "title": "Case 48 — Theorem statements expose exact assumptions",
+      "gate": "THEOREM-STATEMENT-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 49,
+      "title": "Case 49 — Normalization is theorem-driven not lemma-driven",
+      "gate": "THEOREM-STATEMENT-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 50,
+      "title": "Case 50 — Qualitative and quantitative results are split only when useful",
+      "gate": "THEOREM-STATEMENT-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 51,
+      "title": "Case 51 — Equality and rigidity strength are preserved",
+      "gate": "THEOREM-STATEMENT-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 52,
+      "title": "Case 52 — Notation is planned before proof prose",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 53,
+      "title": "Case 53 — Canonical objects have stable symbols in scope",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 54,
+      "title": "Case 54 — Local global and normalization notation remain distinguishable",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 55,
+      "title": "Case 55 — Supplied proof is trusted by default during writing",
+      "gate": "PROOF-CLOSURE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "pass": true
+    },
+    {
+      "id": 56,
+      "title": "Case 56 — Introduction is rebuilt from scratch",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 57,
+      "title": "Case 57 — Introduction paragraphs have dominant mathematical roles",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 58,
+      "title": "Case 58 — Specialist opening suppresses textbook setup",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 59,
+      "title": "Case 59 — Paragraph links are mathematical not administrative",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 60,
+      "title": "Case 60 — Literature prose is claim-centered",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 61,
+      "title": "Case 61 — Adjacent excursions return to the focal problem",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 62,
+      "title": "Case 62 — Theorem cadence separates orientation statement interpretation",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 63,
+      "title": "Case 63 — Introduction cold read preserves only necessary paragraphs",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 64,
+      "title": "Case 64 — Introduction paragraph openings are not a generated template",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 65,
+      "title": "Case 65 — Introduction proof overview is causal mechanism prose",
+      "gate": "INTRODUCTION-PROSE-INTEGRITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 66,
+      "title": "Case 66 — Verified strong central claims must be surfaced",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 67,
+      "title": "Case 67 — Narrative amplification respects factuality ceiling",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 68,
+      "title": "Case 68 — GRAND_PLUS must be earned by mathematics",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 69,
+      "title": "Case 69 — Historical arc reaches exact pre-paper frontier",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 70,
+      "title": "Case 70 — Grandness comes from problem scale not self-praise",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 71,
+      "title": "Case 71 — Theorem interpretation explains change in mathematical picture",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 72,
+      "title": "Case 72 — Methodological afterlife is calibrated",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 73,
+      "title": "Case 73 — Narrative amplification uses only licensed operations",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 74,
+      "title": "Case 74 — Editorial first-two-pages read exposes contribution",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3,
+        4
+      ],
+      "pass": true
+    },
+    {
+      "id": 75,
+      "title": "Case 75 — Strong verified terminology is evidence-sensitive not taboo",
+      "gate": "EDITORIAL-IMPACT",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 76,
+      "title": "Case 76 — High-intensity distillation is stratified not global-average only",
+      "gate": "STYLE-LEDGER-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 77,
+      "title": "Case 77 — Default conditional traits require holdout stability",
+      "gate": "CONDITIONAL-STYLE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 78,
+      "title": "Case 78 — Context-conditioned realization overrides global average",
+      "gate": "CONDITIONAL-STYLE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 79,
+      "title": "Case 79 — Corpus statistics are evidence never generation targets",
+      "gate": "CONDITIONAL-STYLE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 80,
+      "title": "Case 80 — Textbook microstyle and research Introduction macro narrative are separated",
+      "gate": "CONDITIONAL-STYLE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 81,
+      "title": "Case 81 — Introduction paragraph roles receive conditional microstyle priors",
+      "gate": "CONDITIONAL-STYLE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 82,
+      "title": "Case 82 — Tentative corpus traits do not control prose",
+      "gate": "CONDITIONAL-STYLE-FIDELITY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 83,
+      "title": "Case 83 — High-intensity distillation stores no phrase bank or source sequence",
+      "gate": "STYLE-SOURCE-INDEPENDENCE",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": 84,
+      "title": "Case 84 — Duplicate recurring Delta is rejected",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 85,
+      "title": "Case 85 — Unique Delta meaning is allowed",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 86,
+      "title": "Case 86 — Decorative script and fraktur are suppressed",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 87,
+      "title": "Case 87 — Calligraphic notation is restrained and semantic",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 88,
+      "title": "Case 88 — Semantic distinctions are not font-only",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 89,
+      "title": "Case 89 — Blackboard bold is restricted to standard canonical objects",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 90,
+      "title": "Case 90 — Duplicate recurring symbol policy is general",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 91,
+      "title": "Case 91 — Recurring symbol reuse across sections is still a duplicate",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1
+      ],
+      "pass": true
+    },
+    {
+      "id": 92,
+      "title": "Case 92 — Local dummy-variable reuse is outside the audit",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 93,
+      "title": "Case 93 — Gui prior prefers plain semantic letters for undecided recurring objects",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 94,
+      "title": "Case 94 — Gui prior allows mathcal for a genuine named set or class",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 95,
+      "title": "Case 95 — Related families use semantic subscripts before font switching",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 96,
+      "title": "Case 96 — Geometry initials are soft preferences only",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 97,
+      "title": "Case 97 — Duplicate-symbol integrity overrides the Gui prior",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 98,
+      "title": "Case 98 — User and domain conventions override the Gui prior",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "id": 99,
+      "title": "Case 99 — Plain capitals with parameters are preferred for ordinary operator and functional families",
+      "gate": "NOTATION-CONSISTENCY",
+      "good_pass": true,
+      "good_failures": [],
+      "bad_rejected": true,
+      "bad_failures": [
+        1,
+        2
+      ],
+      "pass": true
+    }
+  ]
+}

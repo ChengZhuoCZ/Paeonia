@@ -1,0 +1,17 @@
+paragraph_fingerprint_evidence_map:
+  corpus: null
+  sampling:
+    short_proofs: []
+    long_proofs: []
+    approximation_arguments: []
+    contradiction_arguments: []
+    parameter_splits: []
+    technical_estimates: []
+    equality_or_rigidity: []
+    auxiliary_returns: []
+  supported_traits: []
+  aggregate_statistics: {}
+  forbidden_storage:
+    source_sentences: true
+    source_paragraphs: true
+    distinctive_phrase_bank: true

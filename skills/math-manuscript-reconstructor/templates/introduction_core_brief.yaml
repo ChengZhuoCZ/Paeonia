@@ -1,0 +1,98 @@
+version: 2
+mode: RECONSTRUCT
+scope: Introduction
+
+audience:
+  field: null
+  level: specialist_research
+  assumed_background: []
+
+core:
+  exact_question: null
+  benchmark: null
+  pre_paper_frontier: null
+  main_theorem_conceptual: null
+  main_theorem_exact_anchor: null
+  nonroutine_obstruction: null
+  conceptual_hinge: null
+  unlocked_control: null
+  meaning_for_the_field: null
+  scope_and_limits: null
+
+pde_extension:
+  active: false
+  genre: null
+  explanatory_burden: null  # LOW|MEDIUM|HIGH
+  theorem_presentation_mode: null  # DIRECT_PRECISE|MODEL_THEN_PRECISE|INFORMAL_THEN_PRECISE|RESULT_FAMILY
+  equation_and_setting:
+    governing_problem: null
+    dimension: null
+    domain_or_geometry: null
+    boundary_or_initial_conditions: null
+    normalization: null
+  regime:
+    scaling_or_invariants: null
+    parameter_threshold_or_endpoint: null
+    data_size_regularity_or_symmetry: null
+  solution_and_conclusion:
+    solution_class: null
+    topology_or_asymptotic_mode: null
+    conclusion_type: null
+  result_architecture:
+    type: null  # SINGLE_RESULT|THRESHOLD_OR_DICHOTOMY|STRATIFICATION_OR_PARTIAL_REGULARITY|RESULT_HIERARCHY|SINGULAR_LIMIT_BRIDGE|SOLUTION_CLASS_SEPARATION|STABILITY_OR_SCATTERING
+    branches: []
+  result_delta:
+    axes: []
+    exact_change: null
+    incomparable_frontiers: []
+  assumptions:
+    structural: []
+    technical: []
+    normalization: []
+    proof_local: []
+    dependency_notes: []
+  obstruction_stack: []
+  # Each retained item: layer, failure, resolving_operation, output_to_next_stage
+  mechanism:
+    decisive_relation_or_formula: null
+    semantic_reading: null
+    unlocked_control: null
+    closure_interface: null
+  scope_boundaries:
+    theorem_boundaries: []
+    method_boundaries: []
+    known_counterexamples_or_instabilities: []
+    open_regimes: []
+  dual_audience:
+    active: false
+    object_dictionary: []
+    shared_theorem_stake: null
+
+literature_claims: []
+
+narrative:
+  candidate_arcs: []
+  selected_arc: null
+  selection_reason: null
+  opening_stake: null
+  theorem_entry_requirement: null
+  proof_overview_resolution: COMPACT
+
+optional_modules:
+  mathematical_story: false
+  scientific_context: false
+  deep_proof_explanation: false
+  editorial_positioning: false
+  extended_paragraph_plan: false
+  triggers: []
+
+integrity:
+  all_core_claims_supported: false
+  theorem_scope_matches_body: false
+  no_invented_history_or_novelty: false
+  pre_theorem_paragraphs_indispensable: false
+  non_generic_relation_visible: false
+  pde_coordinates_complete_when_active: false
+  pde_result_delta_exact_when_active: false
+  pde_solution_class_and_topology_exact_when_active: false
+  pde_scope_boundaries_typed_when_active: false

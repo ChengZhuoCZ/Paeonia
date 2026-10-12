@@ -1,0 +1,105 @@
+# v1.37 release suite — bounded batch execution
+RUN tests/run_tests.py
+TEST_PASS
+required_files=152
+contract_checks=51
+RUN tests/test_tools.py
+TOOL_TEST_PASS
+RUN tests/test_v110_contract.py
+V110_COMPAT_PASS
+RUN tests/test_v120_contract.py
+V120_CONTRACT_PASS
+RUN tests/test_v130_contract.py
+V130_CONTRACT_PASS
+RUN tests/test_v140_contract.py
+V140_CONTRACT_PASS
+RUN tests/test_v150_contract.py
+V150_CONTRACT_PASS
+RUN tests/test_v160_contract.py
+V160_CONTRACT_PASS
+RUN tests/test_v170_contract.py
+V170_ADVANCED_TOOLING_RETAINED
+contract_checks=14
+RUN tests/test_v180_contract.py
+V180_CONTRACT_PASS
+contract_checks=11
+RUN tests/test_v190_contract.py
+V190_CONTRACT_PASS
+contract_checks=13
+RUN tests/test_v1_10_contract.py
+V1_10_CONTRACT_PASS
+contract_checks=11
+RUN tests/test_v1_11_contract.py
+V1_11_CONTRACT_PASS
+contract_checks=10
+BATCH_1_AND_2_PASS
+RUN tests/test_v1_12_contract.py
+V1_12_CONTRACT_PASS
+contract_checks=14
+RUN tests/test_v1_13_contract.py
+V1_13_CONTRACT_PASS
+contract_checks=13
+RUN tests/test_v1_14_contract.py
+V1_14_CONTRACT_PASS
+contract_checks=15
+RUN tests/test_v1_15_contract.py
+V1_15_CONTRACT_PASS
+contract_checks=6
+RUN tests/test_v1_16_contract.py
+V1_16_CONTRACT_PASS
+contract_checks=5
+RUN tests/test_v1_17_contract.py
+V1_17_CONTRACT_PASS
+contract_checks=9
+RUN tests/test_v1_18_contract.py
+V1_18_CONTRACT_PASS
+contract_checks=13
+RUN tests/test_v1_19_contract.py
+V1_19_CONTRACT_PASS
+contract_checks=15
+BATCH_3_PASS
+RUN tests/test_v1_20_contract.py
+V1_20_CONTRACT_PASS
+contract_checks=16
+RUN tests/test_v1_21_contract.py
+V1_21_CONTRACT_PASS
+contract_checks=16
+RUN tests/test_v1_36_contract.py
+V1_36_CONTRACT_PASS
+checks=12
+RUN tests/test_v1_37_contract.py
+V1_37_CONTRACT_PASS
+checks=17
+RUN tests/test_behavioral_regressions.py
+BEHAVIORAL_REGRESSION_PASS
+legacy_specs=154
+executable_fixtures=154
+good_candidate_passes=154
+bad_candidate_rejections=154
+RUN tests/test_execution_planner.py
+EXECUTION_PLANNER_PASS
+RUN tests/test_gate_repair_routes.py
+GATE_REPAIR_ROUTE_PASS
+gates=22
+RUN tests/test_contract_consistency.py
+CONTRACT_CONSISTENCY_TEST_PASS
+artifacts=45
+gates=22
+behavioral_fixtures=154
+BATCH_4_PASS
+RUN tests/test_proof_explanation.py
+PROOF_EXPLANATION_TEST_PASS: valid graph, 12 invalid graph/evidence cases, scope guards
+RUN tests/test_writing_modes.py
+..............
+----------------------------------------------------------------------
+Ran 14 tests in 0.002s
+
+OK
+RUN tests/test_citation_inventory.py
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 1.823s
+
+OK
+BATCH_5_PASS
+RELEASE_SUITE_EQUIVALENT_PASS programs=32

@@ -1,0 +1,18 @@
+version: 1
+id: 137
+title: Case 137 — research corpus not author template
+legacy_spec: 137_research_corpus_not_author_template.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: coauthors_acknowledged
+  op: equals
+  value: true
+- path: source_paragraph_order_copied
+  op: equals
+  value: false
+good_candidate:
+  coauthors_acknowledged: true
+  source_paragraph_order_copied: false
+bad_candidate:
+  coauthors_acknowledged: false
+  source_paragraph_order_copied: true

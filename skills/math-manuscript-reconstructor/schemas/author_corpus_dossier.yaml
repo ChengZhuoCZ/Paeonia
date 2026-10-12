@@ -1,0 +1,74 @@
+version: 1
+artifact: AuthorCorpusDossier
+activation:
+  status: NOT_ASKED
+  user_prompted_once: false
+  user_opt_out: false
+  writing_mode: null
+  editable_scope: []
+  intended_use:
+  - introduction
+  - mathematical_writing_habits
+target_author:
+  name: null
+  role: manuscript_author
+  primary_reference: true
+  disambiguators:
+    affiliation: null
+    field: null
+    orcid: null
+    homepage: null
+    arxiv_author_id: null
+  identity_confidence: UNRESOLVED
+  identity_evidence: []
+acquisition:
+  open_access_only: true
+  paywall_circumvention: forbidden
+  default_selected_count: 4
+  allowed_selected_range:
+  - 3
+  - 6
+  prefer_author_prepared_version: true
+  search_date: null
+  candidate_inventory: []
+  selected_papers: []
+  excluded_candidates: []
+corpus_balance:
+  topic_near_count: 0
+  recent_count: 0
+  author_central_count: 0
+  sole_authored_count: 0
+  coauthor_configurations: 0
+  genre_match: null
+  language_match: null
+  evidence_level: LOW_EVIDENCE
+sampling:
+  complete_introductions: []
+  theorem_leadins: []
+  proof_overviews: []
+  routine_proof_windows: []
+  delicate_proof_windows: []
+  method_bridges: []
+  proof_closures: []
+traits:
+  introduction: []
+  mathematical_writing: []
+  rejected_or_unstable: []
+  evidence_classes:
+  - SOLE_AUTHORED_EVIDENCE
+  - CROSS_COLLABORATION_STABLE
+  - COLLABORATION_ASSOCIATED
+  - TOPIC_CONDITIONED
+  - TENTATIVE
+  - UNSUPPORTED
+application:
+  priority: math_then_user_then_preserved_baseline_then_field_then_author_corpus_then_generic
+  local_polish_baseline_precedence: true
+  citation_contamination_forbidden: true
+  source_sentence_storage: forbidden
+  persona_imitation: forbidden
+quarantine:
+  status: PENDING
+  overlap_audit_required: false
+  overlap_audit_status: NOT_RUN
+limitations: []

@@ -1,0 +1,23 @@
+version: 1
+id: 83
+title: Case 83 — High-intensity distillation stores no phrase bank or source sequence
+legacy_spec: 83_no_phrase_or_sequence_storage.md
+gate: STYLE-SOURCE-INDEPENDENCE
+assertions:
+- path: source_phrase_bank
+  op: equals
+  value: false
+- path: source_role_sequence_template
+  op: equals
+  value: false
+- path: abstract_conditional_rules_only
+  op: equals
+  value: true
+good_candidate:
+  source_phrase_bank: false
+  source_role_sequence_template: false
+  abstract_conditional_rules_only: true
+bad_candidate:
+  source_phrase_bank: true
+  source_role_sequence_template: true
+  abstract_conditional_rules_only: false

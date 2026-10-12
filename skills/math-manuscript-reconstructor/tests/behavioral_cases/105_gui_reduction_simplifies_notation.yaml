@@ -1,0 +1,24 @@
+version: 1
+id: 105
+title: Case 105 — Genuine coordinate reduction may simplify local notation
+legacy_spec: 105_gui_reduction_simplifies_notation.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: reduction_is_genuine
+  op: equals
+  value: true
+- path: simple_active_coordinate
+  op: equals
+  value: true
+- path: repeated_expression_named_if_useful
+  op: equals
+  value: true
+good_candidate:
+  reduction_is_genuine: true
+  simple_active_coordinate: true
+  repeated_expression_named_if_useful: true
+  example: xi_1 -> x; define G
+bad_candidate:
+  reduction_is_genuine: true
+  simple_active_coordinate: false
+  repeated_expression_named_if_useful: false

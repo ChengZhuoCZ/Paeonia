@@ -1,0 +1,23 @@
+version: 1
+id: 107
+title: Case 107 — Corpus typography evidence is mixed and user plain style is separate
+legacy_spec: 107_gui_typography_mixed_user_override.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: corpus_typography_mixed
+  op: equals
+  value: true
+- path: user_plain_style_is_separate_override
+  op: equals
+  value: true
+- path: claim_gui_never_uses_mathcal_mathfrak
+  op: equals
+  value: false
+good_candidate:
+  corpus_typography_mixed: true
+  user_plain_style_is_separate_override: true
+  claim_gui_never_uses_mathcal_mathfrak: false
+bad_candidate:
+  corpus_typography_mixed: false
+  user_plain_style_is_separate_override: false
+  claim_gui_never_uses_mathcal_mathfrak: true

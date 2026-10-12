@@ -1,0 +1,19 @@
+version: 1
+id: 33
+title: Case 33 — Appendix requires a modular reason
+legacy_spec: 33_appendix_modularity.md
+gate: WHOLE-PAPER-NARRATIVE-FIDELITY
+assertions:
+- path: appendix_reason
+  op: in
+  value:
+  - method_is_orthogonal_to_main_spine
+  - material_is_reused_by_multiple_body_units
+  - self_contained_background_would_interrupt_core_argument
+  - lengthy_verification_is_necessary_but_not_mechanism_bearing
+  - optional_extension_is_logically_separable
+  - certificate_or_table_requires_modular_verification
+good_candidate:
+  appendix_reason: method_is_orthogonal_to_main_spine
+bad_candidate:
+  appendix_reason: body_too_long

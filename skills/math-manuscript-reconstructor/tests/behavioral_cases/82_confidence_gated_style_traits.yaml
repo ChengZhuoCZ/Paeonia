@@ -1,0 +1,18 @@
+version: 1
+id: 82
+title: Case 82 — Tentative corpus traits do not control prose
+legacy_spec: 82_confidence_gated_style_traits.md
+gate: CONDITIONAL-STYLE-FIDELITY
+assertions:
+- path: tentative_trait_hard_rule
+  op: equals
+  value: false
+- path: confidence_gating
+  op: equals
+  value: true
+good_candidate:
+  tentative_trait_hard_rule: false
+  confidence_gating: true
+bad_candidate:
+  tentative_trait_hard_rule: true
+  confidence_gating: false

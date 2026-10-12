@@ -1,0 +1,13 @@
+version: 1
+id: 194
+title: Case 194 — Sharp constants distinguish disposable bounds
+legacy_spec: 194_sharp_constants_distinguish_disposable_bounds.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: sharp_constant_not_generic
+  op: equals
+  value: true
+good_candidate:
+  sharp_constant_not_generic: true
+bad_candidate:
+  sharp_constant_not_generic: false

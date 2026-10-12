@@ -1,0 +1,13 @@
+version: 1
+id: 32
+title: Case 32 — Front matter is semantically compressed
+legacy_spec: 32_frontmatter_compression_not_ratio_fit.md
+gate: WHOLE-PAPER-NARRATIVE-FIDELITY
+assertions:
+- path: frontmatter_ratio_targeting
+  op: equals
+  value: false
+good_candidate:
+  frontmatter_ratio_targeting: false
+bad_candidate:
+  frontmatter_ratio_targeting: true

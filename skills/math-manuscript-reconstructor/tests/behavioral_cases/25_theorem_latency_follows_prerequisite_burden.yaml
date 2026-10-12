@@ -1,0 +1,13 @@
+version: 1
+id: 25
+title: Regression 25 — Theorem latency follows prerequisite burden
+legacy_spec: 25_theorem_latency_follows_prerequisite_burden.md
+gate: SECTION-NARRATIVE-FIDELITY
+assertions:
+- path: theorem_latency_basis
+  op: equals
+  value: PREREQUISITE_BURDEN
+good_candidate:
+  theorem_latency_basis: PREREQUISITE_BURDEN
+bad_candidate:
+  theorem_latency_basis: SOURCE_DISTANCE

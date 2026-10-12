@@ -1,0 +1,25 @@
+version: 1
+id: 148
+title: Case 148 — PDE assumptions have roles and proof locations
+legacy_spec: 148_pde_assumption_roles.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: assumptions.roles_classified
+  op: equals
+  value: true
+- path: assumptions.major_dependency_named
+  op: equals
+  value: true
+- path: assumptions.everything_called_technical
+  op: equals
+  value: false
+good_candidate:
+  assumptions:
+    roles_classified: true
+    major_dependency_named: true
+    everything_called_technical: false
+bad_candidate:
+  assumptions:
+    roles_classified: false
+    major_dependency_named: false
+    everything_called_technical: true

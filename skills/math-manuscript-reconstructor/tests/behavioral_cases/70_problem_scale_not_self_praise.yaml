@@ -1,0 +1,18 @@
+version: 1
+id: 70
+title: Case 70 — Grandness comes from problem scale not self-praise
+legacy_spec: 70_problem_scale_not_self_praise.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: problem_scale_explicit
+  op: equals
+  value: true
+- path: prestige_adjectives_drive_importance
+  op: equals
+  value: false
+good_candidate:
+  problem_scale_explicit: true
+  prestige_adjectives_drive_importance: false
+bad_candidate:
+  problem_scale_explicit: false
+  prestige_adjectives_drive_importance: true

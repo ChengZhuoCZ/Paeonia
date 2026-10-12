@@ -1,0 +1,23 @@
+version: 1
+id: 64
+title: Case 64 — Introduction paragraph openings are not a generated template
+legacy_spec: 64_introduction_opener_naturalization.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: repeated_administrative_openers_reviewed
+  op: equals
+  value: true
+- path: random_synonym_rotation_used
+  op: equals
+  value: false
+- path: mathematical_subjects_lead_when_natural
+  op: equals
+  value: true
+good_candidate:
+  repeated_administrative_openers_reviewed: true
+  random_synonym_rotation_used: false
+  mathematical_subjects_lead_when_natural: true
+bad_candidate:
+  repeated_administrative_openers_reviewed: false
+  random_synonym_rotation_used: true
+  mathematical_subjects_lead_when_natural: false

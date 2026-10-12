@@ -1,0 +1,56 @@
+trigger:
+  required: true
+  research_depth: TRIANGULATED
+
+hierarchy:
+  focal_theorem: ""
+  focal_problem: ""
+  parent_program: ""
+  canonical_principle: ""
+  stop_reason_if_no_higher_level: ""
+
+story_archetypes:
+  primary: ""
+  secondary: []
+
+scale_transitions: []
+structural_tensions: []
+story_graph:
+  nodes: []
+  edges: []
+  critical_story_path: []
+
+mathematical_ancestry: []
+parallel_problems: []
+
+program_interpretation:
+  theorem_role: ""
+  program_level_consequence: ""
+  factuality_ceiling: ""
+
+opening:
+  preferred_entry: ""
+  first_page_goal: ""
+  theorem_entry_anchor: ""
+
+proof_story:
+  transition_to_explain: ""
+  mechanism_that_crosses_transition: ""
+
+scientific_context_relation:
+  mode: MATH_ONLY_MAINLINE
+
+story_compression:
+  diagnostic_sentence: ""
+  publication_template_forbidden: true
+
+integrity:
+  parent_program_is_mathematically_specific: false
+  primary_archetype_supported: false
+  scale_transition_or_tension_supported: false
+  story_graph_has_nontrivial_critical_path: false
+  ancestry_claims_verified: false
+  parallel_problems_are_structurally_relevant: false
+  theorem_returns_to_parent_program: false
+  no_generic_grandeur: false
+  no_story_inflation_beyond_evidence: false

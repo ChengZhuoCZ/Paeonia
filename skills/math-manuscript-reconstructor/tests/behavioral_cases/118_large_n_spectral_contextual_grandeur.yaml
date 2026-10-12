@@ -1,0 +1,29 @@
+version: 1
+id: 118
+title: Case 118 — Large-N spectral introductions expose continuous-discrete tension
+  instead of staying definition-first
+legacy_spec: 118_large_n_spectral_contextual_grandeur.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: verified_classical_physical_origin
+  op: equals
+  value: true
+- path: continuous_discrete_tension_visible
+  op: equals
+  value: true
+- path: formula_first
+  op: equals
+  value: false
+- path: exact_finite_rigidity_interpreted
+  op: equals
+  value: true
+good_candidate:
+  verified_classical_physical_origin: true
+  continuous_discrete_tension_visible: true
+  formula_first: false
+  exact_finite_rigidity_interpreted: true
+bad_candidate:
+  verified_classical_physical_origin: true
+  continuous_discrete_tension_visible: false
+  formula_first: true
+  exact_finite_rigidity_interpreted: false

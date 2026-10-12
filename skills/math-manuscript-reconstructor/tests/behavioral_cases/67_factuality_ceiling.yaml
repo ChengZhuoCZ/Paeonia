@@ -1,0 +1,18 @@
+version: 1
+id: 67
+title: Case 67 — Narrative amplification respects factuality ceiling
+legacy_spec: 67_factuality_ceiling.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: amplification_within_ceiling
+  op: equals
+  value: true
+- path: theorem_scope_inflated
+  op: equals
+  value: false
+good_candidate:
+  amplification_within_ceiling: true
+  theorem_scope_inflated: false
+bad_candidate:
+  amplification_within_ceiling: false
+  theorem_scope_inflated: true

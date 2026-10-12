@@ -1,0 +1,82 @@
+version: 1
+ledger: SectionNarrativeFingerprintLedger
+
+corpus_policy:
+  source_sections_stored: false
+  source_section_order_reuse: forbidden
+  source_subsection_pattern_reuse: forbidden
+  exact_theorem_latency_reuse: forbidden
+  numeric_targets_forbidden: true
+
+section_roles:
+  - CONCEPTUAL_SETUP
+  - THEOREM_CENTERED
+  - TECHNICAL_ENGINE
+  - APPLICATION_RETURN
+  - CONSTRUCTION_COUNTEREXAMPLE
+  - SYNTHESIS
+  - REFERENCE_APPENDIX
+
+section_boundary_reasons:
+  - OBLIGATION_FAMILY
+  - NEW_OBJECT_OR_SPACE
+  - METHOD_FAMILY_SHIFT
+  - REUSABLE_ENGINE
+  - REGIME_OR_GEOMETRY_SHIFT
+  - APPLICATION_PHASE
+  - COUNTEREXAMPLE_OR_CONSTRUCTION_PHASE
+  - SYNTHESIS_OR_RETURN
+
+opening_modes:
+  - GOAL_FIRST
+  - PROBLEM_FIRST
+  - OBJECT_FIRST
+  - OBSTRUCTION_FIRST
+  - APPLICATION_FIRST
+  - RECALL_AND_PIVOT
+  - CONSTRUCTION_FIRST
+
+theorem_latency_modes:
+  - IMMEDIATE
+  - MOTIVATED
+  - DEVELOPED
+  - DEFERRED
+
+subsection_policy:
+  strong_triggers:
+    - stable_internal_obligation_family
+    - method_or_regime_change
+    - reusable_construction_then_consequences
+    - meaningful_reader_reentry_point
+    - independent_components_under_one_section_goal
+  suppressors:
+    - continuous_single_proof
+    - disguised_numbered_steps
+    - one_short_local_result
+    - theorem_title_duplication
+    - inherited_discovery_history
+    - visual_balance_only
+
+closure_modes:
+  - OBLIGATION_CLOSED
+  - ENGINE_READY
+  - APPLICATION_RESOLVED
+  - RETURN_TO_MAIN
+  - NEXT_OBSTRUCTION_EXPOSED
+  - NO_EXTRA_CLOSURE
+
+corpus_evidence:
+  sample_scope: null
+  section_count: null
+  subsection_zero_count: null
+  subsection_nonzero_count: null
+  section_word_distribution: {}
+  theorem_latency_counts: {}
+  subsection_use_by_broad_size_bin: {}
+  formal_result_density: {}
+  role_transition_counts: {}
+  evidence_locators: []
+
+supported_rules: []
+tentative_rules: []
+unsupported_rules: []

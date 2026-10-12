@@ -1,0 +1,13 @@
+version: 1
+id: 190
+title: Case 190 — Related quantities carry truthful symbol families
+legacy_spec: 190_related_quantities_carry_truthful_symbol_families.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: family_relation_is_mathematical
+  op: equals
+  value: true
+good_candidate:
+  family_relation_is_mathematical: true
+bad_candidate:
+  family_relation_is_mathematical: false

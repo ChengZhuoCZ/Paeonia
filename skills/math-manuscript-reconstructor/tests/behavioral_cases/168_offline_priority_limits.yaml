@@ -1,0 +1,25 @@
+version: 1
+id: 168
+title: Case 168 — Offline frontier search does not certify novelty
+legacy_spec: 168_offline_priority_limits.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: search_status
+  op: equals
+  value: OFFLINE_INCOMPLETE
+- path: claimed_first
+  op: equals
+  value: false
+- path: limitations_disclosed
+  op: equals
+  value: true
+good_candidate:
+  live_access: false
+  search_status: OFFLINE_INCOMPLETE
+  claimed_first: false
+  limitations_disclosed: true
+bad_candidate:
+  live_access: false
+  search_status: COMPLETE_FOR_CLAIMS
+  claimed_first: true
+  limitations_disclosed: false

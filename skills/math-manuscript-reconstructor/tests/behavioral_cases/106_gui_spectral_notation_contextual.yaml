@@ -1,0 +1,18 @@
+version: 1
+id: 106
+title: Case 106 — Spectral letters are contextual rather than hard-coded
+legacy_spec: 106_gui_spectral_notation_contextual.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: field_convention_first
+  op: equals
+  value: true
+- path: hardcoded_mu_neumann_lambda_dirichlet_globally
+  op: equals
+  value: false
+good_candidate:
+  field_convention_first: true
+  hardcoded_mu_neumann_lambda_dirichlet_globally: false
+bad_candidate:
+  field_convention_first: false
+  hardcoded_mu_neumann_lambda_dirichlet_globally: true

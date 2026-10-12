@@ -1,0 +1,23 @@
+version: 1
+id: 139
+title: Case 139 — Ordinary Introductions use the reader-first core
+legacy_spec: 139_reader_first_core_default.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: core_brief_built
+  op: equals
+  value: true
+- path: selected_arc_count
+  op: equals
+  value: 1
+- path: all_optional_modules_instantiated
+  op: equals
+  value: false
+good_candidate:
+  core_brief_built: true
+  selected_arc_count: 1
+  all_optional_modules_instantiated: false
+bad_candidate:
+  core_brief_built: false
+  selected_arc_count: 4
+  all_optional_modules_instantiated: true

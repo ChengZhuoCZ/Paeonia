@@ -1,0 +1,64 @@
+# Illustrative semantic notation choice only; NOT a proof, not an actual theorem audit.
+version: 7
+status: illustrative_only
+canonical_objects:
+- object_id: domain
+  symbol: \Omega
+  meaning: generic planar domain
+  object_type: geometric domain
+- object_id: polygon
+  symbol: P
+  meaning: polygon under comparison
+  object_type: polygon
+- object_id: regular
+  symbol: R_N
+  meaning: regular N-gon
+  object_type: reference domain
+- object_id: eigenvalue
+  symbol: \lambda_1
+  meaning: first Dirichlet eigenvalue functional
+  object_type: spectral functional
+- object_id: energy
+  symbol: F
+  meaning: area-scaled Dirichlet spectral functional
+  object_type: functional
+- object_id: sides
+  symbol: N
+  meaning: polygon side count
+  object_type: integer parameter
+notation_selection:
+  stage: LOCKED
+  field_context:
+    primary_field: spectral_geometry
+    adjacent_fields:
+    - geometric_analysis
+    conventions_checked:
+    - Use standard first Dirichlet eigenvalue notation; illustrative rather than sourced verification.
+  protected_symbols: []
+  decisions:
+  - object_id: eigenvalue
+    chosen_symbol: \lambda_1
+    priority_basis: field_standard
+    rationale: Retain conventional first Dirichlet eigenvalue notation; check indexing in imported
+      sources.
+  - object_id: polygon
+    chosen_symbol: P
+    priority_basis: structural_relation
+    rationale: A plain capital letter makes the polygon recognizable in the comparison formula.
+  - object_id: regular
+    chosen_symbol: R_N
+    priority_basis: structural_relation
+    rationale: The subscript tracks side count and distinguishes the symmetric reference from
+      P.
+  - object_id: energy
+    chosen_symbol: F
+    priority_basis: formula_clarity
+    rationale: One short name shortens the repeated scale-invariant comparison F(P)-F(R_N).
+    representative_formula: F(P)=|P|\lambda_1(P), F(P)-F(R_N)
+  external_symbol_crosswalk: []
+  review:
+    mathematical_semantics: true
+    theorem_readability: true
+    field_conventions: true
+    scope_protection: true
+    source_translation: true

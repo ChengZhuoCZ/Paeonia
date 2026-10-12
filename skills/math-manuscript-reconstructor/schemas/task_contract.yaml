@@ -1,0 +1,42 @@
+version: 1
+artifact: TaskContract
+workflow: null
+writing_mode: null
+editable_scope: []
+protected_scope: []
+has_editing_baseline: false
+requested_deliverables: []
+target_theorems: []
+intended_audience: specialist
+target_language: English
+proof_detail_policy: preserve_all_operational_details
+proof_correctness_mode: trusted_source
+independent_correctness_audit: false
+target_venue: null
+has_math_sources: true
+has_style_corpus: false
+existing_proof_core_gate: NONE
+semantic_checksum_available: false
+external_literature_allowed: false
+mathematical_repair_authorized: false
+authorial_naturalization: true
+latex_output: false
+submission_claim: false
+citations_or_external_inputs: false
+author_corpus_supplement:
+  prompt_policy: ask_once_after_proof_available_and_mode_resolved
+  status: NOT_ASKED
+  target_author: null
+  author_role: manuscript_author_or_user_named_exemplar
+  disambiguators: []
+  user_opt_out: false
+  web_retrieval_allowed: true
+  open_access_only: true
+  default_paper_count: 4
+  allowed_paper_range:
+  - 3
+  - 6
+  scope:
+  - introduction
+  - mathematical_writing_habits
+  priority: soft_supplement_below_preserved_baseline_and_field_requirements

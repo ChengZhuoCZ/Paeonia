@@ -1,0 +1,20 @@
+version: 1
+id: 97
+title: Case 97 — Duplicate-symbol integrity overrides the Gui prior
+legacy_spec: 97_gui_collision_priority.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: collision_free_priority
+  op: equals
+  value: true
+- path: reuses_preferred_taken_symbol
+  op: equals
+  value: false
+good_candidate:
+  collision_free_priority: true
+  reuses_preferred_taken_symbol: false
+  choice: use another plain letter or semantic subscript
+bad_candidate:
+  collision_free_priority: false
+  reuses_preferred_taken_symbol: true
+  choice: force Q although Q already denotes a quadratic form

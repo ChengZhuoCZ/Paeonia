@@ -1,0 +1,37 @@
+{
+  "audit_key": "theorem_statement_integrity",
+  "owner_state": "THEOREM_FRAME",
+  "rollback_to": "THEOREM_FRAME",
+  "allowed_repairs": [
+    "restore_dropped_hypothesis",
+    "remove_unproved_strengthening",
+    "split_overloaded_theorem",
+    "merge_duplicate_theorem_units",
+    "restore_exact_parameter_range",
+    "restore_equality_rigidity_clause",
+    "reorder_results_for_reader"
+  ],
+  "forbidden_repairs": [
+    "change_closed_mathematics",
+    "hide_hypothesis",
+    "inflate_main_result",
+    "inherit_source_theorem_packaging"
+  ],
+  "invalidates": [
+    "TheoremStatementLedger",
+    "SemanticChecksum",
+    "IntroductionNarrativeLedger",
+    "RefereeAudit",
+    "SubmissionGateReport",
+    "IntroductionParagraphPlan",
+    "IntroductionProseAudit"
+  ],
+  "re_audit": [
+    "THEOREM-STATEMENT-INTEGRITY",
+    "MATH-SEMANTICS",
+    "PROOF-CLOSURE",
+    "GRAND-NARRATIVE-INTEGRITY",
+    "NOTATION-CONSISTENCY"
+  ],
+  "gate": "THEOREM-STATEMENT-INTEGRITY"
+}

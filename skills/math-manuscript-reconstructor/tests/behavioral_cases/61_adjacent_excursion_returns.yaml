@@ -1,0 +1,25 @@
+version: 1
+id: 61
+title: Case 61 — Adjacent excursions return to the focal problem
+legacy_spec: 61_adjacent_excursion_returns.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: adjacent_bridge.has_entry_reason
+  op: equals
+  value: true
+- path: adjacent_bridge.has_decisive_difference
+  op: equals
+  value: true
+- path: adjacent_bridge.has_return_to_main_thread
+  op: equals
+  value: true
+good_candidate:
+  adjacent_bridge:
+    has_entry_reason: true
+    has_decisive_difference: true
+    has_return_to_main_thread: true
+bad_candidate:
+  adjacent_bridge:
+    has_entry_reason: true
+    has_decisive_difference: false
+    has_return_to_main_thread: false

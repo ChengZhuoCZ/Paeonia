@@ -1,0 +1,18 @@
+version: 1
+id: 79
+title: Case 79 — Corpus statistics are evidence never generation targets
+legacy_spec: 79_no_numeric_style_fit.md
+gate: CONDITIONAL-STYLE-FIDELITY
+assertions:
+- path: numeric_fit_used
+  op: equals
+  value: false
+- path: covariance_used
+  op: equals
+  value: true
+good_candidate:
+  numeric_fit_used: false
+  covariance_used: true
+bad_candidate:
+  numeric_fit_used: true
+  covariance_used: false

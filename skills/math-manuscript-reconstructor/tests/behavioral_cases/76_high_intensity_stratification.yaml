@@ -1,0 +1,18 @@
+version: 1
+id: 76
+title: Case 76 — High-intensity distillation is stratified not global-average only
+legacy_spec: 76_high_intensity_stratification.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: role_strata_present
+  op: equals
+  value: true
+- path: global_average_only
+  op: equals
+  value: false
+good_candidate:
+  role_strata_present: true
+  global_average_only: false
+bad_candidate:
+  role_strata_present: false
+  global_average_only: true

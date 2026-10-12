@@ -1,0 +1,19 @@
+version: 1
+id: 24
+title: Regression 24 — Section boundary requires obligation family
+legacy_spec: 24_section_boundary_requires_obligation_family.md
+gate: SECTION-NARRATIVE-FIDELITY
+assertions:
+- path: section_boundary_reason
+  op: in
+  value:
+  - OBLIGATION_FAMILY_CHANGE
+  - METHOD_FAMILY_CHANGE
+  - REGIME_CHANGE
+  - REUSABLE_ENGINE
+  - APPLICATION_PHASE
+  - SYNTHESIS_RETURN
+good_candidate:
+  section_boundary_reason: OBLIGATION_FAMILY_CHANGE
+bad_candidate:
+  section_boundary_reason: LENGTH_BREAK

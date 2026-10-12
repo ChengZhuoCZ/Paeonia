@@ -1,0 +1,13 @@
+version: 1
+id: 29
+title: Regression 29 — No numeric section fingerprint matching
+legacy_spec: 29_no_numeric_section_fingerprint_matching.md
+gate: SECTION-NARRATIVE-FIDELITY
+assertions:
+- path: numeric_section_fingerprint_targeting
+  op: equals
+  value: false
+good_candidate:
+  numeric_section_fingerprint_targeting: false
+bad_candidate:
+  numeric_section_fingerprint_targeting: true

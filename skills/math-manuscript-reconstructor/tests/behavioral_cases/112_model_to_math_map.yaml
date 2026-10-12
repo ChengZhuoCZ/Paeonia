@@ -1,0 +1,23 @@
+version: 1
+id: 112
+title: Case 112 — Model-to-math map connects scientific quantities to theorem structure
+legacy_spec: 112_model_to_math_map.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: model_to_math_map_complete
+  op: equals
+  value: true
+- path: parameter_meaning_recorded
+  op: equals
+  value: true
+- path: theorem_feature_mapped
+  op: equals
+  value: true
+good_candidate:
+  model_to_math_map_complete: true
+  parameter_meaning_recorded: true
+  theorem_feature_mapped: true
+bad_candidate:
+  model_to_math_map_complete: false
+  parameter_meaning_recorded: false
+  theorem_feature_mapped: false

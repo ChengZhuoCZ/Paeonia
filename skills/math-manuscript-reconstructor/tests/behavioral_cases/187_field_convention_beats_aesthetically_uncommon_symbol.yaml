@@ -1,0 +1,13 @@
+version: 1
+id: 187
+title: Case 187 — Field convention beats aesthetically uncommon symbol
+legacy_spec: 187_field_convention_beats_aesthetically_uncommon_symbol.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: field_convention_respected
+  op: equals
+  value: true
+good_candidate:
+  field_convention_respected: true
+bad_candidate:
+  field_convention_respected: false

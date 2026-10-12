@@ -1,0 +1,25 @@
+version: 1
+id: 99
+title: Case 99 — Plain capitals with parameters are preferred for ordinary operator
+  and functional families
+legacy_spec: 99_gui_plain_operator_functional.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: plain_capital_family_preferred
+  op: equals
+  value: true
+- path: decorative_operator_default
+  op: equals
+  value: false
+good_candidate:
+  plain_capital_family_preferred: true
+  decorative_operator_default: false
+  examples:
+  - P_N
+  - J_{alpha,N}
+bad_candidate:
+  plain_capital_family_preferred: false
+  decorative_operator_default: true
+  examples:
+  - \mathscr P_N
+  - \mathcal J_{alpha,N}

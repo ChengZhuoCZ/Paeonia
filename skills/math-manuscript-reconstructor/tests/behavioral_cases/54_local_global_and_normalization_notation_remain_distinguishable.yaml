@@ -1,0 +1,18 @@
+version: 1
+id: 54
+title: Case 54 — Local global and normalization notation remain distinguishable
+legacy_spec: 54_local_global_and_normalization_notation_remain_distinguishable.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: local_global_distinct
+  op: equals
+  value: true
+- path: normalization_bridge_explicit
+  op: equals
+  value: true
+good_candidate:
+  local_global_distinct: true
+  normalization_bridge_explicit: true
+bad_candidate:
+  local_global_distinct: false
+  normalization_bridge_explicit: false

@@ -1,0 +1,23 @@
+version: 1
+id: 117
+title: Case 117 — Substantial context may occupy a multi-paragraph opening
+legacy_spec: 117_substantial_context_multi_paragraph.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: context_depth
+  op: equals
+  value: SUBSTANTIAL
+- path: multi_paragraph_context_allowed
+  op: equals
+  value: true
+- path: compressed_only_because_specialist
+  op: equals
+  value: false
+good_candidate:
+  context_depth: SUBSTANTIAL
+  multi_paragraph_context_allowed: true
+  compressed_only_because_specialist: false
+bad_candidate:
+  context_depth: SUBSTANTIAL
+  multi_paragraph_context_allowed: false
+  compressed_only_because_specialist: true

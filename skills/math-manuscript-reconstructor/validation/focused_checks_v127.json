@@ -1,0 +1,11 @@
+{
+  "quick_validate": "PASS",
+  "contract_consistency": "PASS (43 artifacts; 22 gates; 138 existing fixtures)",
+  "proof_explanation": "PASS (valid graph; 12 invalid graph/evidence cases; scope guards)",
+  "changed_markdown_links_checked": 18,
+  "missing_links": [],
+  "release_version": "1.27.0",
+  "full_suite_rerun": false,
+  "independent_generation_or_reader_test": false,
+  "scope": "instruction-only change plus actual same-agent constrained prose replay"
+}

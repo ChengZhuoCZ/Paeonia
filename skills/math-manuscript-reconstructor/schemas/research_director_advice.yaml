@@ -1,0 +1,10 @@
+version: 1
+artifact: ResearchDirectorAdvice
+recommended_required_states: []
+recommended_skips: []
+critical_path: []
+blocker_risk_ranking: []
+information_gain_priorities: []
+reusable_artifacts: []
+notes: []
+advice_is_authoritative: false

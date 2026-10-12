@@ -1,0 +1,23 @@
+version: 1
+id: 72
+title: Case 72 — Methodological afterlife is calibrated
+legacy_spec: 72_method_afterlife_calibrated.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: method_reach
+  op: equals
+  value: TRANSFERABLE
+- path: structural_reason_present
+  op: equals
+  value: true
+- path: claims_unproved_applications
+  op: equals
+  value: false
+good_candidate:
+  method_reach: TRANSFERABLE
+  structural_reason_present: true
+  claims_unproved_applications: false
+bad_candidate:
+  method_reach: PROGRAMMATIC
+  structural_reason_present: false
+  claims_unproved_applications: true

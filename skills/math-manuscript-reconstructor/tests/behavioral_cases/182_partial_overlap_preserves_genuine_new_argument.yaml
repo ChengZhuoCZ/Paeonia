@@ -1,0 +1,23 @@
+version: 1
+id: 182
+title: Case 182 — Partial overlap preserves genuine new argument
+legacy_spec: 182_partial_overlap_preserves_genuine_new_argument.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: external_substep_credited
+  op: equals
+  value: true
+- path: novel_rate_step_retained
+  op: equals
+  value: true
+- path: coverage_status
+  op: equals
+  value: APPLIED_PARTIAL
+good_candidate:
+  external_substep_credited: true
+  novel_rate_step_retained: true
+  coverage_status: APPLIED_PARTIAL
+bad_candidate:
+  external_substep_credited: true
+  novel_rate_step_retained: false
+  coverage_status: APPLIED_DIRECT

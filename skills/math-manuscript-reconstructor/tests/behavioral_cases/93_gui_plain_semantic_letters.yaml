@@ -1,0 +1,21 @@
+version: 1
+id: 93
+title: Case 93 — Gui prior prefers plain semantic letters for undecided recurring
+  objects
+legacy_spec: 93_gui_plain_semantic_letters.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: plain_semantic_preferred
+  op: equals
+  value: true
+- path: decorative_fallback_used
+  op: equals
+  value: false
+good_candidate:
+  plain_semantic_preferred: true
+  decorative_fallback_used: false
+  choice: E_N
+bad_candidate:
+  plain_semantic_preferred: false
+  decorative_fallback_used: true
+  choice: \mathscr E

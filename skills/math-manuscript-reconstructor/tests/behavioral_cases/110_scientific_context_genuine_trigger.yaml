@@ -1,0 +1,23 @@
+version: 1
+id: 110
+title: Case 110 — Scientific context requires a genuine verified trigger
+legacy_spec: 110_scientific_context_genuine_trigger.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: scientific_lineage_verified
+  op: equals
+  value: true
+- path: context_triggered
+  op: equals
+  value: true
+- path: generic_pde_only
+  op: equals
+  value: false
+good_candidate:
+  scientific_lineage_verified: true
+  context_triggered: true
+  generic_pde_only: false
+bad_candidate:
+  scientific_lineage_verified: false
+  context_triggered: true
+  generic_pde_only: true

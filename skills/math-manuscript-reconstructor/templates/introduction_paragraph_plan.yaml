@@ -1,0 +1,45 @@
+version: 2
+authority:
+  ordinary_workflow: protocols/04_introduction_abstract.md
+  status: optional_extended_planning_artifact
+  use_only_when_complexity_justifies: true
+
+core_brief_reference: null
+trigger_reason: null
+
+reconstruction_mode: from_scratch
+source_intro_policy:
+  claim_extraction: allowed
+  citation_candidate_extraction: allowed
+  terminology_extraction: allowed
+  prose_reuse: forbidden
+  paragraph_sequence_reuse: forbidden
+  theorem_latency_reuse: forbidden
+
+audience:
+  level: specialist_research
+  standard_background_assumed: []
+  definitions_required: []
+
+opening:
+  mode: ""
+  mathematical_stakes: ""
+  narrowing_vector: ""
+  definition_budget: minimal
+
+paragraphs: []
+literature_clusters: []
+link_graph: []
+
+global_checks:
+  one_primary_information_change_per_paragraph: true
+  integrated_secondary_functions_allowed: true
+  all_paragraphs_have_entry_or_opening_function: false
+  all_nonfinal_paragraphs_have_exit_anchor: false
+  all_literature_clusters_change_problem_position: false
+  adjacent_excursions_return_to_main_thread: false
+  source_intro_polishing_forbidden: true
+
+# Optional when the mechanism is nonroutine; see schemas/proof_explanation.yaml.
+# This is an internal planning record, not a required manuscript layout.
+proof_explanation: null

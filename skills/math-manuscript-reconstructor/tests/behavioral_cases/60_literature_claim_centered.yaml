@@ -1,0 +1,23 @@
+version: 1
+id: 60
+title: Case 60 — Literature prose is claim-centered
+legacy_spec: 60_literature_claim_centered.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: literature_grouping_basis
+  op: equals
+  value: mathematical_claim
+- path: author_chronology_is_primary
+  op: equals
+  value: false
+- path: all_clusters_change_problem_position
+  op: equals
+  value: true
+good_candidate:
+  literature_grouping_basis: mathematical_claim
+  author_chronology_is_primary: false
+  all_clusters_change_problem_position: true
+bad_candidate:
+  literature_grouping_basis: author_chronology
+  author_chronology_is_primary: true
+  all_clusters_change_problem_position: false

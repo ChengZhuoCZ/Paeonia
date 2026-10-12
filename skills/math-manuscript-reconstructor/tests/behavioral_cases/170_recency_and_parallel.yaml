@@ -1,0 +1,28 @@
+version: 1
+id: 170
+title: Case 170 — Recent parallel work and version are checked before priority language
+legacy_spec: 170_recency_and_parallel.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: recency_checked
+  op: equals
+  value: true
+- path: source_version_locked
+  op: equals
+  value: true
+- path: parallel_results_recognized
+  op: equals
+  value: true
+- path: unverified_first_suppressed
+  op: equals
+  value: true
+good_candidate:
+  recency_checked: true
+  source_version_locked: true
+  parallel_results_recognized: true
+  unverified_first_suppressed: true
+bad_candidate:
+  recency_checked: false
+  source_version_locked: false
+  parallel_results_recognized: false
+  unverified_first_suppressed: false

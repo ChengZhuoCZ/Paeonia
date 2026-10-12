@@ -1,0 +1,23 @@
+version: 1
+id: 141
+title: Case 141 — Theorem latency follows indispensability
+legacy_spec: 141_theorem_latency_indispensability.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: theorem_position
+  op: equals
+  value: page_2
+- path: all_pretheorem_paragraphs_indispensable
+  op: equals
+  value: true
+- path: theorem_delayed_for_drama
+  op: equals
+  value: false
+good_candidate:
+  theorem_position: page_2
+  all_pretheorem_paragraphs_indispensable: true
+  theorem_delayed_for_drama: false
+bad_candidate:
+  theorem_position: page_2
+  all_pretheorem_paragraphs_indispensable: false
+  theorem_delayed_for_drama: true

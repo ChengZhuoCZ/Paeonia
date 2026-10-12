@@ -1,0 +1,31 @@
+version: 1
+id: 115
+title: Case 115 — Grand opening precedes routine definitions when a larger verified
+  stake exists
+legacy_spec: 115_grand_opening_before_routine_definition.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: narrative_scale
+  op: in
+  value:
+  - GRAND
+  - GRAND_PLUS
+- path: larger_verified_stake_exists
+  op: equals
+  value: true
+- path: definition_first
+  op: equals
+  value: false
+- path: stake_before_standard_definition
+  op: equals
+  value: true
+good_candidate:
+  narrative_scale: GRAND
+  larger_verified_stake_exists: true
+  definition_first: false
+  stake_before_standard_definition: true
+bad_candidate:
+  narrative_scale: GRAND
+  larger_verified_stake_exists: true
+  definition_first: true
+  stake_before_standard_definition: false

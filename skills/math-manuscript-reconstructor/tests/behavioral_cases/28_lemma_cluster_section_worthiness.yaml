@@ -1,0 +1,15 @@
+version: 1
+id: 28
+title: Regression 28 — Lemma cluster section-worthiness
+legacy_spec: 28_lemma_cluster_section_worthiness.md
+gate: SECTION-NARRATIVE-FIDELITY
+assertions:
+- path: section_decision
+  op: equals
+  value: KEEP_INLINE
+good_candidate:
+  lemma_cluster_has_downstream_life: false
+  section_decision: KEEP_INLINE
+bad_candidate:
+  lemma_cluster_has_downstream_life: false
+  section_decision: CREATE_SECTION

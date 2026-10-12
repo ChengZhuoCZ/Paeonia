@@ -1,0 +1,23 @@
+version: 1
+id: 68
+title: Case 68 — GRAND_PLUS must be earned by mathematics
+legacy_spec: 68_grand_plus_earned.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: scale
+  op: equals
+  value: GRAND_PLUS
+- path: program_level_evidence
+  op: equals
+  value: true
+- path: scale_selected_for_prestige
+  op: equals
+  value: false
+good_candidate:
+  scale: GRAND_PLUS
+  program_level_evidence: true
+  scale_selected_for_prestige: false
+bad_candidate:
+  scale: GRAND_PLUS
+  program_level_evidence: false
+  scale_selected_for_prestige: true

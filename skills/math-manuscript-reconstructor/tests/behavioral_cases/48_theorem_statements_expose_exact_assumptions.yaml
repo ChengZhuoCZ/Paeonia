@@ -1,0 +1,18 @@
+version: 1
+id: 48
+title: Case 48 — Theorem statements expose exact assumptions
+legacy_spec: 48_theorem_statements_expose_exact_assumptions.md
+gate: THEOREM-STATEMENT-INTEGRITY
+assertions:
+- path: substantive_hypotheses_visible
+  op: equals
+  value: true
+- path: proof_only_assumptions_removed
+  op: equals
+  value: true
+good_candidate:
+  substantive_hypotheses_visible: true
+  proof_only_assumptions_removed: true
+bad_candidate:
+  substantive_hypotheses_visible: false
+  proof_only_assumptions_removed: false

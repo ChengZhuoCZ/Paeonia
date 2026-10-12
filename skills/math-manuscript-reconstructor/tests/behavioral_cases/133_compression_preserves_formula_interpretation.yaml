@@ -1,0 +1,13 @@
+version: 1
+id: 133
+title: Case 133 — compression preserves formula interpretation
+legacy_spec: 133_compression_preserves_formula_interpretation.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: compression_decision
+  op: equals
+  value: retain_operational_interpretation
+good_candidate:
+  compression_decision: retain_operational_interpretation
+bad_candidate:
+  compression_decision: delete_all_formula_followup

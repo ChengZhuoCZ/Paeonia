@@ -1,0 +1,18 @@
+ledger: SectionNarrativeFingerprintLedger
+corpus_id: null
+sampling:
+  sections_sampled: null
+  stratification: []
+aggregate_evidence:
+  section_count: null
+  subsection_zero_count: null
+  subsection_nonzero_count: null
+  section_word_distribution: {}
+  theorem_latency_counts: {}
+  subsection_use_by_broad_size_bin: {}
+  formal_result_density: {}
+abstract_rules: []
+locators: []
+source_sections_stored: false
+source_titles_emitted: false
+numeric_targets_forbidden: true

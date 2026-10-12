@@ -1,0 +1,23 @@
+version: 1
+id: 69
+title: Case 69 — Historical arc reaches exact pre-paper frontier
+legacy_spec: 69_historical_frontier.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: history_reaches_exact_frontier
+  op: equals
+  value: true
+- path: gap_after_prior_work_explicit
+  op: equals
+  value: true
+- path: chronology_is_main_structure
+  op: equals
+  value: false
+good_candidate:
+  history_reaches_exact_frontier: true
+  gap_after_prior_work_explicit: true
+  chronology_is_main_structure: false
+bad_candidate:
+  history_reaches_exact_frontier: false
+  gap_after_prior_work_explicit: false
+  chronology_is_main_structure: true

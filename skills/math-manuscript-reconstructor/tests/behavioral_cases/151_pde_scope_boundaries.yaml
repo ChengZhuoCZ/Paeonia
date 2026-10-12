@@ -1,0 +1,35 @@
+version: 1
+id: 151
+title: Case 151 — PDE scope boundaries are typed
+legacy_spec: 151_pde_scope_boundaries.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: boundaries.theorem
+  op: equals
+  value: true
+- path: boundaries.method
+  op: equals
+  value: true
+- path: boundaries.known_obstruction
+  op: equals
+  value: true
+- path: boundaries.open_regime
+  op: equals
+  value: true
+- path: boundaries.categories_conflated
+  op: equals
+  value: false
+good_candidate:
+  boundaries:
+    theorem: true
+    method: true
+    known_obstruction: true
+    open_regime: true
+    categories_conflated: false
+bad_candidate:
+  boundaries:
+    theorem: false
+    method: false
+    known_obstruction: false
+    open_regime: false
+    categories_conflated: true

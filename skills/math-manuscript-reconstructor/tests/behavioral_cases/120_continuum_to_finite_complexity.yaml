@@ -1,0 +1,23 @@
+version: 1
+id: 120
+title: Case 120 — Continuum-to-finite-complexity transition is made explicit
+legacy_spec: 120_continuum_to_finite_complexity.md
+gate: MATHEMATICAL-STORY-INTEGRITY
+assertions:
+- path: story_archetype
+  op: equals
+  value: CONTINUUM_TO_FINITE_COMPLEXITY
+- path: lost_continuum_mechanism_explained
+  op: equals
+  value: true
+- path: finite_problem_treated_as_routine_corollary
+  op: equals
+  value: false
+good_candidate:
+  story_archetype: CONTINUUM_TO_FINITE_COMPLEXITY
+  lost_continuum_mechanism_explained: true
+  finite_problem_treated_as_routine_corollary: false
+bad_candidate:
+  story_archetype: GENERIC_FIELD_BACKGROUND
+  lost_continuum_mechanism_explained: false
+  finite_problem_treated_as_routine_corollary: true

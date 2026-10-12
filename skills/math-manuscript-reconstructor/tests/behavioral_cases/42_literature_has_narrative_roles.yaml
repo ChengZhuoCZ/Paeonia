@@ -1,0 +1,18 @@
+version: 1
+id: 42
+title: Case 42 — Literature has narrative roles
+legacy_spec: 42_literature_has_narrative_roles.md
+gate: GRAND-NARRATIVE-INTEGRITY
+assertions:
+- path: all_literature_items_have_roles
+  op: equals
+  value: true
+- path: bibliography_dump
+  op: equals
+  value: false
+good_candidate:
+  all_literature_items_have_roles: true
+  bibliography_dump: false
+bad_candidate:
+  all_literature_items_have_roles: false
+  bibliography_dump: true

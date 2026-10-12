@@ -1,0 +1,23 @@
+version: 1
+id: 125
+title: Case 125 — The theorem is interpreted back at parent-program scale
+legacy_spec: 125_program_return_after_theorem.md
+gate: MATHEMATICAL-STORY-INTEGRITY
+assertions:
+- path: formal_theorem_present
+  op: equals
+  value: true
+- path: program_return_present
+  op: equals
+  value: true
+- path: formula_paraphrase_only
+  op: equals
+  value: false
+good_candidate:
+  formal_theorem_present: true
+  program_return_present: true
+  formula_paraphrase_only: false
+bad_candidate:
+  formal_theorem_present: true
+  program_return_present: false
+  formula_paraphrase_only: true

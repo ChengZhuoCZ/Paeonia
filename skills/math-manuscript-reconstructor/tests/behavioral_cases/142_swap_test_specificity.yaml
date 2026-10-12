@@ -1,0 +1,16 @@
+version: 1
+id: 142
+title: Case 142 — The swap test rejects transferable generic prose
+legacy_spec: 142_swap_test_specificity.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: survives_noun_swap
+  op: equals
+  value: false
+- path: nontransferable_mathematical_relation
+  op: present
+good_candidate:
+  survives_noun_swap: false
+  nontransferable_mathematical_relation: finite_side_constraint_breaks_disk_symmetrization
+bad_candidate:
+  survives_noun_swap: true

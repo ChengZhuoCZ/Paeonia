@@ -1,0 +1,18 @@
+version: 1
+id: 13
+title: Regression 13 — Fidelity Without Imitation
+legacy_spec: 13_style_ledger_fidelity_without_copy.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: abstract_trait_fidelity
+  op: equals
+  value: true
+- path: source_phrase_copy
+  op: equals
+  value: false
+good_candidate:
+  abstract_trait_fidelity: true
+  source_phrase_copy: false
+bad_candidate:
+  abstract_trait_fidelity: false
+  source_phrase_copy: true

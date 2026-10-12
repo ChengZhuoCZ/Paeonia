@@ -1,0 +1,18 @@
+version: 1
+id: 131
+title: Case 131 — outline independent of proof body
+legacy_spec: 131_outline_independent_of_proof_body.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: object_meaning_location
+  op: equals
+  value: outline
+- path: stage_outputs_explained
+  op: equals
+  value: true
+good_candidate:
+  object_meaning_location: outline
+  stage_outputs_explained: true
+bad_candidate:
+  object_meaning_location: proof_body_only
+  stage_outputs_explained: false

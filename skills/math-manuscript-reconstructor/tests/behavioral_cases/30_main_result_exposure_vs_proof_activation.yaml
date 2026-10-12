@@ -1,0 +1,13 @@
+version: 1
+id: 30
+title: Case 30 — Main-result exposure is not proof activation
+legacy_spec: 30_main_result_exposure_vs_proof_activation.md
+gate: WHOLE-PAPER-NARRATIVE-FIDELITY
+assertions:
+- path: statement_exposure_separate_from_proof_activation
+  op: equals
+  value: true
+good_candidate:
+  statement_exposure_separate_from_proof_activation: true
+bad_candidate:
+  statement_exposure_separate_from_proof_activation: false

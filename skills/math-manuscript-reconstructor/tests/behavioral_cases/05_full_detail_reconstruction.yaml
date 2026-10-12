@@ -1,0 +1,13 @@
+version: 1
+id: 5
+title: Regression 05 — Preserve All Details Without Preserving Packaging
+legacy_spec: 05_full_detail_reconstruction.md
+gate: PROOF-CLOSURE
+assertions:
+- path: operational_details_preserved
+  op: equals
+  value: true
+good_candidate:
+  operational_details_preserved: true
+bad_candidate:
+  operational_details_preserved: false

@@ -1,0 +1,36 @@
+version: 1
+id: 162
+title: Case 162 — Author corpus learns abstract decisions without phrase or sequence
+  imitation
+legacy_spec: 162_author_corpus_no_imitation.md
+gate: STYLE-SOURCE-INDEPENDENCE
+assertions:
+- path: independence.abstract_traits_only
+  op: equals
+  value: true
+- path: independence.phrase_bank
+  op: equals
+  value: false
+- path: independence.distinctive_tics
+  op: equals
+  value: false
+- path: independence.source_sequence_copy
+  op: equals
+  value: false
+- path: independence.quarantined
+  op: equals
+  value: true
+good_candidate:
+  independence:
+    abstract_traits_only: true
+    phrase_bank: false
+    distinctive_tics: false
+    source_sequence_copy: false
+    quarantined: true
+bad_candidate:
+  independence:
+    abstract_traits_only: false
+    phrase_bank: true
+    distinctive_tics: true
+    source_sequence_copy: true
+    quarantined: false

@@ -1,0 +1,41 @@
+# v1.36 release suite batch 2
+RUN tests/test_v170_contract.py
+V170_ADVANCED_TOOLING_RETAINED
+contract_checks=14
+RUN tests/test_v180_contract.py
+V180_CONTRACT_PASS
+contract_checks=11
+RUN tests/test_v190_contract.py
+V190_CONTRACT_PASS
+contract_checks=13
+RUN tests/test_v1_10_contract.py
+V1_10_CONTRACT_PASS
+contract_checks=11
+RUN tests/test_v1_11_contract.py
+V1_11_CONTRACT_PASS
+contract_checks=10
+RUN tests/test_v1_12_contract.py
+V1_12_CONTRACT_PASS
+contract_checks=14
+RUN tests/test_v1_13_contract.py
+V1_13_CONTRACT_PASS
+contract_checks=13
+RUN tests/test_v1_14_contract.py
+V1_14_CONTRACT_PASS
+contract_checks=15
+RUN tests/test_v1_15_contract.py
+V1_15_CONTRACT_PASS
+contract_checks=6
+RUN tests/test_v1_16_contract.py
+V1_16_CONTRACT_PASS
+contract_checks=5
+RUN tests/test_v1_17_contract.py
+V1_17_CONTRACT_PASS
+contract_checks=9
+RUN tests/test_v1_18_contract.py
+V1_18_CONTRACT_PASS
+contract_checks=13
+RUN tests/test_v1_19_contract.py
+V1_19_CONTRACT_PASS
+contract_checks=15
+BATCH_2_PASS

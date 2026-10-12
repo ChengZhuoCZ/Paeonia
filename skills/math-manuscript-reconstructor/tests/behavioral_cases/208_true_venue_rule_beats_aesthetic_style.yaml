@@ -1,0 +1,15 @@
+version: 1
+id: 208
+title: Case 208 — True venue rule beats aesthetic style
+legacy_spec: 208_true_venue_rule_beats_aesthetic_style.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: venue.mandatory_rule_respected
+  op: equals
+  value: true
+good_candidate:
+  venue:
+    mandatory_rule_respected: true
+bad_candidate:
+  venue:
+    mandatory_rule_respected: false

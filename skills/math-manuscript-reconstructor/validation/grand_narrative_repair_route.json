@@ -1,0 +1,36 @@
+{
+  "audit_key": "grand_narrative_integrity",
+  "owner_state": "INTRODUCTION_NARRATIVE",
+  "rollback_to": "INTRODUCTION_NARRATIVE",
+  "allowed_repairs": [
+    "compress_detached_history",
+    "expose_main_result_earlier",
+    "state_precise_obstruction",
+    "rebuild_result_hierarchy",
+    "assign_literature_roles",
+    "remove_unbridged_adjacent_problem",
+    "replace_section_itinerary_with_mechanism_map",
+    "downgrade_unverified_hype"
+  ],
+  "forbidden_repairs": [
+    "invent_priority",
+    "inflate_novelty",
+    "delay_theorem_for_drama",
+    "copy_reference_introduction_sequence"
+  ],
+  "invalidates": [
+    "IntroductionNarrativeLedger",
+    "CitationLedger",
+    "RefereeAudit",
+    "SubmissionGateReport",
+    "IntroductionParagraphPlan",
+    "IntroductionProseAudit"
+  ],
+  "re_audit": [
+    "GRAND-NARRATIVE-INTEGRITY",
+    "CITATION-INTEGRITY",
+    "MATH-SEMANTICS",
+    "WHOLE-PAPER-NARRATIVE-FIDELITY"
+  ],
+  "gate": "GRAND-NARRATIVE-INTEGRITY"
+}

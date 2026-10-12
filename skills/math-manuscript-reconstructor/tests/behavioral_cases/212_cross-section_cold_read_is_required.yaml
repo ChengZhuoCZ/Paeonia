@@ -1,0 +1,15 @@
+version: 1
+id: 212
+title: Case 212 — Cross-section cold read is required
+legacy_spec: 212_cross-section_cold_read_is_required.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: review.unified_voice_cold_read
+  op: equals
+  value: true
+good_candidate:
+  review:
+    unified_voice_cold_read: true
+bad_candidate:
+  review:
+    unified_voice_cold_read: false

@@ -1,0 +1,18 @@
+version: 1
+id: 45
+title: Case 45 — Mechanism map precedes section itinerary
+legacy_spec: 45_mechanism_map_precedes_section_itinerary.md
+gate: GRAND-NARRATIVE-INTEGRITY
+assertions:
+- path: proof_overview_primary
+  op: equals
+  value: mechanism_chain
+- path: organization_paragraph_mandatory
+  op: equals
+  value: false
+good_candidate:
+  proof_overview_primary: mechanism_chain
+  organization_paragraph_mandatory: false
+bad_candidate:
+  proof_overview_primary: section_itinerary
+  organization_paragraph_mandatory: true

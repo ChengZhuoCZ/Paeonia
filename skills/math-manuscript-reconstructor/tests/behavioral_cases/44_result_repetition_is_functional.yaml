@@ -1,0 +1,28 @@
+version: 1
+id: 44
+title: Case 44 — Main-result repetition is functional
+legacy_spec: 44_result_repetition_is_functional.md
+gate: GRAND-NARRATIVE-INTEGRITY
+assertions:
+- path: orientation_summary
+  op: equals
+  value: allowed
+- path: formal_statement
+  op: equals
+  value: allowed
+- path: conceptual_interpretation
+  op: equals
+  value: allowed
+- path: literal_restatement
+  op: equals
+  value: forbidden
+good_candidate:
+  orientation_summary: allowed
+  formal_statement: allowed
+  conceptual_interpretation: allowed
+  literal_restatement: forbidden
+bad_candidate:
+  orientation_summary: allowed
+  formal_statement: allowed
+  conceptual_interpretation: allowed
+  literal_restatement: allowed

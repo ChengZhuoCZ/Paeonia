@@ -1,0 +1,47 @@
+# Compact example record (not a paper or bibliography template).
+version: 1
+artifact: IntroductionLiteratureDossier
+mode: RECONSTRUCT
+scope: Introduction
+search:
+  research_date: null
+  live_access: null
+  access_limitations: []
+  independent_routes:
+    - name: problem_and_classical_principle
+      concrete_queries: []
+      systems: []
+      selected_sources: []
+    - name: methods_and_citation_graph
+      concrete_queries: []
+      systems: []
+      selected_sources: []
+  outside_source_bibliography_checked: null
+  recency_and_version_check: null
+  status: NOT_STARTED
+fingerprint:
+  object_operator_class: null
+  exact_theorem_scope: null
+  conclusion_and_equality: null
+  mechanisms_and_obstruction: null
+  query_aliases: []
+source_evidence: []
+credit_map: []
+frontier_comparison: []
+programmatic_story:
+  tested_parent_program: null
+  chosen_scale: null
+  verified_chain: []
+  central_structural_tension: null
+  return_to_program: null
+  claim_ceiling: []
+revision_decisions:
+  high_priority_citations: []
+  unresolved_or_inaccessible: []
+  priority_claims_withheld: []
+  out_of_scope_local_polish_regions: []
+gates:
+  factuality_and_credit_checked: false
+  exact_frontier_supported: false
+  theorem_scope_preserved: false
+  false_exhaustiveness_avoided: false

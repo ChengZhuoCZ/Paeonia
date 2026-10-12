@@ -1,0 +1,46 @@
+paragraph_fingerprint_ledger:
+  profile: null
+  source_mode: user_supplied_style_reference
+  representation: abstract_paragraph_decisions_only
+  evidence:
+    proof_windows: null
+    paragraph_windows: null
+    role_statistics_are_targets: false
+    source_paragraph_storage: forbidden
+  boundary_policy:
+    start_new_paragraph_on: []
+    usually_merge_when: []
+    typography_only_breaks: discouraged
+  opening_policy:
+    preferred_functional_modes: []
+    meta_led_openings: review_when_recurrent
+  internal_movements:
+    routine: null
+    structural: null
+    delicate: null
+    bridge: null
+    surprising: null
+    closure: null
+  role_pressure:
+    routine: null
+    structural: null
+    delicate: null
+    bridge: null
+    surprising: null
+    closure: null
+  display_adjacency:
+    setup_policy: null
+    followup_policy: null
+    paragraph_break_policy: null
+  transition_graph:
+    qualitative_edges: []
+    exact_source_sequences_reusable: false
+  mathematical_burstiness:
+    policy: null
+    random_variation: forbidden
+  one_paragraph_claim_policy: null
+  step_heading_policy: null
+  research_projection: null
+  numeric_fit_policy: evidence_only_never_generation_target
+  source_independence: required
+  confidence: null

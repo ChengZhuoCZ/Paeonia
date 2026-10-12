@@ -1,0 +1,23 @@
+version: 1
+id: 114
+title: Case 114 — Scientific theorem interpretation stays below an evidence ceiling
+legacy_spec: 114_scientific_interpretation_ceiling.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: evidence_anchor_present
+  op: equals
+  value: true
+- path: wording_ceiling_present
+  op: equals
+  value: true
+- path: experimental_overclaim
+  op: equals
+  value: false
+good_candidate:
+  evidence_anchor_present: true
+  wording_ceiling_present: true
+  experimental_overclaim: false
+bad_candidate:
+  evidence_anchor_present: false
+  wording_ceiling_present: false
+  experimental_overclaim: true

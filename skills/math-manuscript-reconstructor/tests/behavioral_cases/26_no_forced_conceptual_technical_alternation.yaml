@@ -1,0 +1,13 @@
+version: 1
+id: 26
+title: Regression 26 — No forced conceptual/technical alternation
+legacy_spec: 26_no_forced_conceptual_technical_alternation.md
+gate: SECTION-NARRATIVE-FIDELITY
+assertions:
+- path: forced_conceptual_technical_alternation
+  op: equals
+  value: false
+good_candidate:
+  forced_conceptual_technical_alternation: false
+bad_candidate:
+  forced_conceptual_technical_alternation: true

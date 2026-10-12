@@ -1,0 +1,20 @@
+version: 1
+id: 87
+title: Case 87 — Calligraphic notation is restrained and semantic
+legacy_spec: 87_mathcal_exceptional_only.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: mathcal_role_is_semantic
+  op: equals
+  value: true
+- path: decorative_mathcal
+  op: equals
+  value: false
+good_candidate:
+  mathcal_role_is_semantic: true
+  decorative_mathcal: false
+  example: \mathcal Z(u) as a nodal set
+bad_candidate:
+  mathcal_role_is_semantic: false
+  decorative_mathcal: true
+  example: \mathcal E for an ordinary energy when E is available

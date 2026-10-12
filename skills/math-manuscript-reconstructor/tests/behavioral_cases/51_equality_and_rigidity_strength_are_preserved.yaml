@@ -1,0 +1,18 @@
+version: 1
+id: 51
+title: Case 51 — Equality and rigidity strength are preserved
+legacy_spec: 51_equality_and_rigidity_strength_are_preserved.md
+gate: THEOREM-STATEMENT-INTEGRITY
+assertions:
+- path: equality_clause_exact
+  op: equals
+  value: true
+- path: classification_overstated
+  op: equals
+  value: false
+good_candidate:
+  equality_clause_exact: true
+  classification_overstated: false
+bad_candidate:
+  equality_clause_exact: false
+  classification_overstated: true

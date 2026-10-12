@@ -1,0 +1,35 @@
+version: 1
+id: 150
+title: Case 150 — A decisive PDE formula is interpreted through closure
+legacy_spec: 150_pde_formula_to_closure.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: formula.original_variable_meaning
+  op: equals
+  value: true
+- path: formula.adverse_effect_named
+  op: equals
+  value: true
+- path: formula.unlocked_control_named
+  op: equals
+  value: true
+- path: formula.closure_link_named
+  op: equals
+  value: true
+- path: formula.dump_only
+  op: equals
+  value: false
+good_candidate:
+  formula:
+    original_variable_meaning: true
+    adverse_effect_named: true
+    unlocked_control_named: true
+    closure_link_named: true
+    dump_only: false
+bad_candidate:
+  formula:
+    original_variable_meaning: false
+    adverse_effect_named: false
+    unlocked_control_named: false
+    closure_link_named: false
+    dump_only: true

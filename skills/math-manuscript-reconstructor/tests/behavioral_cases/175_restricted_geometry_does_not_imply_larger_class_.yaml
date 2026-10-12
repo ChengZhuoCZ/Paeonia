@@ -1,0 +1,23 @@
+version: 1
+id: 175
+title: Case 175 — Restricted geometry does not imply larger-class theorem
+legacy_spec: 175_restricted_geometry_does_not_imply_larger_class_.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: geometric_hypotheses_verified
+  op: equals
+  value: false
+- path: retained_original
+  op: equals
+  value: true
+- path: unsupported_class_extension
+  op: equals
+  value: false
+good_candidate:
+  geometric_hypotheses_verified: false
+  retained_original: true
+  unsupported_class_extension: false
+bad_candidate:
+  geometric_hypotheses_verified: false
+  retained_original: false
+  unsupported_class_extension: true

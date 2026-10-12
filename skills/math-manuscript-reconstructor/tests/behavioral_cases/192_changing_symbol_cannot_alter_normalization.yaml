@@ -1,0 +1,13 @@
+version: 1
+id: 192
+title: Case 192 — Changing symbol cannot alter normalization
+legacy_spec: 192_changing_symbol_cannot_alter_normalization.md
+gate: MATH-SEMANTICS
+assertions:
+- path: normalization_retained
+  op: equals
+  value: true
+good_candidate:
+  normalization_retained: true
+bad_candidate:
+  normalization_retained: false

@@ -1,0 +1,49 @@
+# v1.38.0 release validation — bounded constituent execution
+
+Date: 2026-09-18
+Root: math-manuscript-reconstructor
+
+All 33 constituent programs declared by tests/run_release_suite.py passed when run in bounded groups:
+
+1. tests/run_tests.py — PASS
+2. tests/test_tools.py — PASS
+3. tests/test_v110_contract.py — PASS
+4. tests/test_v120_contract.py — PASS
+5. tests/test_v130_contract.py — PASS
+6. tests/test_v140_contract.py — PASS
+7. tests/test_v150_contract.py — PASS
+8. tests/test_v160_contract.py — PASS
+9. tests/test_v170_contract.py — PASS
+10. tests/test_v180_contract.py — PASS
+11. tests/test_v190_contract.py — PASS
+12. tests/test_v1_10_contract.py — PASS
+13. tests/test_v1_11_contract.py — PASS
+14. tests/test_v1_12_contract.py — PASS
+15. tests/test_v1_13_contract.py — PASS
+16. tests/test_v1_14_contract.py — PASS
+17. tests/test_v1_15_contract.py — PASS
+18. tests/test_v1_16_contract.py — PASS
+19. tests/test_v1_17_contract.py — PASS
+20. tests/test_v1_18_contract.py — PASS
+21. tests/test_v1_19_contract.py — PASS
+22. tests/test_v1_20_contract.py — PASS
+23. tests/test_v1_21_contract.py — PASS
+24. tests/test_v1_36_contract.py — PASS
+25. tests/test_v1_37_contract.py — PASS
+26. tests/test_v1_38_contract.py — PASS (14 checks)
+27. tests/test_behavioral_regressions.py — PASS (162 positive accepted; 162 negative rejected)
+28. tests/test_execution_planner.py — PASS
+29. tests/test_gate_repair_routes.py — PASS (22 gates)
+30. tests/test_contract_consistency.py — PASS (46 artifacts; 162 fixtures)
+31. tests/test_proof_explanation.py — PASS
+32. tests/test_writing_modes.py — PASS (14 tests)
+33. tests/test_citation_inventory.py — PASS (9 tests)
+
+Additional release-candidate checks:
+- YAML parse: PASS (209 files before checksum regeneration)
+- JSON parse: PASS (17 files)
+- Python syntax: PASS (64 files)
+- relative Markdown links: PASS (59 links)
+- contract consistency: 29 states, 46 artifacts, 22 gates, 162 fixtures
+
+The monolithic wrapper was not treated as independent evidence because the constrained container imposed a cumulative process timeout during a long wrapper run. All declared child programs were executed and observed separately.

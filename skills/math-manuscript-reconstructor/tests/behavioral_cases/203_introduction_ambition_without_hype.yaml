@@ -1,0 +1,15 @@
+version: 1
+id: 203
+title: Case 203 — Introduction ambition without hype
+legacy_spec: 203_introduction_ambition_without_hype.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: introduction.verified_math_program_and_restrained_prose
+  op: equals
+  value: true
+good_candidate:
+  introduction:
+    verified_math_program_and_restrained_prose: true
+bad_candidate:
+  introduction:
+    verified_math_program_and_restrained_prose: false

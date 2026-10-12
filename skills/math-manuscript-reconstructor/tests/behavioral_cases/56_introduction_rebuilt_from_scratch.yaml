@@ -1,0 +1,23 @@
+version: 1
+id: 56
+title: Case 56 — Introduction is rebuilt from scratch
+legacy_spec: 56_introduction_rebuilt_from_scratch.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: reconstruction_mode
+  op: equals
+  value: from_scratch
+- path: source_intro_line_polish
+  op: equals
+  value: false
+- path: source_paragraph_sequence_reused
+  op: equals
+  value: false
+good_candidate:
+  reconstruction_mode: from_scratch
+  source_intro_line_polish: false
+  source_paragraph_sequence_reused: false
+bad_candidate:
+  reconstruction_mode: polish_source
+  source_intro_line_polish: true
+  source_paragraph_sequence_reused: true

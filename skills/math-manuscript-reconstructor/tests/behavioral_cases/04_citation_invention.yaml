@@ -1,0 +1,16 @@
+version: 1
+id: 4
+title: Regression 04 — Citation Invention
+legacy_spec: 04_citation_invention.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: citation_status
+  op: in
+  value:
+  - verified
+  - user-supplied
+  - needs-check
+good_candidate:
+  citation_status: needs-check
+bad_candidate:
+  citation_status: invented

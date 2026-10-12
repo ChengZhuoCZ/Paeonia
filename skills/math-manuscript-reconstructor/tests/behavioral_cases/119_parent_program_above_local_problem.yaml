@@ -1,0 +1,23 @@
+version: 1
+id: 119
+title: Case 119 — Parent program is identified above the local conjecture
+legacy_spec: 119_parent_program_above_local_problem.md
+gate: MATHEMATICAL-STORY-INTEGRITY
+assertions:
+- path: parent_program_specific
+  op: equals
+  value: true
+- path: local_problem_only
+  op: equals
+  value: false
+- path: canonical_principle_visible
+  op: equals
+  value: true
+good_candidate:
+  parent_program_specific: true
+  local_problem_only: false
+  canonical_principle_visible: true
+bad_candidate:
+  parent_program_specific: false
+  local_problem_only: true
+  canonical_principle_visible: false

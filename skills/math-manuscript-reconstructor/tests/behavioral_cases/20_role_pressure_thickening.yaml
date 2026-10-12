@@ -1,0 +1,13 @@
+version: 1
+id: 20
+title: Regression 20 — Role-pressure thickening
+legacy_spec: 20_role_pressure_thickening.md
+gate: AUTHORIAL-DECISION
+assertions:
+- path: delicate_local_thickening
+  op: equals
+  value: true
+good_candidate:
+  delicate_local_thickening: true
+bad_candidate:
+  delicate_local_thickening: false

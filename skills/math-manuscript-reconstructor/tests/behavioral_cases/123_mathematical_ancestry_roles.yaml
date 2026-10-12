@@ -1,0 +1,27 @@
+version: 1
+id: 123
+title: Case 123 — Mathematical ancestry is role-based rather than chronological
+legacy_spec: 123_mathematical_ancestry_roles.md
+gate: MATHEMATICAL-STORY-INTEGRITY
+assertions:
+- path: ancestry_roles
+  op: contains
+  value: CANONICAL_THEOREM
+- path: ancestry_roles
+  op: contains
+  value: GLOBAL_FRONTIER
+- path: chronology_only
+  op: equals
+  value: false
+good_candidate:
+  ancestry_roles:
+  - PROGRAM_ORIGIN
+  - CANONICAL_THEOREM
+  - GLOBAL_FRONTIER
+  chronology_only: false
+bad_candidate:
+  ancestry_roles:
+  - AUTHOR_A
+  - AUTHOR_B
+  - AUTHOR_C
+  chronology_only: true

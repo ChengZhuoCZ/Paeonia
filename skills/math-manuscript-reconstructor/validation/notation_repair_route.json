@@ -1,0 +1,40 @@
+{
+  "audit_key": "notation_consistency",
+  "owner_state": "NOTATION_ARCHITECTURE",
+  "rollback_to": "NOTATION_ARCHITECTURE",
+  "allowed_repairs": [
+    "rename_duplicate_symbol",
+    "unify_normalization",
+    "repair_cross_reference",
+    "regularize_index_family",
+    "make_constant_dependencies_explicit",
+    "replace_decorative_alphabet",
+    "justify_or_remove_mathcal",
+    "replace_font_only_distinction"
+  ],
+  "forbidden_repairs": [
+    "change_mathematical_object_silently",
+    "rename_for_cosmetic_variation",
+    "preserve_source_collision_by_inertia",
+    "introduce_decorative_font_for_variety",
+    "distinguish_objects_only_by_font",
+    "preserve_duplicate_recurring_symbol"
+  ],
+  "invalidates": [
+    "NotationLedger",
+    "ProofCoreGateReport",
+    "TheoremStatementLedger",
+    "SemanticChecksum",
+    "ReconstructionBlueprint",
+    "SubmissionGateReport",
+    "IntroductionParagraphPlan",
+    "IntroductionProseAudit"
+  ],
+  "re_audit": [
+    "NOTATION-CONSISTENCY",
+    "MATH-SEMANTICS",
+    "PROOF-CLOSURE",
+    "THEOREM-STATEMENT-INTEGRITY"
+  ],
+  "gate": "NOTATION-CONSISTENCY"
+}

@@ -1,0 +1,23 @@
+version: 1
+id: 65
+title: Case 65 — Introduction proof overview is causal mechanism prose
+legacy_spec: 65_introduction_mechanism_prose.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: proof_story
+  op: equals
+  value: causal_mechanism
+- path: section_itinerary_is_primary
+  op: equals
+  value: false
+- path: ceremonial_summary_ending
+  op: equals
+  value: false
+good_candidate:
+  proof_story: causal_mechanism
+  section_itinerary_is_primary: false
+  ceremonial_summary_ending: false
+bad_candidate:
+  proof_story: section_checklist
+  section_itinerary_is_primary: true
+  ceremonial_summary_ending: true

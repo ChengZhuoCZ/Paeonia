@@ -1,0 +1,13 @@
+version: 1
+id: 10
+title: Regression 10 — Front Matter Follows the Proof
+legacy_spec: 10_frontmatter_after_closure.md
+gate: PROOF-CORE-ORDER
+assertions:
+- path: frontmatter_after_proof_gate
+  op: equals
+  value: true
+good_candidate:
+  frontmatter_after_proof_gate: true
+bad_candidate:
+  frontmatter_after_proof_gate: false

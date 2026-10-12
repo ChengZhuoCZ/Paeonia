@@ -1,0 +1,19 @@
+version: 1
+id: 85
+title: Case 85 — Unique Delta meaning is allowed
+legacy_spec: 85_unique_Delta_meaning_allowed.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: duplicate_symbol_free
+  op: equals
+  value: true
+good_candidate:
+  duplicate_symbol_free: true
+  symbol_table:
+    \Delta: discriminant
+bad_candidate:
+  duplicate_symbol_free: false
+  symbol_table:
+    \Delta:
+    - discriminant
+    - deficit

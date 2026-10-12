@@ -1,0 +1,896 @@
+{
+  "conditional_contrasts": {
+    "general_to_intro_orientation": {
+      "administrative_markers_per_1000_words": -0.48,
+      "clause_markers_per_sentence": 0.114,
+      "first_person_per_1000_words": 5.58,
+      "paragraph_words_median": 44.0,
+      "sentence_words_median": 8
+    },
+    "general_to_section_opening": {
+      "administrative_markers_per_1000_words": -0.34,
+      "clause_markers_per_sentence": -0.115,
+      "first_person_per_1000_words": -3.91,
+      "paragraph_words_median": 55,
+      "sentence_words_median": 5
+    },
+    "routine_to_bridge": {
+      "administrative_markers_per_1000_words": 0.06,
+      "clause_markers_per_sentence": 0.106,
+      "first_person_per_1000_words": 2.27,
+      "paragraph_words_median": 33.0,
+      "sentence_words_median": 3.0
+    },
+    "routine_to_delicate": {
+      "administrative_markers_per_1000_words": -0.07,
+      "clause_markers_per_sentence": 0.174,
+      "first_person_per_1000_words": 0.24,
+      "paragraph_words_median": 46.5,
+      "sentence_words_median": 3.0
+    },
+    "routine_to_technical_estimate": {
+      "administrative_markers_per_1000_words": -0.21,
+      "clause_markers_per_sentence": 0.195,
+      "first_person_per_1000_words": 2.58,
+      "paragraph_words_median": 40.0,
+      "sentence_words_median": 3.0
+    }
+  },
+  "corpus_chars": 2055659,
+  "cross_fold_stability": {
+    "CONCEPTUAL_INTERPRETATION": {
+      "administrative_markers_per_1000_words": {
+        "confidence": "moderate",
+        "folds": 5,
+        "median": 0.0,
+        "range": [
+          0.0,
+          1.22
+        ],
+        "relative_mad": 0.0
+      },
+      "clause_markers_per_sentence": {
+        "confidence": "moderate",
+        "folds": 5,
+        "median": 0.811,
+        "range": [
+          0.611,
+          0.978
+        ],
+        "relative_mad": 0.178
+      },
+      "first_person_per_1000_words": {
+        "confidence": "moderate",
+        "folds": 5,
+        "median": 16.15,
+        "range": [
+          12.35,
+          20.66
+        ],
+        "relative_mad": 0.069
+      },
+      "paragraph_words_median": {
+        "confidence": "moderate",
+        "folds": 5,
+        "median": 44,
+        "range": [
+          35,
+          58
+        ],
+        "relative_mad": 0.205
+      },
+      "sentence_words_median": {
+        "confidence": "moderate",
+        "folds": 5,
+        "median": 18,
+        "range": [
+          16.0,
+          20.5
+        ],
+        "relative_mad": 0.111
+      }
+    },
+    "GENERAL_EXPOSITION": {
+      "administrative_markers_per_1000_words": {
+        "confidence": "moderate",
+        "folds": 8,
+        "median": 0.49,
+        "range": [
+          0.09,
+          0.83
+        ],
+        "relative_mad": 0.408
+      },
+      "clause_markers_per_sentence": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 0.698,
+        "range": [
+          0.516,
+          0.799
+        ],
+        "relative_mad": 0.063
+      },
+      "first_person_per_1000_words": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 14.225,
+        "range": [
+          9.94,
+          18.04
+        ],
+        "relative_mad": 0.11
+      },
+      "paragraph_words_median": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 27.5,
+        "range": [
+          24,
+          32
+        ],
+        "relative_mad": 0.082
+      },
+      "sentence_words_median": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 15.5,
+        "range": [
+          14.0,
+          17
+        ],
+        "relative_mad": 0.032
+      }
+    },
+    "PROOF_BRIDGE": {
+      "administrative_markers_per_1000_words": {
+        "confidence": "tentative",
+        "folds": 8,
+        "median": 0.62,
+        "range": [
+          0.0,
+          1.81
+        ],
+        "relative_mad": 0.548
+      },
+      "clause_markers_per_sentence": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 0.744,
+        "range": [
+          0.679,
+          1.107
+        ],
+        "relative_mad": 0.041
+      },
+      "first_person_per_1000_words": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 19.69,
+        "range": [
+          13.35,
+          25.29
+        ],
+        "relative_mad": 0.195
+      },
+      "paragraph_words_median": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 54.5,
+        "range": [
+          47.0,
+          88.5
+        ],
+        "relative_mad": 0.092
+      },
+      "sentence_words_median": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 18.5,
+        "range": [
+          15.0,
+          21.0
+        ],
+        "relative_mad": 0.027
+      }
+    },
+    "PROOF_CLOSURE": {
+      "administrative_markers_per_1000_words": {
+        "confidence": "tentative",
+        "folds": 5,
+        "median": 0.84,
+        "range": [
+          0.0,
+          2.15
+        ],
+        "relative_mad": 1.0
+      },
+      "clause_markers_per_sentence": {
+        "confidence": "moderate",
+        "folds": 5,
+        "median": 0.98,
+        "range": [
+          0.6,
+          1.108
+        ],
+        "relative_mad": 0.131
+      },
+      "first_person_per_1000_words": {
+        "confidence": "moderate",
+        "folds": 5,
+        "median": 22.73,
+        "range": [
+          14.88,
+          28.94
+        ],
+        "relative_mad": 0.231
+      },
+      "paragraph_words_median": {
+        "confidence": "moderate",
+        "folds": 5,
+        "median": 39.5,
+        "range": [
+          33,
+          46
+        ],
+        "relative_mad": 0.165
+      },
+      "sentence_words_median": {
+        "confidence": "moderate",
+        "folds": 5,
+        "median": 15,
+        "range": [
+          12,
+          18
+        ],
+        "relative_mad": 0.133
+      }
+    },
+    "PROOF_DELICATE": {
+      "administrative_markers_per_1000_words": {
+        "confidence": "tentative",
+        "folds": 6,
+        "median": 0.545,
+        "range": [
+          0.0,
+          1.32
+        ],
+        "relative_mad": 0.532
+      },
+      "clause_markers_per_sentence": {
+        "confidence": "strong",
+        "folds": 6,
+        "median": 0.906,
+        "range": [
+          0.758,
+          1.06
+        ],
+        "relative_mad": 0.105
+      },
+      "first_person_per_1000_words": {
+        "confidence": "strong",
+        "folds": 6,
+        "median": 16.47,
+        "range": [
+          10.65,
+          21.22
+        ],
+        "relative_mad": 0.144
+      },
+      "paragraph_words_median": {
+        "confidence": "strong",
+        "folds": 6,
+        "median": 70.25,
+        "range": [
+          56,
+          87
+        ],
+        "relative_mad": 0.096
+      },
+      "sentence_words_median": {
+        "confidence": "strong",
+        "folds": 6,
+        "median": 18.75,
+        "range": [
+          17.0,
+          21
+        ],
+        "relative_mad": 0.027
+      }
+    },
+    "PROOF_ROUTINE": {
+      "administrative_markers_per_1000_words": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 0.73,
+        "range": [
+          0.51,
+          0.93
+        ],
+        "relative_mad": 0.13
+      },
+      "clause_markers_per_sentence": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 0.706,
+        "range": [
+          0.611,
+          0.716
+        ],
+        "relative_mad": 0.013
+      },
+      "first_person_per_1000_words": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 16.72,
+        "range": [
+          14.23,
+          21.89
+        ],
+        "relative_mad": 0.136
+      },
+      "paragraph_words_median": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 24.5,
+        "range": [
+          21,
+          28
+        ],
+        "relative_mad": 0.02
+      },
+      "sentence_words_median": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 15.0,
+        "range": [
+          14,
+          16.0
+        ],
+        "relative_mad": 0.0
+      }
+    },
+    "PROOF_TECHNICAL_ESTIMATE": {
+      "administrative_markers_per_1000_words": {
+        "confidence": "moderate",
+        "folds": 8,
+        "median": 0.44,
+        "range": [
+          0.0,
+          1.35
+        ],
+        "relative_mad": 0.477
+      },
+      "clause_markers_per_sentence": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 0.871,
+        "range": [
+          0.716,
+          1.125
+        ],
+        "relative_mad": 0.102
+      },
+      "first_person_per_1000_words": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 18.975,
+        "range": [
+          13.88,
+          27.73
+        ],
+        "relative_mad": 0.133
+      },
+      "paragraph_words_median": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 65.25,
+        "range": [
+          51.0,
+          82
+        ],
+        "relative_mad": 0.142
+      },
+      "sentence_words_median": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 18.5,
+        "range": [
+          15,
+          19
+        ],
+        "relative_mad": 0.027
+      }
+    },
+    "THEOREM_LEADIN": {
+      "administrative_markers_per_1000_words": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 0.985,
+        "range": [
+          0.59,
+          1.61
+        ],
+        "relative_mad": 0.157
+      },
+      "clause_markers_per_sentence": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 0.74,
+        "range": [
+          0.587,
+          0.816
+        ],
+        "relative_mad": 0.09
+      },
+      "first_person_per_1000_words": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 18.52,
+        "range": [
+          12.3,
+          20.17
+        ],
+        "relative_mad": 0.074
+      },
+      "paragraph_words_median": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 31.5,
+        "range": [
+          27.0,
+          34.0
+        ],
+        "relative_mad": 0.048
+      },
+      "sentence_words_median": {
+        "confidence": "strong",
+        "folds": 8,
+        "median": 16.0,
+        "range": [
+          15,
+          17
+        ],
+        "relative_mad": 0.0
+      }
+    }
+  },
+  "interpretation_policy": {
+    "context_conditioned_traits_override_global_average": true,
+    "numbers_are_evidence_not_generation_targets": true,
+    "retain_only_cross_context_stable_traits_as_defaults": true,
+    "source_paragraphs_stored": false,
+    "source_phrases_emitted": false,
+    "source_sentences_stored": false
+  },
+  "strata": {
+    "CONCEPTUAL_INTERPRETATION": {
+      "administrative_markers_per_1000_words": 0.68,
+      "clause_markers_per_sentence": 0.801,
+      "colon_per_100_sentences": 8.47,
+      "ease_markers_per_1000_words": 1.86,
+      "first_person_per_1000_words": 16.77,
+      "formula_density_median": 0.0051,
+      "paragraph_words_iqr": [
+        32.75,
+        82.25
+      ],
+      "paragraph_words_median": 50.5,
+      "paragraphs": 92,
+      "parenthesis_marks_per_100_sentences": 131.6,
+      "reader_address_per_1000_words": 0.34,
+      "semicolon_per_100_sentences": 8.14,
+      "sentence_opener_distribution": {
+        "action_led": 0.003,
+        "consequence_led": 0.013,
+        "contrast_led": 0.013,
+        "first_person_led": 0.062,
+        "goal_or_reduction_led": 0.003,
+        "object_or_other_led": 0.857,
+        "premise_led": 0.033,
+        "recollection_led": 0.016
+      },
+      "sentence_words_iqr": [
+        12.0,
+        25.0
+      ],
+      "sentence_words_median": 18,
+      "sentences_per_paragraph_median": 3.0,
+      "transition_density_per_1000_words": {
+        "closure": 0.0,
+        "consequence": 1.02,
+        "construction": 3.56,
+        "contrast": 1.02,
+        "premise": 3.39,
+        "recollection": 1.52,
+        "reduction": 0.34
+      },
+      "words": 5903
+    },
+    "GENERAL_EXPOSITION": {
+      "administrative_markers_per_1000_words": 0.48,
+      "clause_markers_per_sentence": 0.704,
+      "colon_per_100_sentences": 15.87,
+      "ease_markers_per_1000_words": 1.73,
+      "first_person_per_1000_words": 14.25,
+      "formula_density_median": 0.01,
+      "paragraph_words_iqr": [
+        17.0,
+        47.0
+      ],
+      "paragraph_words_median": 28,
+      "paragraphs": 2311,
+      "parenthesis_marks_per_100_sentences": 247.27,
+      "reader_address_per_1000_words": 0.34,
+      "semicolon_per_100_sentences": 15.91,
+      "sentence_opener_distribution": {
+        "action_led": 0.029,
+        "administrative_led": 0.0,
+        "consequence_led": 0.02,
+        "contrast_led": 0.01,
+        "first_person_led": 0.054,
+        "goal_or_reduction_led": 0.005,
+        "object_or_other_led": 0.826,
+        "premise_led": 0.035,
+        "recollection_led": 0.019
+      },
+      "sentence_words_iqr": [
+        11.0,
+        23.0
+      ],
+      "sentence_words_median": 16,
+      "sentences_per_paragraph_median": 2,
+      "transition_density_per_1000_words": {
+        "closure": 0.14,
+        "consequence": 2.61,
+        "construction": 6.24,
+        "contrast": 1.05,
+        "premise": 3.42,
+        "recollection": 2.21,
+        "reduction": 0.5
+      },
+      "words": 88873
+    },
+    "INTRO_ORIENTATION": {
+      "administrative_markers_per_1000_words": 0.0,
+      "clause_markers_per_sentence": 0.818,
+      "colon_per_100_sentences": 19.71,
+      "ease_markers_per_1000_words": 0.27,
+      "first_person_per_1000_words": 19.83,
+      "formula_density_median": 0.0,
+      "paragraph_words_iqr": [
+        42.25,
+        139.25
+      ],
+      "paragraph_words_median": 72.0,
+      "paragraphs": 36,
+      "parenthesis_marks_per_100_sentences": 23.36,
+      "reader_address_per_1000_words": 2.14,
+      "semicolon_per_100_sentences": 15.33,
+      "sentence_opener_distribution": {
+        "consequence_led": 0.007,
+        "contrast_led": 0.058,
+        "first_person_led": 0.153,
+        "object_or_other_led": 0.781
+      },
+      "sentence_words_iqr": [
+        15,
+        33
+      ],
+      "sentence_words_median": 24,
+      "sentences_per_paragraph_median": 2.5,
+      "transition_density_per_1000_words": {
+        "closure": 0.0,
+        "consequence": 0.27,
+        "construction": 0.0,
+        "contrast": 2.41,
+        "premise": 1.07,
+        "recollection": 0.0,
+        "reduction": 0.0
+      },
+      "words": 3731
+    },
+    "PROOF_BRIDGE": {
+      "administrative_markers_per_1000_words": 0.75,
+      "clause_markers_per_sentence": 0.799,
+      "colon_per_100_sentences": 9.82,
+      "ease_markers_per_1000_words": 2.48,
+      "first_person_per_1000_words": 19.18,
+      "formula_density_median": 0.0064,
+      "paragraph_words_iqr": [
+        33.0,
+        92.0
+      ],
+      "paragraph_words_median": 58,
+      "paragraphs": 191,
+      "parenthesis_marks_per_100_sentences": 195.77,
+      "reader_address_per_1000_words": 0.0,
+      "semicolon_per_100_sentences": 9.67,
+      "sentence_opener_distribution": {
+        "action_led": 0.024,
+        "administrative_led": 0.003,
+        "consequence_led": 0.014,
+        "contrast_led": 0.021,
+        "first_person_led": 0.086,
+        "goal_or_reduction_led": 0.011,
+        "object_or_other_led": 0.769,
+        "premise_led": 0.057,
+        "recollection_led": 0.015
+      },
+      "sentence_words_iqr": [
+        12.0,
+        26.0
+      ],
+      "sentence_words_median": 18.0,
+      "sentences_per_paragraph_median": 3,
+      "transition_density_per_1000_words": {
+        "closure": 0.0,
+        "consequence": 2.11,
+        "construction": 7.0,
+        "contrast": 3.46,
+        "premise": 6.39,
+        "recollection": 1.58,
+        "reduction": 0.53
+      },
+      "words": 13295
+    },
+    "PROOF_CLOSURE": {
+      "administrative_markers_per_1000_words": 0.78,
+      "clause_markers_per_sentence": 0.935,
+      "colon_per_100_sentences": 3.78,
+      "ease_markers_per_1000_words": 0.78,
+      "first_person_per_1000_words": 21.37,
+      "formula_density_median": 0.0107,
+      "paragraph_words_iqr": [
+        25.0,
+        68.5
+      ],
+      "paragraph_words_median": 39.5,
+      "paragraphs": 94,
+      "parenthesis_marks_per_100_sentences": 210.31,
+      "reader_address_per_1000_words": 0.0,
+      "semicolon_per_100_sentences": 7.56,
+      "sentence_opener_distribution": {
+        "action_led": 0.01,
+        "consequence_led": 0.1,
+        "contrast_led": 0.017,
+        "first_person_led": 0.055,
+        "goal_or_reduction_led": 0.01,
+        "object_or_other_led": 0.735,
+        "premise_led": 0.069,
+        "recollection_led": 0.003
+      },
+      "sentence_words_iqr": [
+        10.0,
+        23.0
+      ],
+      "sentence_words_median": 15,
+      "sentences_per_paragraph_median": 2.0,
+      "transition_density_per_1000_words": {
+        "closure": 13.21,
+        "consequence": 9.91,
+        "construction": 5.44,
+        "contrast": 1.17,
+        "premise": 10.88,
+        "recollection": 2.72,
+        "reduction": 1.94
+      },
+      "words": 5147
+    },
+    "PROOF_DELICATE": {
+      "administrative_markers_per_1000_words": 0.62,
+      "clause_markers_per_sentence": 0.867,
+      "colon_per_100_sentences": 7.98,
+      "ease_markers_per_1000_words": 2.42,
+      "first_person_per_1000_words": 17.15,
+      "formula_density_median": 0.0088,
+      "paragraph_words_iqr": [
+        55.0,
+        96.5
+      ],
+      "paragraph_words_median": 71.5,
+      "paragraphs": 156,
+      "parenthesis_marks_per_100_sentences": 198.75,
+      "reader_address_per_1000_words": 0.16,
+      "semicolon_per_100_sentences": 5.63,
+      "sentence_opener_distribution": {
+        "action_led": 0.027,
+        "consequence_led": 0.025,
+        "contrast_led": 0.017,
+        "first_person_led": 0.066,
+        "goal_or_reduction_led": 0.014,
+        "object_or_other_led": 0.77,
+        "premise_led": 0.069,
+        "recollection_led": 0.013
+      },
+      "sentence_words_iqr": [
+        13.0,
+        26.0
+      ],
+      "sentence_words_median": 18,
+      "sentences_per_paragraph_median": 4.0,
+      "transition_density_per_1000_words": {
+        "closure": 0.0,
+        "consequence": 3.82,
+        "construction": 7.48,
+        "contrast": 1.01,
+        "premise": 6.47,
+        "recollection": 1.17,
+        "reduction": 0.62
+      },
+      "words": 12830
+    },
+    "PROOF_ROUTINE": {
+      "administrative_markers_per_1000_words": 0.69,
+      "clause_markers_per_sentence": 0.693,
+      "colon_per_100_sentences": 13.4,
+      "ease_markers_per_1000_words": 2.03,
+      "first_person_per_1000_words": 16.91,
+      "formula_density_median": 0.0118,
+      "paragraph_words_iqr": [
+        17.0,
+        38.0
+      ],
+      "paragraph_words_median": 25.0,
+      "paragraphs": 2818,
+      "parenthesis_marks_per_100_sentences": 266.84,
+      "reader_address_per_1000_words": 0.16,
+      "semicolon_per_100_sentences": 10.28,
+      "sentence_opener_distribution": {
+        "action_led": 0.02,
+        "consequence_led": 0.033,
+        "contrast_led": 0.01,
+        "first_person_led": 0.053,
+        "goal_or_reduction_led": 0.01,
+        "object_or_other_led": 0.813,
+        "premise_led": 0.045,
+        "recollection_led": 0.016
+      },
+      "sentence_words_iqr": [
+        10.0,
+        21.0
+      ],
+      "sentence_words_median": 15.0,
+      "sentences_per_paragraph_median": 2.0,
+      "transition_density_per_1000_words": {
+        "closure": 0.08,
+        "consequence": 4.49,
+        "construction": 6.98,
+        "contrast": 1.01,
+        "premise": 5.03,
+        "recollection": 2.43,
+        "reduction": 0.46
+      },
+      "words": 89227
+    },
+    "PROOF_TECHNICAL_ESTIMATE": {
+      "administrative_markers_per_1000_words": 0.48,
+      "clause_markers_per_sentence": 0.888,
+      "colon_per_100_sentences": 7.68,
+      "ease_markers_per_1000_words": 2.38,
+      "first_person_per_1000_words": 19.49,
+      "formula_density_median": 0.0144,
+      "paragraph_words_iqr": [
+        40.0,
+        87.0
+      ],
+      "paragraph_words_median": 65.0,
+      "paragraphs": 206,
+      "parenthesis_marks_per_100_sentences": 270.75,
+      "reader_address_per_1000_words": 0.0,
+      "semicolon_per_100_sentences": 8.22,
+      "sentence_opener_distribution": {
+        "action_led": 0.023,
+        "consequence_led": 0.07,
+        "contrast_led": 0.015,
+        "first_person_led": 0.075,
+        "goal_or_reduction_led": 0.009,
+        "object_or_other_led": 0.732,
+        "premise_led": 0.058,
+        "recollection_led": 0.018
+      },
+      "sentence_words_iqr": [
+        12.0,
+        26.0
+      ],
+      "sentence_words_median": 18.0,
+      "sentences_per_paragraph_median": 3.0,
+      "transition_density_per_1000_words": {
+        "closure": 0.0,
+        "consequence": 6.65,
+        "construction": 6.18,
+        "contrast": 1.22,
+        "premise": 8.22,
+        "recollection": 2.72,
+        "reduction": 0.88
+      },
+      "words": 14729
+    },
+    "SECTION_OPENING": {
+      "administrative_markers_per_1000_words": 0.14,
+      "clause_markers_per_sentence": 0.589,
+      "colon_per_100_sentences": 11.27,
+      "ease_markers_per_1000_words": 1.27,
+      "first_person_per_1000_words": 10.34,
+      "formula_density_median": 0.0,
+      "paragraph_words_iqr": [
+        38.0,
+        133.0
+      ],
+      "paragraph_words_median": 83,
+      "paragraphs": 75,
+      "parenthesis_marks_per_100_sentences": 61.09,
+      "reader_address_per_1000_words": 0.99,
+      "semicolon_per_100_sentences": 12.0,
+      "sentence_opener_distribution": {
+        "action_led": 0.007,
+        "consequence_led": 0.011,
+        "contrast_led": 0.011,
+        "first_person_led": 0.065,
+        "object_or_other_led": 0.891,
+        "premise_led": 0.015
+      },
+      "sentence_words_iqr": [
+        16.0,
+        29.0
+      ],
+      "sentence_words_median": 21,
+      "sentences_per_paragraph_median": 3,
+      "transition_density_per_1000_words": {
+        "closure": 0.0,
+        "consequence": 1.42,
+        "construction": 1.84,
+        "contrast": 1.27,
+        "premise": 1.13,
+        "recollection": 0.14,
+        "reduction": 0.14
+      },
+      "words": 7063
+    },
+    "THEOREM_LEADIN": {
+      "administrative_markers_per_1000_words": 0.97,
+      "clause_markers_per_sentence": 0.719,
+      "colon_per_100_sentences": 9.87,
+      "ease_markers_per_1000_words": 2.05,
+      "first_person_per_1000_words": 17.12,
+      "formula_density_median": 0.0101,
+      "paragraph_words_iqr": [
+        20.0,
+        50.75
+      ],
+      "paragraph_words_median": 30.0,
+      "paragraphs": 1206,
+      "parenthesis_marks_per_100_sentences": 235.32,
+      "reader_address_per_1000_words": 0.32,
+      "semicolon_per_100_sentences": 9.8,
+      "sentence_opener_distribution": {
+        "action_led": 0.022,
+        "administrative_led": 0.001,
+        "consequence_led": 0.026,
+        "contrast_led": 0.011,
+        "first_person_led": 0.076,
+        "goal_or_reduction_led": 0.008,
+        "object_or_other_led": 0.797,
+        "premise_led": 0.042,
+        "recollection_led": 0.017
+      },
+      "sentence_words_iqr": [
+        11.0,
+        23.0
+      ],
+      "sentence_words_median": 16.0,
+      "sentences_per_paragraph_median": 2.0,
+      "transition_density_per_1000_words": {
+        "closure": 0.32,
+        "consequence": 3.67,
+        "construction": 6.49,
+        "contrast": 1.09,
+        "premise": 4.77,
+        "recollection": 2.22,
+        "reduction": 0.4
+      },
+      "words": 49636
+    }
+  },
+  "usable_paragraphs": 7185
+}

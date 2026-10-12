@@ -1,0 +1,18 @@
+version: 1
+id: 98
+title: Case 98 — User and domain conventions override the Gui prior
+legacy_spec: 98_gui_user_domain_priority.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: user_domain_priority
+  op: equals
+  value: true
+- path: gui_prior_overrides_convention
+  op: equals
+  value: false
+good_candidate:
+  user_domain_priority: true
+  gui_prior_overrides_convention: false
+bad_candidate:
+  user_domain_priority: false
+  gui_prior_overrides_convention: true

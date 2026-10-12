@@ -1,0 +1,15 @@
+version: 1
+id: 213
+title: Case 213 — A/B user request is explicit exception
+legacy_spec: 213_a_b_user_request_is_explicit_exception.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: interaction.explicitly_requested_variants_only
+  op: equals
+  value: true
+good_candidate:
+  interaction:
+    explicitly_requested_variants_only: true
+bad_candidate:
+  interaction:
+    explicitly_requested_variants_only: false

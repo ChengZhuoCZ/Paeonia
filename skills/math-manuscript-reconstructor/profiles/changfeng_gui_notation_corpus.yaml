@@ -1,0 +1,157 @@
+version: 1
+profile: changfeng_gui_corpus_soft_prior
+purpose: empirical_notation_evidence
+attribution_caveat: >-
+  All papers are coauthored unless noted otherwise. Exact symbol choices are therefore
+  corpus evidence, not claims of individual authorship. Only repeated abstract habits
+  may be promoted to the runtime notation prior.
+priority_rule:
+  - duplicate_symbol_integrity
+  - explicit_user_requirements
+  - field_and_problem_conventions
+  - clear_collision_free_source_notation
+  - changfeng_gui_corpus_prior
+papers:
+  - arxiv: '1605.06481'
+    year: 2016
+    title: The Sphere Covering Inequality and Its Applications
+    evidence_level: abstract_and_source_record
+    observed_patterns:
+      - direct_PDE_and_geometry_notation
+      - ordinary_solution_and_domain_symbols
+      - theorem_named_in_prose_not_by_decorative_symbol
+  - arxiv: '1709.02474'
+    year: 2017
+    title: Non-axially symmetric solutions of a mean field equation on S^2
+    evidence_level: abstract
+    observed_patterns:
+      - sphere_written_as_standard_S2
+      - symmetry_groups_named_by_standard_group_symbols
+      - solution_language_centered_on_plain_unknowns
+  - arxiv: '1812.09994'
+    year: 2018
+    title: The sphere covering inequality and its dual
+    evidence_level: abstract_and_source_record
+    observed_patterns:
+      - direct_geometric_and_elliptic_notation
+      - no_separate_decorative_layer_needed_for_main_objects
+  - arxiv: '1905.10842'
+    year: 2019
+    title: Remarks on a mean field equation on S^2
+    evidence_level: abstract_and_source_record
+    observed_patterns:
+      - laplace_beltrami_as_Delta_S2
+      - main_unknown_u
+      - ambient_sphere_mathbb_S2
+  - arxiv: '2109.13390'
+    year: 2021
+    title: Improved Beckner's inequality for axially symmetric functions on S^4
+    evidence_level: substantial_full_text
+    observed_patterns:
+      - operator_family_P4
+      - functional_family_J_alpha_and_I_alpha
+      - parameter_alpha
+      - reduced_coordinate_x_from_xi_1
+      - derived_quantity_G
+      - spectral_basis_F_k_and_lambda_k
+      - coefficients_a_k_beta_gamma
+      - semantic_mathcal_and_mathfrak_also_occur
+  - arxiv: '2109.13924'
+    year: 2021
+    title: Improved Beckner's inequality for axially symmetric functions on S^n
+    evidence_level: substantial_full_text
+    observed_patterns:
+      - standard_sphere_and_dimension_notation
+      - parameter_and_operator_families_use_indices
+      - plain_unknowns_and_classical_special_function_notation
+  - arxiv: '2208.03612'
+    year: 2022
+    title: Some geometric inequalities related to Liouville equation
+    evidence_level: abstract_and_source_record
+    observed_patterns:
+      - main_unknown_u
+      - metric_g_equals_e2u_delta
+      - delta_as_Euclidean_metric
+      - ambient_R2_mathbb
+  - arxiv: '2306.05184'
+    year: 2023
+    title: Rigidity of Steady Solutions to the Navier-Stokes Equations in High Dimensions and its Applications
+    evidence_level: abstract
+    observed_patterns:
+      - velocity_u
+      - point_x
+      - dimension_n
+      - scaling_bound_C_over_abs_x
+  - arxiv: '2311.12659'
+    year: 2023
+    title: Uniqueness of critical points of the second Neumann eigenfunctions on triangles
+    evidence_level: substantial_full_text
+    observed_patterns:
+      - generic_domain_Omega_then_concrete_triangle_T
+      - main_eigenfunction_u
+      - Neumann_eigenvalues_mu_j
+      - mixed_eigenvalue_lambda_1_superscript_Gamma_D
+      - side_labels_L_M_S
+      - nodal_set_mathcal_Z_of_u
+      - rotational_vector_field_R_p
+      - deformation_family_T_sup_t_and_u_sup_0
+  - arxiv: '2510.18681'
+    year: 2025
+    title: A Generalization of the Sphere Covering Inequality
+    evidence_level: abstract
+    observed_patterns:
+      - boundary_shift_parameter_c
+      - direct_geometric_quantities_without_new_font_layer
+  - arxiv: '2604.19003'
+    year: 2026
+    title: Critical points of the second Neumann eigenfunctions on the quadrangles with symmetry
+    evidence_level: substantial_full_text
+    observed_patterns:
+      - generic_domain_Omega_and_concrete_quadrangle_Q
+      - concrete_kite_K
+      - vertices_P_i
+      - center_C
+      - critical_set_mathcal_C_nv_of_u
+      - base_angle_alpha_height_h
+      - thresholds_hat_h_tilde_h_h0_h1
+      - symmetric_antisymmetric_eigenvalues_mu_s_mu_a
+      - generic_elliptic_operator_L
+      - coefficients_a_ij_b_i_c
+      - standard_basis_e_i
+  - arxiv: '2605.15448'
+    year: 2026
+    title: Symmetry and Rigidity Results for the Mean Field Equation and Hawking Mass on S^2
+    evidence_level: substantial_full_text
+    observed_patterns:
+      - main_unknown_u_and_parameter_alpha
+      - sphere_mathbb_S2
+      - great_circles_hemispheres_reflections_named_by_semantic_geometry_symbols
+      - set_and_vector_field_notation_introduced_at_first_need
+      - theorem_hierarchy_uses_existing_object_symbols
+promoted_traits:
+  high_confidence:
+    - ordinary_letters_for_primary_objects
+    - standard_field_symbols_for_operators_spaces_and_parameters
+    - semantic_initials_for_concrete_geometry_when_natural
+    - base_symbol_plus_subscript_or_modifier_for_related_families
+    - generic_to_specific_geometry_notation
+    - compact_local_notation_introduced_near_first_use
+    - coordinate_reduction_may_rename_to_simple_x
+  moderate_confidence:
+    - u_as_default_scalar_unknown
+    - mu_for_Neumann_and_lambda_for_Dirichlet_or_mixed_spectral_quantities
+    - P_i_for_vertices
+    - T_Q_K_for_triangle_quadrangle_kite
+  not_promoted:
+    - exact_symbol_sequences_from_any_single_paper
+    - blanket_claim_that_calligraphic_or_fraktur_notation_is_absent
+    - attribution_of_coauthored_symbol_choices_to_one_author
+user_override_layer:
+  plain_typography_preference: true
+  avoid_mathscr: true
+  avoid_mathfrak: true
+  restrain_mathcal: true
+  note: >-
+    This is the user's house style. It is intentionally stronger than the corpus evidence,
+    which includes examples such as mathfrak L and mathcal J_alpha as well as mathcal Z(u)
+    and mathcal C_nv(u).

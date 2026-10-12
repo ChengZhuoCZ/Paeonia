@@ -1,0 +1,15 @@
+version: 1
+id: 211
+title: Case 211 — Terminology consistent across sections
+legacy_spec: 211_terminology_consistent_across_sections.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: manuscript.term_and_certainty_consistency
+  op: equals
+  value: true
+good_candidate:
+  manuscript:
+    term_and_certainty_consistency: true
+bad_candidate:
+  manuscript:
+    term_and_certainty_consistency: false

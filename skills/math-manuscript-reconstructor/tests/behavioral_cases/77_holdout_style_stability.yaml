@@ -1,0 +1,18 @@
+version: 1
+id: 77
+title: Case 77 — Default conditional traits require holdout stability
+legacy_spec: 77_holdout_style_stability.md
+gate: CONDITIONAL-STYLE-FIDELITY
+assertions:
+- path: holdout_checked
+  op: equals
+  value: true
+- path: unstable_trait_promoted
+  op: equals
+  value: false
+good_candidate:
+  holdout_checked: true
+  unstable_trait_promoted: false
+bad_candidate:
+  holdout_checked: false
+  unstable_trait_promoted: true

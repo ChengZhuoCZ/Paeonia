@@ -1,0 +1,21 @@
+version: 1
+id: 11
+title: Regression 11 — Style Is Distilled Before Proof Prose
+legacy_spec: 11_style_prepass_before_proof_core.md
+gate: STYLE-SOURCE-INDEPENDENCE
+assertions:
+- path: state_order
+  op: before
+  value:
+  - STYLE_QUARANTINE
+  - PROOF_CORE
+good_candidate:
+  state_order:
+  - STYLE_EXTRACT
+  - STYLE_QUARANTINE
+  - PROOF_CORE
+bad_candidate:
+  state_order:
+  - PROOF_CORE
+  - STYLE_EXTRACT
+  - STYLE_QUARANTINE

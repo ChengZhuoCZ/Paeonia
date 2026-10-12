@@ -1,0 +1,13 @@
+version: 1
+artifact: ResearchDirectorBrief
+workflow_class: null
+requested_deliverables: []
+source_status: null
+style_corpus_status: null
+proof_closure_status: null
+known_blockers: []
+reusable_locked_artifacts: []
+critical_path_risks: []
+frontmatter_requested: false
+audit_only: false
+mathematical_repair_authorized: false

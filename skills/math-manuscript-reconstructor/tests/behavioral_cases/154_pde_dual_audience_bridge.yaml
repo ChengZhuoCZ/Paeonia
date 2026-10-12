@@ -1,0 +1,30 @@
+version: 1
+id: 154
+title: Case 154 — Dual-audience PDE bridges use an object dictionary
+legacy_spec: 154_pde_dual_audience_bridge.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: dual_audience.active
+  op: equals
+  value: true
+- path: dual_audience.object_dictionary_present
+  op: equals
+  value: true
+- path: dual_audience.theorem_relation_present
+  op: equals
+  value: true
+- path: dual_audience.parallel_surveys
+  op: equals
+  value: false
+good_candidate:
+  dual_audience:
+    active: true
+    object_dictionary_present: true
+    theorem_relation_present: true
+    parallel_surveys: false
+bad_candidate:
+  dual_audience:
+    active: true
+    object_dictionary_present: false
+    theorem_relation_present: false
+    parallel_surveys: true

@@ -1,0 +1,13 @@
+version: 1
+id: 23
+title: Regression 23 — Paragraph fingerprint without template copy
+legacy_spec: 23_paragraph_fingerprint_without_template_copy.md
+gate: STYLE-SOURCE-INDEPENDENCE
+assertions:
+- path: source_paragraph_role_sequence_reused
+  op: equals
+  value: false
+good_candidate:
+  source_paragraph_role_sequence_reused: false
+bad_candidate:
+  source_paragraph_role_sequence_reused: true

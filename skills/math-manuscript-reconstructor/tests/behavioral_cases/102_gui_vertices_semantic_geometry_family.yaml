@@ -1,0 +1,23 @@
+version: 1
+id: 102
+title: Case 102 — Concrete geometry and vertices use direct family notation
+legacy_spec: 102_gui_vertices_semantic_geometry_family.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: vertices_use_common_base
+  op: equals
+  value: true
+- path: vertex_base
+  op: equals
+  value: P_i
+- path: decorative_vertex_alphabet
+  op: equals
+  value: false
+good_candidate:
+  vertices_use_common_base: true
+  vertex_base: P_i
+  decorative_vertex_alphabet: false
+bad_candidate:
+  vertices_use_common_base: false
+  vertex_base: \mathscr P_i
+  decorative_vertex_alphabet: true

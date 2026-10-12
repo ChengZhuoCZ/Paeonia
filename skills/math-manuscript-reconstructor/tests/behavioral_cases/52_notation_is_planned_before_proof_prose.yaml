@@ -1,0 +1,18 @@
+version: 1
+id: 52
+title: Case 52 — Notation is planned before proof prose
+legacy_spec: 52_notation_is_planned_before_proof_prose.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: notation_ledger_before_proof_core
+  op: equals
+  value: true
+- path: notation_designed_during_final_polish
+  op: equals
+  value: false
+good_candidate:
+  notation_ledger_before_proof_core: true
+  notation_designed_during_final_polish: false
+bad_candidate:
+  notation_ledger_before_proof_core: false
+  notation_designed_during_final_polish: true

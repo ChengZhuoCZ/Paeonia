@@ -1,0 +1,18 @@
+version: 1
+id: 81
+title: Case 81 — Introduction paragraph roles receive conditional microstyle priors
+legacy_spec: 81_intro_conditional_microstyle.md
+gate: CONDITIONAL-STYLE-FIDELITY
+assertions:
+- path: intro_role_mapping_present
+  op: equals
+  value: true
+- path: uniform_intro_microstyle
+  op: equals
+  value: false
+good_candidate:
+  intro_role_mapping_present: true
+  uniform_intro_microstyle: false
+bad_candidate:
+  intro_role_mapping_present: false
+  uniform_intro_microstyle: true

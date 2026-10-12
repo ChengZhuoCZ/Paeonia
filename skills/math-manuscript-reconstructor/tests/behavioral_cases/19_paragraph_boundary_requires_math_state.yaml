@@ -1,0 +1,16 @@
+version: 1
+id: 19
+title: Regression 19 — Paragraph boundary requires mathematical state
+legacy_spec: 19_paragraph_boundary_requires_math_state.md
+gate: PARAGRAPH-FINGERPRINT-FIDELITY
+assertions:
+- path: boundary_reason
+  op: not_in
+  value:
+  - VISUAL_VARIETY
+  - LENGTH_TARGET
+  - SOURCE_MATCH
+good_candidate:
+  boundary_reason: METHOD_CHANGE
+bad_candidate:
+  boundary_reason: VISUAL_VARIETY

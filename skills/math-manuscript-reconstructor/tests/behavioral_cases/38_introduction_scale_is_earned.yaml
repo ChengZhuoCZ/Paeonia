@@ -1,0 +1,18 @@
+version: 1
+id: 38
+title: Case 38 — Introduction scale is earned
+legacy_spec: 38_introduction_scale_is_earned.md
+gate: GRAND-NARRATIVE-INTEGRITY
+assertions:
+- path: scale
+  op: equals
+  value: STANDARD
+- path: scale_selected_from_reference_style
+  op: equals
+  value: false
+good_candidate:
+  scale: STANDARD
+  scale_selected_from_reference_style: false
+bad_candidate:
+  scale: GRAND
+  scale_selected_from_reference_style: true

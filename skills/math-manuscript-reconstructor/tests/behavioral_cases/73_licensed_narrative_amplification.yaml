@@ -1,0 +1,28 @@
+version: 1
+id: 73
+title: Case 73 — Narrative amplification uses only licensed operations
+legacy_spec: 73_licensed_narrative_amplification.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: operations
+  op: subset_of
+  value:
+  - BROADEN_CONTEXT
+  - SHARPEN_CONTRAST
+  - CLARIFY_OBSTRUCTION
+  - STRENGTHEN_CONSEQUENCE
+  - EXPOSE_METHOD_AFTERLIFE
+- path: adds_new_factual_claim
+  op: equals
+  value: false
+good_candidate:
+  operations:
+  - BROADEN_CONTEXT
+  - SHARPEN_CONTRAST
+  - STRENGTHEN_CONSEQUENCE
+  adds_new_factual_claim: false
+bad_candidate:
+  operations:
+  - BROADEN_CONTEXT
+  - INVENT_PRIORITY
+  adds_new_factual_claim: true

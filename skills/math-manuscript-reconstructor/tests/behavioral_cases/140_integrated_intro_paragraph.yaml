@@ -1,0 +1,23 @@
+version: 1
+id: 140
+title: Case 140 — Introduction paragraphs may integrate coherent functions
+legacy_spec: 140_integrated_intro_paragraph.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: primary_information_change_visible
+  op: equals
+  value: true
+- path: integrated_secondary_functions_allowed
+  op: equals
+  value: true
+- path: split_only_for_role_compliance
+  op: equals
+  value: false
+good_candidate:
+  primary_information_change_visible: true
+  integrated_secondary_functions_allowed: true
+  split_only_for_role_compliance: false
+bad_candidate:
+  primary_information_change_visible: false
+  integrated_secondary_functions_allowed: false
+  split_only_for_role_compliance: true

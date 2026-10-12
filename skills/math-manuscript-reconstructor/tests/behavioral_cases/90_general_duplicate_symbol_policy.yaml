@@ -1,0 +1,21 @@
+version: 1
+id: 90
+title: Case 90 — Duplicate recurring symbol policy is general
+legacy_spec: 90_general_duplicate_symbol_policy.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: duplicate_symbol_free
+  op: equals
+  value: true
+good_candidate:
+  duplicate_symbol_free: true
+  symbol_table:
+    E: energy
+    P: operator
+bad_candidate:
+  duplicate_symbol_free: false
+  symbol_table:
+    E:
+    - energy
+    - exceptional_set
+    P: operator

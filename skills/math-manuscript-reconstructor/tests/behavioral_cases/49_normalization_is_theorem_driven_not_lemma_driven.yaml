@@ -1,0 +1,18 @@
+version: 1
+id: 49
+title: Case 49 — Normalization is theorem-driven not lemma-driven
+legacy_spec: 49_normalization_is_theorem_driven_not_lemma_driven.md
+gate: THEOREM-STATEMENT-INTEGRITY
+assertions:
+- path: normalization_is_canonical
+  op: equals
+  value: true
+- path: technical_lemma_normalization_controls_main_statement
+  op: equals
+  value: false
+good_candidate:
+  normalization_is_canonical: true
+  technical_lemma_normalization_controls_main_statement: false
+bad_candidate:
+  normalization_is_canonical: false
+  technical_lemma_normalization_controls_main_statement: true

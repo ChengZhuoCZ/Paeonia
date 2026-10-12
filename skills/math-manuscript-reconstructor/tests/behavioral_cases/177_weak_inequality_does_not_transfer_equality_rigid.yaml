@@ -1,0 +1,23 @@
+version: 1
+id: 177
+title: Case 177 — Weak inequality does not transfer equality rigidity
+legacy_spec: 177_weak_inequality_does_not_transfer_equality_rigid.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: weak_inequality_imported
+  op: equals
+  value: true
+- path: rigidity_claim_retained
+  op: equals
+  value: true
+- path: rigidity_falsely_attributed
+  op: equals
+  value: false
+good_candidate:
+  weak_inequality_imported: true
+  rigidity_claim_retained: true
+  rigidity_falsely_attributed: false
+bad_candidate:
+  weak_inequality_imported: true
+  rigidity_claim_retained: false
+  rigidity_falsely_attributed: true

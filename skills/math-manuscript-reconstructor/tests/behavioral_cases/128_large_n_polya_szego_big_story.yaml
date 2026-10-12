@@ -1,0 +1,33 @@
+version: 1
+id: 128
+title: Case 128 — Large-N Pólya–Szegő uses the isoperimetric continuum-to-finite story
+legacy_spec: 128_large_n_polya_szego_big_story.md
+gate: MATHEMATICAL-STORY-INTEGRITY
+assertions:
+- path: parent_program
+  op: equals
+  value: isoperimetric_shape_optimization
+- path: canonical_continuum_optimizer_visible
+  op: equals
+  value: true
+- path: finite_side_constraint_breaks_continuum_symmetry_method
+  op: equals
+  value: true
+- path: large_n_limit_distinguished_from_exact_finite_n
+  op: equals
+  value: true
+- path: definition_first
+  op: equals
+  value: false
+good_candidate:
+  parent_program: isoperimetric_shape_optimization
+  canonical_continuum_optimizer_visible: true
+  finite_side_constraint_breaks_continuum_symmetry_method: true
+  large_n_limit_distinguished_from_exact_finite_n: true
+  definition_first: false
+bad_candidate:
+  parent_program: torsional_rigidity_formula
+  canonical_continuum_optimizer_visible: false
+  finite_side_constraint_breaks_continuum_symmetry_method: false
+  large_n_limit_distinguished_from_exact_finite_n: false
+  definition_first: true

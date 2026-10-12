@@ -1,0 +1,19 @@
+style_evidence_map:
+  corpus_id: null
+  sampling:
+    strategy: stratified_by_mathematical_function
+    windows: []
+  traits:
+    - trait_id: null
+      ledger_path: null
+      confidence: null   # strong | moderate | tentative
+      evidence:
+        aggregate_counts: {}
+        aggregate_rates: {}
+        locators: []     # line/page locators only; no source sentences
+      counterevidence: []
+      decision: null
+  prohibited_storage:
+    source_sentences: true
+    distinctive_source_phrases: true
+    paragraph_templates: true

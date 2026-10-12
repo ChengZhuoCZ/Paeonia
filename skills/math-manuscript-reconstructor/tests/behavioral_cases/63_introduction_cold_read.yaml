@@ -1,0 +1,23 @@
+version: 1
+id: 63
+title: Case 63 — Introduction cold read preserves only necessary paragraphs
+legacy_spec: 63_introduction_cold_read.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: first_last_sentence_spine_coherent
+  op: equals
+  value: true
+- path: detachable_background_paragraphs_remaining
+  op: equals
+  value: false
+- path: cold_read_performed
+  op: equals
+  value: true
+good_candidate:
+  first_last_sentence_spine_coherent: true
+  detachable_background_paragraphs_remaining: false
+  cold_read_performed: true
+bad_candidate:
+  first_last_sentence_spine_coherent: false
+  detachable_background_paragraphs_remaining: true
+  cold_read_performed: false

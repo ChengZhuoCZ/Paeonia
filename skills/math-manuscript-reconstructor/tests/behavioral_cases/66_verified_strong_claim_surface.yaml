@@ -1,0 +1,23 @@
+version: 1
+id: 66
+title: Case 66 — Verified strong central claims must be surfaced
+legacy_spec: 66_verified_strong_claim_surface.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: verified
+  op: equals
+  value: true
+- path: must_surface
+  op: equals
+  value: true
+- path: final_positioning
+  op: equals
+  value: resolves_conjecture
+good_candidate:
+  verified: true
+  must_surface: true
+  final_positioning: resolves_conjecture
+bad_candidate:
+  verified: true
+  must_surface: true
+  final_positioning: makes_progress

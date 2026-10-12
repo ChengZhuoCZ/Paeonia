@@ -1,0 +1,22 @@
+version: 1
+main_claims: []
+definitions: []
+normalizations: []
+parameter_ranges: []
+notation: []
+claims:
+  # - id: CLAIM-...
+  #   statement: ...
+  #   hypotheses: []
+  #   conclusion: ...
+  #   dependencies: []
+  #   equality_cases: []
+  #   status: trusted_source_closed|trusted_source_external|proved|external|gap|heuristic
+proof_mechanisms: []
+constant_dependencies: []
+endpoint_cases: []
+equality_rigidity_chain: []
+external_inputs: []
+computational_inputs: []
+conflicts: []
+unresolved: []

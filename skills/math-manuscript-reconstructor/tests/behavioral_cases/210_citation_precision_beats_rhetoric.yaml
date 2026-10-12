@@ -1,0 +1,15 @@
+version: 1
+id: 210
+title: Case 210 — Citation precision beats rhetoric
+legacy_spec: 210_citation_precision_beats_rhetoric.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: proof_citation.claim_strength_preserved
+  op: equals
+  value: true
+good_candidate:
+  proof_citation:
+    claim_strength_preserved: true
+bad_candidate:
+  proof_citation:
+    claim_strength_preserved: false

@@ -1,0 +1,13 @@
+version: 1
+id: 199
+title: Case 199 — Decorative fonts must not replace semantic names
+legacy_spec: 199_decorative_fonts_must_not_replace_semantic_names.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: font_only_distinction_used
+  op: equals
+  value: false
+good_candidate:
+  font_only_distinction_used: false
+bad_candidate:
+  font_only_distinction_used: true

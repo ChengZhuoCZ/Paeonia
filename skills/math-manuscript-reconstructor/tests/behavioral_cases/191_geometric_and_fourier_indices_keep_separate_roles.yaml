@@ -1,0 +1,13 @@
+version: 1
+id: 191
+title: Case 191 — Geometric and Fourier indices keep separate roles
+legacy_spec: 191_geometric_and_fourier_indices_keep_separate_roles.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: indices_by_semantic_role
+  op: equals
+  value: true
+good_candidate:
+  indices_by_semantic_role: true
+bad_candidate:
+  indices_by_semantic_role: false

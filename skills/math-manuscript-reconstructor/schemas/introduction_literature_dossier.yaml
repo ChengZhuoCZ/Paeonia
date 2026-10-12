@@ -1,0 +1,38 @@
+version: 1
+artifact: IntroductionLiteratureDossier
+mode: RECONSTRUCT
+scope: Introduction
+search:
+  research_date: null
+  live_access: null             # true|false; if false mark OFFLINE_INCOMPLETE
+  access_limitations: []
+  independent_routes: []       # name, concrete queries, date/window, providers, result counts if known
+  outside_source_bibliography_checked: null
+  recency_and_version_check: null
+  status: NOT_STARTED           # COMPLETE_FOR_CLAIMS|PARTIAL|OFFLINE_INCOMPLETE|BLOCKED
+fingerprint:
+  object_operator_class: null
+  exact_theorem_scope: null
+  conclusion_and_equality: null
+  mechanisms_and_obstruction: null
+  query_aliases: []
+source_evidence: []             # source_id, metadata/url/version, evidence_locator, status, claim(s), mathematical_role(s)
+credit_map: []                 # source_id, contribution, role, planned_prose_location, wording_ceiling
+frontier_comparison: []        # axis, prior sources, verified pre-paper conclusion, present exact delta, nonimplication
+programmatic_story:
+  tested_parent_program: null
+  chosen_scale: null           # DIRECT|PROGRAMMATIC|HISTORICAL_SYNTHESIS
+  verified_chain: []
+  central_structural_tension: null
+  return_to_program: null
+  claim_ceiling: []
+revision_decisions:
+  high_priority_citations: []
+  unresolved_or_inaccessible: []
+  priority_claims_withheld: []
+  out_of_scope_local_polish_regions: []
+gates:
+  factuality_and_credit_checked: false
+  exact_frontier_supported: false
+  theorem_scope_preserved: false
+  false_exhaustiveness_avoided: false

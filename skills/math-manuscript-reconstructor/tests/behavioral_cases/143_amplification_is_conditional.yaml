@@ -1,0 +1,18 @@
+version: 1
+id: 143
+title: Case 143 — Narrative amplification is conditional
+legacy_spec: 143_amplification_is_conditional.md
+gate: EDITORIAL-IMPACT
+assertions:
+- path: underpositioning_defect_identified
+  op: equals
+  value: false
+- path: amplification_run
+  op: equals
+  value: false
+good_candidate:
+  underpositioning_defect_identified: false
+  amplification_run: false
+bad_candidate:
+  underpositioning_defect_identified: false
+  amplification_run: true

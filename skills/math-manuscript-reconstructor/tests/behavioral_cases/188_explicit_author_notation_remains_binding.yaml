@@ -1,0 +1,13 @@
+version: 1
+id: 188
+title: Case 188 — Explicit author notation remains binding
+legacy_spec: 188_explicit_author_notation_remains_binding.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: user_fixed_symbol_preserved
+  op: equals
+  value: true
+good_candidate:
+  user_fixed_symbol_preserved: true
+bad_candidate:
+  user_fixed_symbol_preserved: false

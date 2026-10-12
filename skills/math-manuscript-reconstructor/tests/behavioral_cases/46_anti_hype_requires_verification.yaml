@@ -1,0 +1,18 @@
+version: 1
+id: 46
+title: Case 46 — Grand narrative does not permit hype debt
+legacy_spec: 46_anti_hype_requires_verification.md
+gate: GRAND-NARRATIVE-INTEGRITY
+assertions:
+- path: priority_claims_verified
+  op: equals
+  value: true
+- path: unsupported_hype
+  op: equals
+  value: false
+good_candidate:
+  priority_claims_verified: true
+  unsupported_hype: false
+bad_candidate:
+  priority_claims_verified: false
+  unsupported_hype: true

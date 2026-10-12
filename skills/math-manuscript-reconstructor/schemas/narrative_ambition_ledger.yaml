@@ -1,0 +1,54 @@
+version: 1
+
+scale:
+  value: STANDARD
+  allowed: [STANDARD, EXPANSIVE, GRAND, GRAND_PLUS]
+  reason: null
+
+strongest_defensible_positions: []
+# Each item:
+# - type: RESOLVES_CONJECTURE|SETTLES_RANGE|COMPLETE_CLASSIFICATION|FIRST_GLOBAL|SHARP_RESULT|REMOVES_RESTRICTION|UNIFIES_REGIMES|REUSABLE_METHOD|BRIDGES_LINES|STRENGTHENS_BEST_PRIOR|MODEL_FOR_PROGRAM|OTHER
+#   claim: null
+#   evidence_anchor: null
+#   verified: false
+#   must_surface: false
+#   preferred_wording: null
+#   forbidden_stronger_wording: null
+
+historical_depth:
+  value: SHORT
+  allowed: [SHORT, MEDIUM, DEEP]
+  reason: null
+
+adjacent_area_reach: []
+# Each item:
+# - area: null
+#   shared_structure: null
+#   relevance_type: THEOREM|METHOD|CONCEPTUAL
+#   evidence_anchor: null
+#   wording_ceiling: null
+
+methodological_afterlife:
+  level: NONE
+  allowed: [NONE, LOCAL, TRANSFERABLE, PROGRAMMATIC]
+  mechanism: null
+  structural_reason: null
+  wording_ceiling: null
+
+factuality_ceilings: []
+# Each item:
+# - topic: null
+#   allowed_wording: null
+#   forbidden_wording: null
+#   evidence_anchor: null
+
+conditional_or_weak_claims: []
+# Each item:
+# - claim: null
+#   required_qualifier: null
+#   reason: null
+
+integrity:
+  all_strong_positions_have_evidence: false
+  all_must_surface_claims_identified: false
+  all_factuality_ceilings_recorded: false

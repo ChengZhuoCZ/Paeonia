@@ -1,0 +1,32 @@
+version: 1
+id: 103
+title: Case 103 — Stable geometric roles may use short semantic labels
+legacy_spec: 103_gui_semantic_side_labels.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: semantic_labels_reduce_prose
+  op: equals
+  value: true
+- path: labels
+  op: equals
+  value:
+  - L
+  - M
+  - S
+- path: labels_are_context_defined
+  op: equals
+  value: true
+good_candidate:
+  semantic_labels_reduce_prose: true
+  labels:
+  - L
+  - M
+  - S
+  labels_are_context_defined: true
+bad_candidate:
+  semantic_labels_reduce_prose: false
+  labels:
+  - A
+  - B
+  - C
+  labels_are_context_defined: false

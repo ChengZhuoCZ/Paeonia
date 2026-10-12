@@ -1,0 +1,10 @@
+{
+  "quick_validate": "PASS",
+  "contract_consistency": "PASS",
+  "proof_explanation": "PASS",
+  "changed_links_checked": 10,
+  "version_consistency": "PASS",
+  "manuscript_changed": false,
+  "independent_reader_test": false,
+  "full_suite_rerun": false
+}

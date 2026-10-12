@@ -1,0 +1,28 @@
+version: 1
+id: 165
+title: Case 165 — Exact prior frontier compared on theorem axes
+legacy_spec: 165_frontier_axes.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: geometry_boundary_checked
+  op: equals
+  value: true
+- path: parameter_comparison
+  op: equals
+  value: true
+- path: equality_case_comparison
+  op: equals
+  value: true
+- path: unproved_implication_claim
+  op: equals
+  value: false
+good_candidate:
+  geometry_boundary_checked: true
+  parameter_comparison: true
+  equality_case_comparison: true
+  unproved_implication_claim: false
+bad_candidate:
+  geometry_boundary_checked: false
+  parameter_comparison: false
+  equality_case_comparison: false
+  unproved_implication_claim: true

@@ -1,0 +1,13 @@
+version: 1
+id: 22
+title: Regression 22 — Bridge paragraph names the obstruction
+legacy_spec: 22_bridge_paragraph_names_obstruction.md
+gate: MATHEMATICAL-TRANSITIONS
+assertions:
+- path: bridge_names_obstruction
+  op: equals
+  value: true
+good_candidate:
+  bridge_names_obstruction: true
+bad_candidate:
+  bridge_names_obstruction: false

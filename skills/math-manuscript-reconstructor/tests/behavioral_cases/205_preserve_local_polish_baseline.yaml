@@ -1,0 +1,15 @@
+version: 1
+id: 205
+title: Case 205 — Preserve local polish baseline
+legacy_spec: 205_preserve_local_polish_baseline.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: local_polish.protected_baseline_preserved
+  op: equals
+  value: true
+good_candidate:
+  local_polish:
+    protected_baseline_preserved: true
+bad_candidate:
+  local_polish:
+    protected_baseline_preserved: false

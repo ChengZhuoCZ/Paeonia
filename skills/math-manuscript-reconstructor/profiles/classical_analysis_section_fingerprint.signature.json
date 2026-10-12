@@ -1,0 +1,55 @@
+{
+  "emits_source_titles": false,
+  "formal_result_count_distribution": {
+    "median": 5,
+    "q1": 2.0,
+    "q3": 10.5
+  },
+  "numeric_targets_forbidden": true,
+  "section_count": 141,
+  "section_word_distribution": {
+    "median": 1469,
+    "q1": 764.5,
+    "q3": 2868.0
+  },
+  "source_section_order_reuse": "forbidden",
+  "source_subsection_pattern_reuse": "forbidden",
+  "status": "OK",
+  "stores_source_sections": false,
+  "subsection_nonzero_count": 61,
+  "subsection_use_by_broad_size_bin": {
+    "0-800": {
+      "sections": 38,
+      "with_subsections": 8,
+      "with_subsections_rate": 0.2105
+    },
+    "1500-3000": {
+      "sections": 36,
+      "with_subsections": 20,
+      "with_subsections_rate": 0.5556
+    },
+    "3000-6000": {
+      "sections": 25,
+      "with_subsections": 19,
+      "with_subsections_rate": 0.76
+    },
+    "6000-plus": {
+      "sections": 8,
+      "with_subsections": 8,
+      "with_subsections_rate": 1.0
+    },
+    "800-1500": {
+      "sections": 34,
+      "with_subsections": 6,
+      "with_subsections_rate": 0.1765
+    }
+  },
+  "subsection_zero_count": 80,
+  "theorem_latency_counts": {
+    "DEFERRED": 22,
+    "DEVELOPED": 26,
+    "IMMEDIATE": 27,
+    "MOTIVATED": 38,
+    "NO_FORMAL_RESULT": 28
+  }
+}

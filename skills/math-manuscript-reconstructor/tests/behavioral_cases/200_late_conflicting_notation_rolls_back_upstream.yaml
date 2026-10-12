@@ -1,0 +1,13 @@
+version: 1
+id: 200
+title: Case 200 — Late conflicting notation rolls back upstream
+legacy_spec: 200_late_conflicting_notation_rolls_back_upstream.md
+gate: NOTATION-CONSISTENCY
+assertions:
+- path: rollback_to_architecture
+  op: equals
+  value: true
+good_candidate:
+  rollback_to_architecture: true
+bad_candidate:
+  rollback_to_architecture: false

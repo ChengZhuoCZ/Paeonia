@@ -1,0 +1,18 @@
+version: 1
+id: 130
+title: Case 130 — bridge status is not overclaimed
+legacy_spec: 130_bridge_status_is_not_overclaimed.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: bridge_status
+  op: equals
+  value: principal_order
+- path: exact_spectral_identity_claimed
+  op: equals
+  value: false
+good_candidate:
+  bridge_status: principal_order
+  exact_spectral_identity_claimed: false
+bad_candidate:
+  bridge_status: exact_equivalence
+  exact_spectral_identity_claimed: true

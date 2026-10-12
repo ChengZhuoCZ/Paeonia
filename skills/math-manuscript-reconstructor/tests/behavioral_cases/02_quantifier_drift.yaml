@@ -1,0 +1,13 @@
+version: 1
+id: 2
+title: Regression 02 — Quantifier Drift
+legacy_spec: 02_quantifier_drift.md
+gate: MATH-SEMANTICS
+assertions:
+- path: quantifiers_preserved
+  op: equals
+  value: true
+good_candidate:
+  quantifiers_preserved: true
+bad_candidate:
+  quantifiers_preserved: false

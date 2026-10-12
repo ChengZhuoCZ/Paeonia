@@ -1,0 +1,23 @@
+version: 1
+id: 58
+title: Case 58 — Specialist opening suppresses textbook setup
+legacy_spec: 58_specialist_opening_compression.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: audience
+  op: equals
+  value: specialist_research
+- path: standard_background_compressed
+  op: equals
+  value: true
+- path: textbook_prelude_without_theorem_function
+  op: equals
+  value: false
+good_candidate:
+  audience: specialist_research
+  standard_background_compressed: true
+  textbook_prelude_without_theorem_function: false
+bad_candidate:
+  audience: specialist_research
+  standard_background_compressed: false
+  textbook_prelude_without_theorem_function: true

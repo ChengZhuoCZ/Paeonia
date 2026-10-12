@@ -1,0 +1,22 @@
+version: 1
+required_fields:
+  - id
+  - title
+  - legacy_spec
+  - gate
+  - assertions
+  - good_candidate
+  - bad_candidate
+supported_assertion_ops:
+  - equals
+  - not_equals
+  - present
+  - absent
+  - contains
+  - not_contains
+  - in
+  - not_in
+  - before
+  - subset_of
+  - truthy
+  - falsy

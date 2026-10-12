@@ -1,0 +1,40 @@
+version: 1
+status: draft
+source_of_truth:
+  math_ledger_locked: true
+  proof_core_gate_passed: false
+statement_policy:
+  reader_order_over_proof_chronology: true
+  source_packaging_reuse: forbidden
+  silent_strengthening: forbidden
+  decorative_fragmentation: forbidden
+theorem_units: []
+# Each theorem_units entry may contain:
+# semantic_id: CLAIM-MAIN
+# role: MAIN | STRUCTURAL | QUANTITATIVE | RIGIDITY | CLASSIFICATION | COROLLARY
+# source_claim_ids: []
+# reader_order: 1
+# grouping_reason: ""
+# split_reason: ""
+# assumptions_explicit: []
+# assumptions_inherited: []
+# parameter_ranges: []
+# normalization: ""
+# qualitative_conclusion: ""
+# quantitative_conclusion: null
+# constant_dependencies: []
+# equality_case: null
+# rigidity_or_classification: null
+# exceptional_cases: []
+# external_dependencies: []
+# proof_location: ""
+integrity_checks:
+  no_strengthening: pending
+  no_dropped_hypotheses: pending
+  exact_parameter_ranges: pending
+  normalization_consistent: pending
+  equality_rigidity_preserved: pending
+  no_duplicate_theorem_units: pending
+  grouping_is_reader_motivated: pending
+  theorem_order_is_reader_motivated: pending
+issues: []

@@ -1,0 +1,13 @@
+version: 1
+id: 15
+title: Regression 15 — No template proof geometry
+legacy_spec: 15_no_template_proof_geometry.md
+gate: GENERATIVE-RESIDUE
+assertions:
+- path: fixed_three_step_template
+  op: equals
+  value: false
+good_candidate:
+  fixed_three_step_template: false
+bad_candidate:
+  fixed_three_step_template: true

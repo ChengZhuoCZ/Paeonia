@@ -1,0 +1,23 @@
+version: 1
+id: 186
+title: Case 186 — Proposed candidate and applied edit are not interchangeable
+legacy_spec: 186_proposed_candidate_and_applied_edit_are_not_inte.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: source_verified
+  op: equals
+  value: false
+- path: status
+  op: equals
+  value: PROPOSED
+- path: reported_as_applied
+  op: equals
+  value: false
+good_candidate:
+  source_verified: false
+  status: PROPOSED
+  reported_as_applied: false
+bad_candidate:
+  source_verified: false
+  status: APPLIED_DIRECT
+  reported_as_applied: true

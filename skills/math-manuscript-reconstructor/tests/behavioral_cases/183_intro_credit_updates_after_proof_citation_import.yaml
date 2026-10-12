@@ -1,0 +1,23 @@
+version: 1
+id: 183
+title: Case 183 — Intro credit updates after proof citation import
+legacy_spec: 183_intro_credit_updates_after_proof_citation_import.md
+gate: CITATION-INTEGRITY
+assertions:
+- path: imported_component_credited
+  op: equals
+  value: true
+- path: remaining_novelty_separated
+  op: equals
+  value: true
+- path: unearned_originality_claim
+  op: equals
+  value: false
+good_candidate:
+  imported_component_credited: true
+  remaining_novelty_separated: true
+  unearned_originality_claim: false
+bad_candidate:
+  imported_component_credited: false
+  remaining_novelty_separated: false
+  unearned_originality_claim: true

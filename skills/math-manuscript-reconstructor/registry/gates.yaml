@@ -1,0 +1,581 @@
+version: 1
+release_blockers:
+  MATH-SEMANTICS:
+    audit_key: semantic_integrity
+    owner_state: LEDGER_LOCK
+    rollback_to: EXTRACT
+    allowed_repairs:
+    - correct_ledger
+    - correct_claim_spec
+    - correct_parameter_range
+    - remove_unsupported_strengthening
+    forbidden_repairs:
+    - prose_only_smoothing
+    - silent_theorem_change
+    invalidates:
+    - ProofGraph
+    - ProofBodyBlueprint
+    - ProofCoreGateReport
+    - ReconstructionBlueprint
+    - SemanticChecksum
+    - RefereeAudit
+    - IntroductionNarrativeLedger
+    - SubmissionGateReport
+    - IntroductionParagraphPlan
+    - IntroductionProseAudit
+    - MathematicalStoryLedger
+    re_audit:
+    - MATH-SEMANTICS
+    - PROOF-CLOSURE
+    - PROOF-CORE-ORDER
+    mode_semantics:
+      trusted_source: preserve source theorem semantics without independent validity
+        checking
+      verify_proof: independently audit theorem semantics against verified mathematics
+  PROOF-CORE-ORDER:
+    audit_key: proof_core_order
+    owner_state: PROOF_GRAPH
+    rollback_to: EXECUTION_PLAN
+    allowed_repairs:
+    - reorder_execution_plan
+    - defer_frontmatter
+    - rebuild_proof_first_sequence
+    forbidden_repairs:
+    - pretend_prior_closure
+    - relabel_frontmatter_as_internal
+    invalidates:
+    - ExecutionPlan
+    - ProofCoreGateReport
+    - ReconstructionBlueprint
+    - SubmissionGateReport
+    re_audit:
+    - PROOF-CORE-ORDER
+    - PROOF-CLOSURE
+  SOURCE-INDEPENDENCE:
+    audit_key: source_independence
+    owner_state: MANUSCRIPT_ARCHITECTURE
+    rollback_to: MANUSCRIPT_ARCHITECTURE
+    allowed_repairs:
+    - rebuild_architecture
+    - regroup_claims_by_dependency
+    - remove_source_labels
+    - rewrite_from_ledger
+    forbidden_repairs:
+    - rename_only
+    - synonym_substitution
+    invalidates:
+    - ReconstructionBlueprint
+    - SourceIndependenceReport
+    - SubmissionGateReport
+    re_audit:
+    - SOURCE-INDEPENDENCE
+    - PROOF-CLOSURE
+  STYLE-SOURCE-INDEPENDENCE:
+    audit_key: style_source_independence
+    owner_state: STYLE_EXTRACT
+    rollback_to: STYLE_EXTRACT
+    allowed_repairs:
+    - redistill_abstract_traits
+    - remove_source_phrase_reuse
+    - discard_sentence_templates
+    forbidden_repairs:
+    - near_paraphrase
+    - author_tic_imitation
+    invalidates:
+    - StyleLedger
+    - ParagraphFingerprintLedger
+    - SectionNarrativeFingerprintLedger
+    - WholePaperNarrativeFingerprintLedger
+    - NaturalizationGateReport
+    - SubmissionGateReport
+    - ConditionalStyleLedger
+    - HighIntensityStyleEvidenceReport
+    re_audit:
+    - STYLE-SOURCE-INDEPENDENCE
+    - STYLE-LEDGER-FIDELITY
+    - CONDITIONAL-STYLE-FIDELITY
+  STYLE-LEDGER-FIDELITY:
+    audit_key: style_fidelity
+    owner_state: EDIT
+    rollback_to: EDIT
+    allowed_repairs:
+    - restore_supported_style_decisions
+    - remove_generic_formulaic_prose
+    forbidden_repairs:
+    - copy_style_source
+    - vocabulary_frequency_matching
+    invalidates:
+    - NaturalizationGateReport
+    - SubmissionGateReport
+    re_audit:
+    - STYLE-LEDGER-FIDELITY
+    - GENERATIVE-RESIDUE
+    - CONDITIONAL-STYLE-FIDELITY
+  CONDITIONAL-STYLE-FIDELITY:
+    audit_key: conditional_style_fidelity
+    owner_state: EDIT
+    rollback_to: STYLE_EXTRACT
+    allowed_repairs:
+    - redistill_role_conditioned_strata
+    - drop_unstable_trait
+    - restore_context_conditioned_realization
+    - restore_research_genre_projection
+    - separate_intro_microstyle_from_macro_narrative
+    forbidden_repairs:
+    - match_source_medians
+    - match_source_variance
+    - copy_source_role_sequence
+    - use_textbook_corpus_for_priority_rhetoric
+    - vocabulary_frequency_matching
+    invalidates:
+    - ConditionalStyleLedger
+    - HighIntensityStyleEvidenceReport
+    - NaturalizationGateReport
+    - IntroductionProseAudit
+    - SubmissionGateReport
+    re_audit:
+    - CONDITIONAL-STYLE-FIDELITY
+    - STYLE-SOURCE-INDEPENDENCE
+    - STYLE-LEDGER-FIDELITY
+    - GENERATIVE-RESIDUE
+  GENERATIVE-RESIDUE:
+    audit_key: generative_residue
+    owner_state: RESIDUE_DIAGNOSIS
+    rollback_to: RESIDUE_DIAGNOSIS
+    allowed_repairs:
+    - delete_empty_signposting
+    - remove_formula_paraphrase
+    - compress_template_closure
+    - mathematicalize_transition
+    forbidden_repairs:
+    - random_synonyms
+    - deliberate_errors
+    - random_sentence_variation
+    invalidates:
+    - GenerativeResidueReport
+    - NaturalizationGateReport
+    - SubmissionGateReport
+    re_audit:
+    - GENERATIVE-RESIDUE
+    - AUTHORIAL-DECISION
+    - MATHEMATICAL-TRANSITIONS
+  AUTHORIAL-DECISION:
+    audit_key: authorial_decision
+    owner_state: AUTHORIAL_DECISION
+    rollback_to: AUTHORIAL_DECISION
+    allowed_repairs:
+    - thicken_delicate_justification
+    - compress_routine_narration
+    - expose_obstruction
+    forbidden_repairs:
+    - uniform_length_targeting
+    - artificial_irregularity
+    invalidates:
+    - AuthorialDecisionReport
+    - NaturalizationGateReport
+    - SubmissionGateReport
+    re_audit:
+    - AUTHORIAL-DECISION
+    - PARAGRAPH-FINGERPRINT-FIDELITY
+  PARAGRAPH-FINGERPRINT-FIDELITY:
+    audit_key: paragraph_fingerprint_fidelity
+    owner_state: PARAGRAPH_RHYTHM
+    rollback_to: PARAGRAPH_RHYTHM
+    allowed_repairs:
+    - merge_same_obligation_paragraphs
+    - split_on_real_state_change
+    - restore_role_sensitive_density
+    forbidden_repairs:
+    - numeric_length_matching
+    - source_paragraph_sequence_reuse
+    invalidates:
+    - ParagraphFingerprintReport
+    - NaturalizationGateReport
+    - SubmissionGateReport
+    re_audit:
+    - PARAGRAPH-FINGERPRINT-FIDELITY
+    - GENERATIVE-RESIDUE
+  SECTION-NARRATIVE-FIDELITY:
+    audit_key: section_narrative_fidelity
+    owner_state: SECTION_NARRATIVE
+    rollback_to: SECTION_NARRATIVE
+    allowed_repairs:
+    - merge_artificial_sections
+    - split_new_obligation_family
+    - suppress_unneeded_subsections
+    - reposition_theorem_by_prerequisite
+    forbidden_repairs:
+    - section_count_matching
+    - source_section_sequence_reuse
+    - cosmetic_subsectioning
+    invalidates:
+    - SectionNarrativeReport
+    - ReconstructionBlueprint
+    - SubmissionGateReport
+    re_audit:
+    - SECTION-NARRATIVE-FIDELITY
+    - WHOLE-PAPER-NARRATIVE-FIDELITY
+    - SOURCE-INDEPENDENCE
+  WHOLE-PAPER-NARRATIVE-FIDELITY:
+    audit_key: whole_paper_narrative_fidelity
+    owner_state: WHOLE_PAPER_NARRATIVE
+    rollback_to: WHOLE_PAPER_NARRATIVE
+    allowed_repairs:
+    - expose_main_result
+    - move_technical_mass_by_dependency
+    - return_central_argument_from_appendix
+    - remove_ceremonial_conclusion
+    forbidden_repairs:
+    - global_ratio_matching
+    - section_padding
+    - source_mass_profile_reuse
+    invalidates:
+    - WholePaperNarrativeReport
+    - ReconstructionBlueprint
+    - IntroductionNarrativeLedger
+    - SubmissionGateReport
+    - IntroductionParagraphPlan
+    - IntroductionProseAudit
+    re_audit:
+    - WHOLE-PAPER-NARRATIVE-FIDELITY
+    - SECTION-NARRATIVE-FIDELITY
+    - PROOF-CLOSURE
+  GRAND-NARRATIVE-INTEGRITY:
+    audit_key: grand_narrative_integrity
+    owner_state: INTRODUCTION_NARRATIVE
+    rollback_to: INTRODUCTION_NARRATIVE
+    allowed_repairs:
+    - compress_detached_history
+    - expose_main_result_earlier
+    - state_precise_obstruction
+    - rebuild_result_hierarchy
+    - assign_literature_roles
+    - remove_unbridged_adjacent_problem
+    - replace_section_itinerary_with_mechanism_map
+    - downgrade_unverified_hype
+    forbidden_repairs:
+    - invent_priority
+    - inflate_novelty
+    - delay_theorem_for_drama
+    - copy_reference_introduction_sequence
+    invalidates:
+    - IntroductionNarrativeLedger
+    - CitationLedger
+    - RefereeAudit
+    - SubmissionGateReport
+    - IntroductionParagraphPlan
+    - IntroductionProseAudit
+    - MathematicalStoryLedger
+    re_audit:
+    - GRAND-NARRATIVE-INTEGRITY
+    - MATHEMATICAL-STORY-INTEGRITY
+    - CITATION-INTEGRITY
+    - MATH-SEMANTICS
+    - WHOLE-PAPER-NARRATIVE-FIDELITY
+  MATHEMATICAL-STORY-INTEGRITY:
+    audit_key: mathematical_story_integrity
+    owner_state: INTRODUCTION_NARRATIVE
+    rollback_to: INTRODUCTION_NARRATIVE
+    allowed_repairs:
+    - rebuild_mathematical_story_ledger
+    - research_parent_mathematical_program
+    - identify_canonical_principle
+    - identify_scale_transition
+    - reconstruct_mathematical_ancestry
+    - remove_generic_grandeur
+    - add_program_return_after_theorem
+    - rewrite_proof_story_around_transition
+    forbidden_repairs:
+    - add_prestige_adjectives
+    - invent_parent_program
+    - invent_parallel_problem_relevance
+    - inflate_asymptotic_result_to_exact_result
+    - replace_mathematical_story_with_physics_wallpaper
+    invalidates:
+    - MathematicalStoryLedger
+    - IntroductionParagraphPlan
+    - IntroductionProseAudit
+    - EditorialImpactAudit
+    - RefereeAudit
+    - SubmissionGateReport
+    re_audit:
+    - MATHEMATICAL-STORY-INTEGRITY
+    - GRAND-NARRATIVE-INTEGRITY
+    - INTRODUCTION-PROSE-INTEGRITY
+    - EDITORIAL-IMPACT
+    - CITATION-INTEGRITY
+  THEOREM-STATEMENT-INTEGRITY:
+    audit_key: theorem_statement_integrity
+    owner_state: THEOREM_FRAME
+    rollback_to: THEOREM_FRAME
+    allowed_repairs:
+    - restore_dropped_hypothesis
+    - remove_unproved_strengthening
+    - split_overloaded_theorem
+    - merge_duplicate_theorem_units
+    - restore_exact_parameter_range
+    - restore_equality_rigidity_clause
+    - reorder_results_for_reader
+    forbidden_repairs:
+    - change_closed_mathematics
+    - hide_hypothesis
+    - inflate_main_result
+    - inherit_source_theorem_packaging
+    invalidates:
+    - TheoremStatementLedger
+    - SemanticChecksum
+    - IntroductionNarrativeLedger
+    - RefereeAudit
+    - SubmissionGateReport
+    - IntroductionParagraphPlan
+    - IntroductionProseAudit
+    re_audit:
+    - THEOREM-STATEMENT-INTEGRITY
+    - MATH-SEMANTICS
+    - PROOF-CLOSURE
+    - GRAND-NARRATIVE-INTEGRITY
+    - NOTATION-CONSISTENCY
+  MATHEMATICAL-TRANSITIONS:
+    audit_key: mathematical_transitions
+    owner_state: MATHEMATICAL_TRANSITIONS
+    rollback_to: MATHEMATICAL_TRANSITIONS
+    allowed_repairs:
+    - name_cause
+    - name_reduction
+    - name_limit_passage
+    - name_method_change
+    - delete_administrative_transition
+    forbidden_repairs:
+    - random_transition_rotation
+    invalidates:
+    - NaturalizationGateReport
+    - SubmissionGateReport
+    re_audit:
+    - MATHEMATICAL-TRANSITIONS
+    - GENERATIVE-RESIDUE
+  COLD-AUTHOR:
+    audit_key: cold_author
+    owner_state: COLD_AUTHOR
+    rollback_to: COLD_AUTHOR
+    allowed_repairs:
+    - delete_redundancy
+    - merge_repetition
+    - compress_pedagogy
+    forbidden_repairs:
+    - delete_legality
+    - delete_equality_chain
+    - introduce_new_mathematics
+    invalidates:
+    - NaturalizationGateReport
+    - SubmissionGateReport
+    re_audit:
+    - COLD-AUTHOR
+    - PROOF-CLOSURE
+    - MATH-SEMANTICS
+  CITATION-INTEGRITY:
+    audit_key: citation_integrity
+    owner_state: AUDIT
+    rollback_to: LEDGER_LOCK
+    allowed_repairs:
+    - verify_external_input
+    - remove_unsupported_claim
+    - downgrade_priority_language
+    - flag_needs_check
+    forbidden_repairs:
+    - invent_reference
+    - infer_theorem_number
+    invalidates:
+    - CitationLedger
+    - RefereeAudit
+    - IntroductionNarrativeLedger
+    - SubmissionGateReport
+    - IntroductionParagraphPlan
+    - IntroductionProseAudit
+    - MathematicalStoryLedger
+    re_audit:
+    - CITATION-INTEGRITY
+    - MATH-SEMANTICS
+    - PROOF-CLOSURE
+  NOTATION-CONSISTENCY:
+    audit_key: notation_consistency
+    owner_state: NOTATION_ARCHITECTURE
+    rollback_to: NOTATION_ARCHITECTURE
+    allowed_repairs:
+    - choose_field_native_semantic_symbols
+    - repair_external_theorem_symbol_crosswalk
+    - respect_user_fixed_notation_and_edit_scope
+    - rename_duplicate_symbol
+    - unify_normalization
+    - repair_cross_reference
+    - regularize_index_family
+    - make_constant_dependencies_explicit
+    - replace_decorative_alphabet
+    - justify_or_remove_mathcal
+    - replace_font_only_distinction
+    forbidden_repairs:
+    - change_mathematical_object_silently
+    - rename_for_cosmetic_variation
+    - preserve_source_collision_by_inertia
+    - introduce_decorative_font_for_variety
+    - distinguish_objects_only_by_font
+    - preserve_duplicate_recurring_symbol
+    invalidates:
+    - NotationLedger
+    - ProofCoreGateReport
+    - TheoremStatementLedger
+    - SemanticChecksum
+    - ReconstructionBlueprint
+    - SubmissionGateReport
+    - IntroductionParagraphPlan
+    - IntroductionProseAudit
+    re_audit:
+    - NOTATION-CONSISTENCY
+    - MATH-SEMANTICS
+    - PROOF-CLOSURE
+    - THEOREM-STATEMENT-INTEGRITY
+  PROOF-CLOSURE:
+    audit_key: proof_closure
+    owner_state: PROOF_CORE_GATE
+    rollback_to: PROOF_GRAPH
+    allowed_repairs:
+    - add_missing_proof_obligation
+    - verify_external_dependency
+    - expose_blocker
+    - rebuild_affected_proof
+    forbidden_repairs:
+    - rhetorical_bridge
+    - hide_gap
+    - appendix_debt
+    invalidates:
+    - ProofCoreGateReport
+    - ReconstructionBlueprint
+    - WholePaperNarrativeReport
+    - SectionNarrativeReport
+    - RefereeAudit
+    - IntroductionNarrativeLedger
+    - SubmissionGateReport
+    - IntroductionParagraphPlan
+    - IntroductionProseAudit
+    - MathematicalStoryLedger
+    re_audit:
+    - PROOF-CLOSURE
+    - MATH-SEMANTICS
+    - PROOF-CORE-ORDER
+    mode_semantics:
+      trusted_source: faithful source-relative proof coverage through the source-stated
+        closure
+      verify_proof: independent mathematical proof closure
+    trusted_source_repairs:
+    - restore_omitted_source_branch
+    - restore_source_stated_closure
+    - restore_source_specified_external_input
+    - mark_literal_source_missing
+  LATEX-INTEGRITY:
+    audit_key: latex_integrity
+    owner_state: EDIT
+    rollback_to: EDIT
+    allowed_repairs:
+    - fix_environment
+    - fix_reference
+    - fix_delimiter
+    - fix_compilation_issue
+    forbidden_repairs:
+    - alter_semantics_to_compile
+    invalidates:
+    - SubmissionGateReport
+    re_audit:
+    - LATEX-INTEGRITY
+    - NOTATION-CONSISTENCY
+  INTRODUCTION-PROSE-INTEGRITY:
+    audit_key: introduction_prose_integrity
+    owner_state: FRONTMATTER
+    rollback_to: INTRODUCTION_NARRATIVE
+    allowed_repairs:
+    - rebuild_introduction_core_brief
+    - activate_or_repair_conditional_pde_extension
+    - specify_pde_theorem_coordinates
+    - replace_vague_improvement_with_multi_axis_result_delta
+    - preserve_incomparable_pde_frontiers
+    - classify_pde_assumption_roles
+    - rebuild_causal_pde_obstruction_stack
+    - connect_decisive_pde_formula_to_closure
+    - separate_theorem_method_counterexample_and_open_boundaries
+    - repair_earliest_missing_reader_inference
+    - select_clearer_theorem_facing_arc
+    - rewrite_generic_paragraph_under_swap_test
+    - remove_nonindispensable_pretheorem_material
+    - move_theorem_to_earliest_readable_position
+    - recluster_literature_by_claim
+    - rewrite_proof_overview_at_conceptual_resolution
+    - compress_proof_local_bookkeeping
+    - preserve_or_restore_effective_authorial_baseline
+    - use_extended_paragraph_plan_only_if_multi_thread_complexity_requires_it
+    - repair_paragraph_link_graph
+    - restore_adjacent_problem_return
+    - separate_theorem_orientation_statement_interpretation
+    - rewrite_administrative_openers_around_mathematical_subjects
+    - remove_detachable_paragraph
+    forbidden_repairs:
+    - line_by_line_polish_source_introduction
+    - copy_reference_paragraph_sequence
+    - random_synonym_rotation
+    - invent_literature
+    - alter_closed_theorem_for_prose
+    invalidates:
+    - ReaderContractAudit
+    - IntroductionCoreBrief
+    - IntroductionParagraphPlan
+    - IntroductionProseAudit
+    - RefereeAudit
+    - SubmissionGateReport
+    re_audit:
+    - INTRODUCTION-PROSE-INTEGRITY
+    - MATHEMATICAL-STORY-INTEGRITY
+    - GRAND-NARRATIVE-INTEGRITY
+    - CITATION-INTEGRITY
+    - THEOREM-STATEMENT-INTEGRITY
+    - SOURCE-INDEPENDENCE
+  EDITORIAL-IMPACT:
+    audit_key: editorial_impact
+    owner_state: FRONTMATTER
+    rollback_to: INTRODUCTION_NARRATIVE
+    allowed_repairs:
+    - rebuild_narrative_ambition_ledger
+    - surface_verified_strong_claim
+    - sharpen_known_new_contrast
+    - clarify_structural_obstruction
+    - strengthen_verified_consequence
+    - expose_calibrated_method_afterlife
+    - downgrade_claim_to_factuality_ceiling
+    - research_scientific_context
+    - increase_scientific_context_depth
+    - rebuild_grand_opening
+    - add_model_to_math_bridge
+    - remove_physics_wallpaper
+    - calibrate_scientific_theorem_interpretation
+    - rebuild_mathematical_story_ledger
+    - research_parent_mathematical_program
+    - identify_scale_transition
+    - clarify_program_consequence_when_operative
+    forbidden_repairs:
+    - invent_priority
+    - inflate_theorem_scope
+    - add_prestige_adjectives_without_mathematical_content
+    - claim_unverified_transferability
+    - delay_main_theorem_for_drama
+    - invent_physical_relevance
+    - claim_experimental_consequence_from_model_theorem
+    invalidates:
+    - EditorialImpactAudit
+    - IntroductionProseAudit
+    - RefereeAudit
+    - SubmissionGateReport
+    - ScientificContextLedger
+    - MathematicalStoryLedger
+    re_audit:
+    - EDITORIAL-IMPACT
+    - MATHEMATICAL-STORY-INTEGRITY
+    - GRAND-NARRATIVE-INTEGRITY
+    - INTRODUCTION-PROSE-INTEGRITY
+    - CITATION-INTEGRITY
+    - THEOREM-STATEMENT-INTEGRITY

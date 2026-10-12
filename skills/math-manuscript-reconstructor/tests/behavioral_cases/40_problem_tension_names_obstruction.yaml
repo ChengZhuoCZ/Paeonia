@@ -1,0 +1,19 @@
+version: 1
+id: 40
+title: Case 40 — Problem tension names the obstruction
+legacy_spec: 40_problem_tension_names_obstruction.md
+gate: GRAND-NARRATIVE-INTEGRITY
+assertions:
+- path: problem_tension.structural_obstruction
+  op: truthy
+- path: generic_difficulty_only
+  op: equals
+  value: false
+good_candidate:
+  problem_tension:
+    structural_obstruction: nonlocal boundary operator blocks the local surgery argument
+  generic_difficulty_only: false
+bad_candidate:
+  problem_tension:
+    structural_obstruction: ''
+  generic_difficulty_only: true

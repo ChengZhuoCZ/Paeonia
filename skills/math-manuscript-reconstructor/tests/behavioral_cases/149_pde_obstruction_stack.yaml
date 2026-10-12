@@ -1,0 +1,25 @@
+version: 1
+id: 149
+title: Case 149 — PDE obstruction stack is short and causal
+legacy_spec: 149_pde_obstruction_stack.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: obstruction_stack.causal
+  op: equals
+  value: true
+- path: obstruction_stack.layer_count
+  op: equals
+  value: 3
+- path: obstruction_stack.technical_catalogue
+  op: equals
+  value: false
+good_candidate:
+  obstruction_stack:
+    causal: true
+    layer_count: 3
+    technical_catalogue: false
+bad_candidate:
+  obstruction_stack:
+    causal: false
+    layer_count: 8
+    technical_catalogue: true

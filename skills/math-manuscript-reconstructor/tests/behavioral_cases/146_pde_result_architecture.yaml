@@ -1,0 +1,25 @@
+version: 1
+id: 146
+title: Case 146 — PDE result architecture is not flattened
+legacy_spec: 146_pde_result_architecture.md
+gate: INTRODUCTION-PROSE-INTEGRITY
+assertions:
+- path: result_architecture.type
+  op: equals
+  value: STRATIFICATION_OR_PARTIAL_REGULARITY
+- path: result_architecture.branches_visible
+  op: equals
+  value: true
+- path: result_architecture.flattened_to_generic_main_result
+  op: equals
+  value: false
+good_candidate:
+  result_architecture:
+    type: STRATIFICATION_OR_PARTIAL_REGULARITY
+    branches_visible: true
+    flattened_to_generic_main_result: false
+bad_candidate:
+  result_architecture:
+    type: SINGLE_RESULT
+    branches_visible: false
+    flattened_to_generic_main_result: true

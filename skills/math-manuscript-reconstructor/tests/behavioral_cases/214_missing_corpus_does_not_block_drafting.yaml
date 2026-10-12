@@ -1,0 +1,15 @@
+version: 1
+id: 214
+title: Case 214 — Missing corpus does not block drafting
+legacy_spec: 214_missing_corpus_does_not_block_drafting.md
+gate: STYLE-LEDGER-FIDELITY
+assertions:
+- path: draft.continues_without_style_corpus
+  op: equals
+  value: true
+good_candidate:
+  draft:
+    continues_without_style_corpus: true
+bad_candidate:
+  draft:
+    continues_without_style_corpus: false
