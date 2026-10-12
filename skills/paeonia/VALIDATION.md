@@ -1,3 +1,11 @@
+# v1.42.1 — Paeonia rename validation
+
+- **Identity:** skill frontmatter and manifest use `paeonia`; the directory and archive root are `paeonia/`; UI display name and documentation title are **Paeonia**. All version metadata is `1.42.1`.
+- **Checks run:** skill-creator quick validator passed; the v1.42 contract passed all 23 checks; contract consistency passed with 48 artifacts, 22 gates and 214 behavioral fixtures.
+- **Scope preservation:** all manuscript-writing protocols, helper tools, schemas and behavioral fixtures are byte-identical to the preceding v1.42.0 source. The existing v1.42 contract now permits consistent patch releases.
+- **Packaging:** both internal SHA-256 manifests were regenerated; all 740 entries were checked. The ZIP integrity check passed and all 742 archived files were compared byte-for-byte with the source directory. The distribution checksum is supplied separately.
+- **Limits:** the full historical release suite was not rerun for this rename. These checks establish naming, metadata and package consistency; they do not independently assess manuscript quality, mathematical correctness or cited-theorem applicability.
+
 # v1.42 validation scope
 
 The new single-voice specification is checked structurally for path integration, automatic conflict resolution, no unsolicited author/style-choice prompt, local-polish preservation, and consistency across the former style-realization protocols. Behavioral fixtures check explicit editorial decisions rather than actual full-model writing. Read-only corpus and citation machinery remains subject to its prior tests. A formal automated test cannot certify the quality of a real mathematical manuscript; final judgment is a coherent text-level cold read.

@@ -1,4 +1,10 @@
-# Math Manuscript Reconstructor v1.42.0 — One Unified Editorial Voice
+# Paeonia v1.42.1 — Skill Rename
+
+The skill is now **Paeonia**, with the installation identifier and directory `paeonia`. Its entrypoint, manifest and UI display name use the same identity. This patch changes the name and distribution metadata; the manuscript-writing protocols, tools and behavioral rules remain those of v1.42.0. Invoke the renamed skill as `$paeonia`.
+
+---
+
+# Paeonia v1.42.0 — One Unified Editorial Voice
 
 **Single default voice; no style choices.** All authorized writing uses one formal, precise, restrained and mathematically ambitious research-paper register (English unless the output language is explicitly specified). The same voice applies to Abstract, Introduction, theorem statements and proofs; density varies only with the mathematical task. The skill resolves conflicting style advice independently using [Protocol 05p](protocols/05p_unified_manuscript_voice.md), the [house profile](profiles/unified_research_mathematics_voice.md), and the [final cross-section checklist](checklists/unified_language_style.md). It does **not** ask for a stylistic author/exemplar by default or offer multiple tones. Already user-supplied reference corpora remain optional subordinate evidence; genuine literature discovery, exact-theorem proof citations and notation audits are unchanged.
 
@@ -6,7 +12,7 @@
 
 ---
 
-# Math Manuscript Reconstructor v1.41.0 — Semantic Notation Selection
+# Paeonia v1.41.0 — Semantic Notation Selection
 
 **New in v1.41: symbols are chosen deliberately, not merely de-duplicated.** Protocol 02h makes Pass 5a an active, field-native symbol-selection procedure: map the real mathematical objects and their relations, honor user/domain conventions, choose readable recurring symbols on representative formulas, and record concise justifications for salient choices in the **existing** `NotationLedger.notation_selection`. It preserves the strict duplicate-symbol and plain-typography audits, the empirical Gui-corpus soft prior, and the `LOCAL_POLISH` protected-baseline policy.
 

@@ -1,8 +1,8 @@
 # Paeonia
 
-**Paeonia** 是 `math-manuscript-reconstructor` skill 的发布仓库，用于数学研究论文的重构写作、局部润色和参考文献审计。
+**Paeonia** 是用于数学研究论文重构写作、局部润色和参考文献审计的 skill。
 
-当前版本：**v1.42.0**。仓库名称为 Paeonia；skill 内部名称保留为 `math-manuscript-reconstructor`，以保持原始包及其引用路径完整。
+当前版本：**v1.42.1**。展示名称为 **Paeonia**；安装标识、内部名称和目录为 `paeonia`，可通过 `$paeonia` 调用。
 
 ## 功能
 
@@ -16,19 +16,19 @@
 
 ## 下载与安装
 
-从 [v1.42.0 Release](https://github.com/ChengZhuoCZ/Paeonia/releases/tag/v1.42.0) 下载 `math-manuscript-reconstructor-v1.42.0.skill`。
+从 [v1.42.1 Release](https://github.com/ChengZhuoCZ/Paeonia/releases/tag/v1.42.1) 下载 `Paeonia-v1.42.1.skill`。
 
 - 支持 `.skill` 文件导入的客户端：使用客户端的 skill 导入功能。
-- 使用目录形式的客户端：将文件按 ZIP 格式解压，把完整的 `math-manuscript-reconstructor/` 目录放入客户端指定的 skills 目录。
-- 从源码安装：使用本仓库的 [`skills/math-manuscript-reconstructor/`](skills/math-manuscript-reconstructor/) 目录。
+- 使用目录形式的客户端：将文件按 ZIP 格式解压，把完整的 `paeonia/` 目录放入客户端指定的 skills 目录。
+- 从源码安装：使用本仓库的 [`skills/paeonia/`](skills/paeonia/) 目录。
 
-安装时保留 `SKILL.md` 和同级资源目录。完整使用说明见 [skill README](skills/math-manuscript-reconstructor/README.md)，入口见 [SKILL.md](skills/math-manuscript-reconstructor/SKILL.md)。
+安装时保留 `SKILL.md` 和同级资源目录。更新已安装的版本时，请用新目录替换旧版 skill，避免重复加载。完整使用说明见 [skill README](skills/paeonia/README.md)，入口见 [SKILL.md](skills/paeonia/SKILL.md)。
 
-## v1.42.0
+## v1.42.1
 
-本版本引入统一的数学论文语言风格，不再默认要求选择作者范例或提供多种文风选项。原有的编辑范围约束、精确到定理的文献引用和语义记号选择机制继续保留。
+本版本将 skill 正式改名为 Paeonia，并统一入口、清单、UI 展示、安装目录和发行文件的名称。数学写作协议与行为延续 v1.42.0：统一的数学论文语言风格、编辑范围约束、精确到定理的文献引用和语义记号选择机制。
 
-详细变化见 [CHANGELOG](skills/math-manuscript-reconstructor/CHANGELOG.md)。原包的验证范围与限制见 [VALIDATION](skills/math-manuscript-reconstructor/VALIDATION.md)。
+详细变化见 [CHANGELOG](skills/paeonia/CHANGELOG.md)。验证范围与限制见 [VALIDATION](skills/paeonia/VALIDATION.md)。
 
 ## 仓库结构
 
@@ -36,24 +36,18 @@
 Paeonia/
 ├── README.md
 ├── skills/
-│   └── math-manuscript-reconstructor/  # 原始包解压后的全部内容
+│   └── paeonia/                       # skill 入口及完整资源
 └── dist/
-    ├── math-manuscript-reconstructor-v1.42.0.skill
+    ├── Paeonia-v1.42.1.skill
     └── SHA256SUMS
 ```
 
 ## 完整性
 
-`dist/` 中的 `.skill` 文件与提供的原始文件逐字节一致，解压后的 741 个文件也保持原样。发布前已核对包内清单的 739 条 SHA-256 记录，全部匹配；这项检查验证文件完整性，不代表对实际数学论文质量或外部引用适用性的重新审计。
+`dist/` 中的 `.skill` 文件由 `skills/paeonia/` 生成，解压后的内容与该目录逐文件一致。每次重新打包后更新包内校验清单与发行文件的 `SHA256SUMS`。具体发布校验结果见 [VALIDATION](skills/paeonia/VALIDATION.md)。
 
 下载发行文件及同一 Release 的 `SHA256SUMS` 后，可在它们所在的目录中校验：
 
 ```bash
 shasum -a 256 -c SHA256SUMS
-```
-
-原始文件 SHA-256：
-
-```text
-e826c96e228ef060e18e05b81963f6c7a6e5128943b455c75aa3ef4c9f3e016b
 ```

@@ -1,14 +1,14 @@
 ---
-name: math-manuscript-reconstructor
+name: paeonia
 description: Reconstruct mathematical manuscripts, locally polish a draft, or audit references in one consistent research-mathematics voice without offering style options. Choose field-native notation, use exact verified theorem citations where applicable, and research related mathematics before writing evidence-grounded Introductions; preserve theorem scope and protected text.
 metadata:
-  version: 1.42.0
+  version: 1.42.1
   category: mathematics-writing
   status: research-grade
   entrypoint: SKILL.md
 ---
 
-# Math Manuscript Reconstructor
+# Paeonia
 
 ## Unified language style — no stylistic selection (v1.42)
 

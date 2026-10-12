@@ -12,7 +12,7 @@ a=read('protocols/05o_author_corpus_supplement.md')
 modes=read('protocols/00_writing_modes.md')
 state=read('protocols/12_execution_state_machine.md')
 checks={
- 'version':version==(1,42,0) and m['version']=='1.42.0' and 'version: 1.42.0' in skill,
+ 'version':version>=(1,42,0) and m['version']==read('VERSION').strip() and 'version: '+m['version'] in skill,
  'canonical_protocol':all(x in skill for x in ['Protocol 05p','05p_unified_manuscript_voice.md','unified_language_style.md']),
  'single_profile':m['canonical_editorial_voice']=='profiles/unified_research_mathematics_voice.md' and (R/m['canonical_editorial_voice']).is_file(),
  'language':all(x in p for x in ['research mathematics','English','explicitly different']),

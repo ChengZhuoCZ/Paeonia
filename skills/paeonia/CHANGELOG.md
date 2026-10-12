@@ -1,3 +1,11 @@
+# v1.42.1 — Rename the Skill to Paeonia
+
+- Renamed the skill identifier and installation directory to `paeonia`, and its human-facing title to **Paeonia**.
+- Updated entrypoint and manifest metadata, added the Paeonia UI display name, and refreshed repository and package documentation.
+- Published `Paeonia-v1.42.1.skill` with a `paeonia/` archive root and regenerated SHA-256 manifests.
+- Preserved all manuscript-writing protocols, helper tools and behavioral fixtures from v1.42.0.
+- Made the existing v1.42 contract accept consistent patch releases while retaining its minimum version requirement.
+
 # v1.42.0 — Unified Manuscript Language Style, No Style Selection
 
 - Introduced Protocol 05p, one journal-neutral, mathematically precise and evidence-grounded research-paper voice across Abstract, Introduction, theorems, proofs and remarks; density changes with mathematical obligations, not with selectable personas or tones.

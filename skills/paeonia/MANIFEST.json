@@ -1,6 +1,6 @@
 {
-  "name": "math-manuscript-reconstructor",
-  "version": "1.42.0",
+  "name": "paeonia",
+  "version": "1.42.1",
   "entrypoint": "SKILL.md",
   "domain": "research mathematics writing",
   "default_language": "English",
